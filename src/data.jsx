@@ -28,11 +28,12 @@ export const links = [
     url: '/contact',
     text: 'contact',
   },
-  {
-    id: 5,
-    url: '/tutorials',
-    text: 'tutorials',
-  },
+//   {
+//     id: 5,
+//     url: '/tutorials',
+//     text: 'tutorials',
+//   },
+ 
 ]
 
 export const social = [
