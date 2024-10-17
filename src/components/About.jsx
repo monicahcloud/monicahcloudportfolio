@@ -1,4 +1,4 @@
-import resume from '../../public/MonicahCloudResume.pdf'
+import resume from '../assets/MonicahCloudResume.pdf'
 
 const About = () => {
   return (

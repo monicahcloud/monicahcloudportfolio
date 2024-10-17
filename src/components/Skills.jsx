@@ -1,3 +1,4 @@
+import ProgressCircles from "./ProgressCircle"
 
 
 const Skills = () => {
@@ -14,8 +15,9 @@ const Skills = () => {
         }}
       >
         My
-        <span> Skills</span>
+        <span> technologies</span>
       </h1>
+      <ProgressCircles/>
      
     </div>
   )
