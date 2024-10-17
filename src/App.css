@@ -1253,32 +1253,37 @@ article {
     }
     .service-title {
       margin-bottom: 0.5rem;
+       color:#00bfff;
     }
   }
 
-/* section */
-.section {
-  padding: 5rem 0;
-  scroll-margin-top: 4rem;
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.section-title h2 {
-  text-transform: uppercase;
-}
-
-.section-center {
-  width: 90vw;
-
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
+ /* section */
+  .section {
+    padding: 5rem 0;
+    scroll-margin-top: 4rem;
   }
-}
+  .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+  }
+  .section-title span {
+    color: var(--clr-primary-5);
+  }
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+      
+    }
+    
+  }
 
 /********************************
 Effects

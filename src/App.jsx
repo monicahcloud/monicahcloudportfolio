@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <BlurBackground />
       <About />
       <Services />
       <Skills />
