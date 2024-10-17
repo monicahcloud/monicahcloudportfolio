@@ -4,6 +4,7 @@ import pic5 from '../images/5-removebg-preview.png'
 import pic4 from '../images/4-removebg-preview.png'
 import pic7 from '../images/7-removebg-preview.png'
 import pic9 from '../images/9-removebg-preview.png'
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
 
 import { useState } from 'react'
 
@@ -198,12 +199,11 @@ const Portfolio = () => {
 						</div>
 					</div>
 					<div className="arrows">
-						<button id="prev" onClick={prevSlide}>
-							&#x2039;
+						<button id="prev" onClick={prevSlide} >
+							<FaArrowLeft/>
 						</button>
-						<button id="back"> Go Back </button>
 						<button id="next" onClick={nextSlide}>
-							&#x203A;
+							<FaArrowRight/>
 						</button>
 					</div>
 				</div>

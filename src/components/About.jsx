@@ -24,7 +24,7 @@ const About = () => {
               I design and develop websites that focus on user <br />
               experience and functionality.
             </p>
-            <a href={resume} download="Resume">
+            <a href={resume} download="Monicah Cloud Resume">
               <button className="btnGlowHover">Download Resume</button>
             </a>
           </article>

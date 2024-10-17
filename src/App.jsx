@@ -7,6 +7,7 @@ import BlurBackground from './components/BlurBackground'
 import About from './components/About'
 import { BrowserRouter } from 'react-router-dom'
 import Services from './components/Services'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <About />
       <Services/>
+      <Skills/>
       <Portfolio />
       <Contact />
       <Footer />
