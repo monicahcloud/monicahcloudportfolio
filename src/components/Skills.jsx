@@ -36,11 +36,11 @@ const Skills = () => {
             />
           
         </div>
+        <span>
         <div className="skills ">
-          <div className="skillsContainer ">
             <ProgressCircles />
-          </div>
-        </div>
+
+        </div></span>
       </div>
     </div>
   )

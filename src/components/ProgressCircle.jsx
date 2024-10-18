@@ -29,6 +29,7 @@ const CircleProgress = ({ degree, color, title }) => {
         }}
         data-degree={degree}
         data-color={color}
+        data-title={title}
       >
         <h2 className="number" style={{ color }}>
           {currentDegree}

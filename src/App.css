@@ -1074,30 +1074,40 @@ About
 }
 .aboutInfo {
   font-size: large;
-  margin-left: em;
+  margin-left: 1em;
   margin-bottom: -3rem;
   margin-top: 1rem;
   text-align: right;
 }
 
+/********************
+Skills
+********************/
 .skills {
   /* position: relative; */
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(1, minmax(270px, 1fr));
   align-items: center;
-  padding: 15px 5%;
+  padding: 10px 5%;
   width: 80%;
- 
+  margin-top: -22rem;
+  margin-left: 2rem;
 }
+.myTech img {
+  width: 25rem;
+  min-height: 15rem;
+  margin-left: 60rem;
+  border-bottom-left-radius: 60%;
+}
+
 .skillsContainer {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 40px;
- 
+  gap: 35px;
 }
 
 .skillsContainer .circle {
@@ -1396,7 +1406,7 @@ Services
 }
 .myTech h1::after {
   position: absolute;
-  
+
   top: 8px;
   left: -30px;
   height: 0px;
@@ -1406,7 +1416,7 @@ Services
 }
 .myTech h1::before {
   position: absolute;
- 
+
   top: 8px;
   right: -30px;
   height: 0px;
@@ -1462,6 +1472,6 @@ Effects
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255,255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0,);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0);
 }
