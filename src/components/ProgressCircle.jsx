@@ -19,6 +19,7 @@ const CircleProgress = ({ degree, color, title }) => {
     }
     return () => clearInterval(interval)
   }, [currentDegree, degree])
+
   return (
     <div className="">
       <div
@@ -41,14 +42,14 @@ const CircleProgress = ({ degree, color, title }) => {
 
 const ProgressCircles = () => {
   const progressData = [
-    { degree: 75, color: '#00bfff', title: 'HTML' },
-    { degree: 80, color: '#00bfff', title: 'CSS' },
-    { degree: 72, color: '#00bfff', title: 'JS' },
-    { degree: 87, color: '#00bfff', title: 'Python' },
-    { degree: 89, color: '#00bfff', title: 'ReactJS' },
-    { degree: 89, color: '#00bfff', title: 'SQL' },
-    { degree: 70, color: '#00bfff', title: 'Figma' },
-    { degree: 88, color: '#00bfff', title: 'Bootstrap' },
+    { degree: 75, color: 'blue', title: 'HTML' },
+    { degree: 80, color: 'green', title: 'CSS' },
+    { degree: 72, color: 'purple', title: 'JS' },
+    { degree: 87, color: 'teal', title: 'Python' },
+    { degree: 89, color: 'blue', title: 'ReactJS' },
+    { degree: 89, color: 'green', title: 'SQL' },
+    { degree: 70, color: 'purple', title: 'Figma' },
+    { degree: 88, color: 'teal', title: 'Bootstrap' },
   ]
 
   return (
