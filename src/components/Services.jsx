@@ -8,8 +8,9 @@ const Services = () => {
           <h1
             style={{
               color: '#fff',
-              textAlign: 'center',
-              marginTop: '2rem',
+              textAlign: 'right',
+              marginTop: '1rem',
+              marginBottom: '1.5rem',
               fontSize: '3.3rem',
               textDecoration: 'none',
             }}
@@ -18,9 +19,8 @@ const Services = () => {
             <span> services</span>
           </h1>
           <p id="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            excepturi sed illum nostrum reiciendis rem corporis dolor? Molestias
-            pariatur ab, at, quod quae ad totam eos tempore quisquam odit ipsum!
+            As a versatile designer and developer, I catch the vision and make
+            it reality. Lets collaborate to bring your vision to life!
           </p>
           <div className="cards">
             <div className="card">
@@ -30,13 +30,8 @@ const Services = () => {
               <div className="content">
                 <h3>Web Designer</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis dolorem autem facilis
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                  iure veniam, voluptatibus rerum dolorem dolor cum. Asperiores
-                  eveniet, recusandae perspiciatis, sint molestias quibusdam
+                  As a web designer, I focus on creating visually appealing and
+                  intuitive layouts that enhance user engagement. 
                 </p>
               </div>
             </div>
@@ -47,13 +42,9 @@ const Services = () => {
               <div className="content">
                 <h3>Web Developer</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis dolorem autem facilis
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                  iure veniam, voluptatibus rerum dolorem dolor cum. Asperiores
-                  eveniet, recusandae perspiciatis, sint molestias quibusdam
+                  As a web developer, I specialize in building robust and
+                  efficient websites that deliver exceptional user experiences.
+                 
                 </p>
               </div>
             </div>
@@ -64,13 +55,8 @@ const Services = () => {
               <div className="content">
                 <h3>App Development</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis dolorem autem facilis
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                  iure veniam, voluptatibus rerum dolorem dolor cum. Asperiores
-                  eveniet, recusandae perspiciatis, sint molestias quibusdam
+                  As a graphic designer, I bring ideas to life through
+                  compelling visuals and creative storytelling. 
                 </p>
               </div>
             </div>

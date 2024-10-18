@@ -3,12 +3,13 @@ import ProgressCircles from "./ProgressCircle"
 
 const Skills = () => {
   return (
-    <div>
+    <div id='skills'>
       <h1
         style={{
           color: '#fff',
-          textAlign: 'right',
-          marginTop: '1rem',
+          textAlign: 'center',
+          marginBottom: '1rem',
+          marginTop: '3rem',
           fontSize: '3.3rem',
           textDecoration: 'none',
           paddingRight: '10rem',

@@ -195,7 +195,7 @@ ul {
   width: 100%;
 }
 
-#portfolio #about #hero #contact {
+#portfolio #about #hero #contact  #services #skills{
   margin-top: -5rem;
   z-index: 2;
 }
@@ -209,7 +209,7 @@ nav {
   box-shadow: var(--shadow-1);
   border-bottom: #1a6aa2 solid;
   position: sticky;
-  z-index: 3;
+  z-index: 10;
   top: 0;
   left:0;
   width: 100%;
@@ -1083,14 +1083,19 @@ About
   text-align: right;
 }
 .skills {
-    position: relative;
-    display: flex;
+    /* position: relative; */
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     align-items: center;
+    padding: 15px 5%;
+    width: 80%;
+    margin-left: 15rem;
 }
 .skillsContainer {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -1140,7 +1145,7 @@ About
     color: #fff;
     z-index: 10;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: 1em;
     text-transform: uppercase;
     line-height: 0.6em;
 }
@@ -1158,11 +1163,6 @@ About
         margin-right: 1rem;
         margin-left: 1rem;
     }
-}
-
-article {
-  justify-content: right;
-  align-items: right;
 }
 
 /* button */
@@ -1202,6 +1202,7 @@ article {
     #00bfff,
     #002bff
   );
+
   position: absolute;
   top: -2px;
   left: -2px;
@@ -1279,6 +1280,7 @@ article {
 /************************
 Services
 *************************/
+
 .service-section {
     min-height: 740px;
     width: 100%;
@@ -1320,8 +1322,9 @@ Services
     text-align: center;
     line-height: 1.5rem;
     white-space: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 5rem;
     text-transform: uppercase;
+    
 }
 
 .cards {
@@ -1329,12 +1332,12 @@ Services
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     z-index: 9;
-    margin-top: 20px;
+    margin-top: .5rem;
 }
 
 .cards .card {
-    height: 350px;
-    width: 450px;
+    height: 16rem;
+    width: 22rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -1365,7 +1368,7 @@ Services
 .cards .card i {
     font-size: 2.5rem;
     color: var(--mint-greenish);
-    margin-top: 40px;
+    margin-top: 1rem;
     margin-bottom: 10px;
 }
 
@@ -1376,9 +1379,8 @@ Services
 .cards .card .content p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.05rem;
+    margin-top: 1rem;
 }
-
-
 
  /* section */
   .section {

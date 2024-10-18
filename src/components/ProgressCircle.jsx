@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
-const CircleProgress = ({ degree, color }) => {
+
+const CircleProgress = ({ degree, color, title }) => {
   const [currentDegree, setCurrentDegree] = useState(0)
 
   useEffect(() => {
@@ -19,7 +20,7 @@ const CircleProgress = ({ degree, color }) => {
     return () => clearInterval(interval)
   }, [currentDegree, degree])
   return (
-    <div className="circle">
+    <div className="">
       <div
         className="circle"
         style={{
@@ -32,29 +33,37 @@ const CircleProgress = ({ degree, color }) => {
           {currentDegree}
           <span>%</span>
         </h2>
-        <h4>HTML</h4>
+        <h4>{title}</h4>
       </div>
     </div>
   )
 }
 
 const ProgressCircles = () => {
- const progressData = [
-   { degree: 75, color: 'blue', title: 'HTML' },
-   { degree: 80, color: 'green', title: 'CSS' },
-   { degree: 72, color: 'purple', title: 'JS' },
-   { degree: 87, color: 'teal', title: 'Python' },
-   { degree: 89, color: 'blue', title: 'ReactJS' },
-   { degree: 89, color: 'purple', title: 'SQL' },
-   { degree: 70, color: 'green', title: 'Figma' },
-   { degree: 88, color: 'teal', title: 'Botstrap' },
- ]
+  const progressData = [
+    { degree: 75, color: '#00bfff', title: 'HTML' },
+    { degree: 80, color: '#00bfff', title: 'CSS' },
+    { degree: 72, color: '#00bfff', title: 'JS' },
+    { degree: 87, color: '#00bfff', title: 'Python' },
+    { degree: 89, color: '#00bfff', title: 'ReactJS' },
+    { degree: 89, color: '#00bfff', title: 'SQL' },
+    { degree: 70, color: '#00bfff', title: 'Figma' },
+    { degree: 88, color: '#00bfff', title: 'Bootstrap' },
+  ]
 
   return (
-    <div className="skillsContainer">
-      {progressData.map((data, index) => (
-        <CircleProgress key={index} degree={data.degree} color={data.color} />
-      ))}
+    <div>
+      
+      <div className="skillsContainer">
+        {progressData.map((data, index) => (
+          <CircleProgress
+            key={index}
+            degree={data.degree}
+            color={data.color}
+            title={data.title}
+          />
+        ))}
+      </div>
     </div>
   )
 }
