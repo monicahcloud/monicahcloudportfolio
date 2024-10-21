@@ -222,7 +222,6 @@ nav {
   left: 0;
   width: 100%;
   max-width: 100vw;
-  /* display: block */
 }
 
 .nav-header {
@@ -259,7 +258,6 @@ nav {
 
 .nav-toggle:hover {
   color: var(--mint-greenish);
-  /* transform: rotate(90deg); */
 }
 
 /* Hide links by default on small screens */
@@ -290,9 +288,6 @@ nav {
   padding-bottom: 0.5rem;
   border-bottom: 0.25rem solid var(--mint-greenish);
 }
-/* 160px */
-
-
 
 .social-icons {
   display: none;
@@ -1097,6 +1092,7 @@ About
 .aboutMeHeading h1 {
   font-size: 3rem;
 }
+
 .aboutTitle {
   color: #ffffff;
   text-align: right;
@@ -1107,6 +1103,7 @@ About
   align-items: center;
   padding-right: 12rem;
 }
+
 .aboutInfo {
   font-size: large;
   margin-left: 1em;
@@ -1116,6 +1113,7 @@ About
   align-items: center;
   padding-right: 12rem;
 }
+
 .aboutBtn {
   text-align: right;
   align-items: center;
@@ -1127,21 +1125,51 @@ About
   .aboutContainer {
     background-image: url('../src/images/5-removebg-preview.png');
     background-repeat: no-repeat;
-  
     background-position: center;
     min-height: 15rem;
     margin-left: auto;
     margin-right: auto;
   
   }
+  .aboutMeHeading h1{
+     font-size: 2rem;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     width: 100vw;
+     margin-top: -5rem ;
+  }
 
-  /* .aboutTitle h1 {
+  .aboutTitle h1 {
     text-align: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 18rem;
     font-size: 2rem;
-    padding: auto;
-  } */
+    justify-content: center;
+    width: 100vw;
+  
+  }
+  .aboutTitle h3 {
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 100vw;
+   
+  }
+  .aboutInfo  {
+   font-size: large;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  align-items: center;
+  padding-right: 0rem;
+  width: 100vw;
+  display: flex;
+  }
+ 
 
   .aboutBtn {
     text-align: center;

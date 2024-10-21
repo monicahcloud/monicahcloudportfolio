@@ -14,8 +14,8 @@ const About = () => {
             </span>
           </h1>
         </div>
-        <article>
-          <div className="aboutTitle">
+        <article className=''>
+          <div className="aboutTitle ">
             <h1>
               Monicah <span> Cloud</span>
             </h1>
