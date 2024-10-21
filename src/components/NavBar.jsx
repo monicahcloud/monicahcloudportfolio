@@ -16,36 +16,35 @@ const NavBar = () => {
       <nav>
         <div className="nav-center">
           <div className="nav-header">
-            <img src={mono2} alt="monogram" className='logo'/>
+            <img src={mono2} alt="monogram" className="logo" />
 
             <button className="nav-toggle" onClick={toggleLinks}>
               <FaBars />
             </button>
           </div>
 
-          {showLinks && (
-            <div className="links-container">
-              <ul className="links">
-                {links.map((link) => {
-                  const { id, url, text } = link
-                  return (
-                    <li key={id}>
-                      <Link
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-130}
-                        duration={500}
-                        to={url}
-                      >
-                        {text}
-                      </Link>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )}
+          {/* Add dynamic class to show or hide links */}
+          <div className={`links-container ${showLinks ? 'show' : ''}`}>
+            <ul className="links">
+              {links.map((link) => {
+                const { id, url, text } = link
+                return (
+                  <li key={id}>
+                    <Link
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={-130}
+                      duration={500}
+                      to={url}
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
 
           <ul className="social-icons">
             {social.map((socialIcon) => {
