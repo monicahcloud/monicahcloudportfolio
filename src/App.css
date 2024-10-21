@@ -263,7 +263,7 @@ nav {
 /* Hide links by default on small screens */
 
 .links-container {
- height: 0;
+  height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
@@ -295,13 +295,12 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
-  
   .active {
     color: #00bfff;
     border-bottom: 3px solid #00bfff;
   }
   .nav-toggle {
-    display: none;  /* Hide toggle on larger screens */
+    display: none; /* Hide toggle on larger screens */
   }
   .nav-header {
     padding: 0;
@@ -320,7 +319,7 @@ nav {
     justify-content: left;
   }
 
-    /* Display links in a row on larger screens */
+  /* Display links in a row on larger screens */
   .links-container {
     height: auto !important;
     overflow: visible;
@@ -337,7 +336,7 @@ nav {
     background: transparent;
   }
 
-    /* Display social icons on larger screens */
+  /* Display social icons on larger screens */
   .social-icons {
     display: flex;
   }
@@ -1129,15 +1128,14 @@ About
     min-height: 15rem;
     margin-left: auto;
     margin-right: auto;
-  
   }
-  .aboutMeHeading h1{
-     font-size: 2rem;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     width: 100vw;
-     margin-top: -5rem ;
+  .aboutMeHeading h1 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-top: -5rem;
   }
 
   .aboutTitle h1 {
@@ -1147,7 +1145,6 @@ About
     font-size: 2rem;
     justify-content: center;
     width: 100vw;
-  
   }
   .aboutTitle h3 {
     text-align: center;
@@ -1156,20 +1153,18 @@ About
     font-size: 1.5rem;
     justify-content: center;
     width: 100vw;
-   
   }
-  .aboutInfo  {
-   font-size: large;
-  margin-left: auto;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  align-items: center;
-  padding-right: 0rem;
-  width: 100vw;
-  display: flex;
+  .aboutInfo {
+    font-size: large;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    padding-right: 0rem;
+    width: 100vw;
+    display: flex;
   }
- 
 
   .aboutBtn {
     text-align: center;
@@ -1199,7 +1194,6 @@ Skills
   margin-top: -22rem;
   margin-left: 2rem;
 }
-
 
 .skillsContainer {
   position: relative;
@@ -1348,37 +1342,11 @@ Services
 
 .service-section {
   min-height: 740px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.service-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  position: relative;
-}
-.service-section h2::after {
-  position: absolute;
-  content: '';
-  top: 8px;
-  left: -30px;
-  height: 0px;
-  width: 0px;
-  border-top: 20px solid transparent;
-  border-left: 20px solid var(--mint-greenish);
-}
-.service-section h2::before {
-  position: absolute;
-  content: '';
-  top: 8px;
-  right: -30px;
-  height: 0px;
-  width: 0px;
-  border-top: 20px solid transparent;
-  border-right: 20px solid var(--white);
 }
 
 .service-section #paragraph {
@@ -1456,13 +1424,12 @@ Services
 }
 
 .myTech h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
   position: relative;
 }
 .myTech h1::after {
   position: absolute;
-
   top: 8px;
   left: -30px;
   height: 0px;
@@ -1515,53 +1482,135 @@ Services
   margin: 0 auto;
   max-width: 1170px;
 }
+
 @media screen and (max-width: 800px) {
   .section-center {
-    width: 100%;
+    width: 100vw;
+  }
+
+  .service-section h1 {
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    margin-right: 2rem;
+  }
+  .service-section h1::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    height: 0px;
+    width: 100vw;
+  }
+  .service-section h1::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    height: 0px;
+    width: 100vw;
+  }
+  .service-section #paragraph {
+    font-size: 0.5rem;
+    width: 90vw;
+    margin-right: 2rem;
+    line-height: 1rem;
   }
   .cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 5rem;
-  z-index: 9;
-  margin-top: 0.5rem;
-}
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    z-index: 9;
+    margin-top: 0.5rem;
+    width: 80vw;
+  }
+  .cards .card {
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 5%;
+    background: rgb(65, 62, 105);
+    position: relative;
+    border-radius: 10px;
+  }
+  .cards .card::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 80vw;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #00bfff;
+    transition: 0.6s;
+    transform: rotate(10deg);
+    z-index: -1;
+  }
 
-.cards .card::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: #00bfff;
-  transition: 0.6s;
-  transform: rotate(10deg);
-  z-index: -1;
-}
+  .cards .card:hover .card::before {
+    transform: rotate(0deg);
+  }
 
-.cards .card:hover .card::before {
-  transform: rotate(0deg);
-}
+  .cards .card i {
+    font-size: 2rem;
+    color: var(--mint-greenish);
+    margin-top: 1rem;
+    margin-bottom: 10px;
+  }
 
-.cards .card i {
-  font-size: 2.5rem;
-  color: var(--mint-greenish);
-  margin-top: 1rem;
-  margin-bottom: 10px;
-}
+  .cards .card h3 {
+    font-size: 1.25rem;
+  }
 
-.cards .card h3 {
-  font-size: 1.8rem;
-}
+  .cards .card .content p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    width: 60vw;
+  }
+  .myTech {
+    margin-top: 5rem;
+  }
+  .myTech h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    margin-right: 2rem;
+  }
+  .myTech h1::after {
+    position: absolute;
+    top: 8px;
+    height: 0px;
+  }
+  .myTech h1::before {
+    position: absolute;
+    top: 8px;
+    height: 0px;
+    width: 0px;
+  }
+  .myTech p {
+    width: 90vw;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+  }
+  .myTech img {
+    display: none;
+  }
 
-.cards .card .content p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.05rem;
-  margin-top: 1rem;
+  .skills {
+  width: 90vw;
+  margin-top: 3rem;
 }
-
 }
 
 /********************************

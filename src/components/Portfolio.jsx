@@ -47,7 +47,6 @@ const Portfolio = () => {
           style={{
             color: '#fff',
             textAlign: 'right',
-           
             fontSize: '3.3rem',
             textDecoration: 'none',
             paddingRight: '10rem',

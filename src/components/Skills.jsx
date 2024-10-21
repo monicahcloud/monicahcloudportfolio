@@ -4,19 +4,10 @@ import pic from '../images/7-removebg-preview.png'
 
 const Skills = () => {
   return (
-    <div>
+    <div  className="myTech">
       <div id="skills">
-        <div id="" className="myTech">
-          <h1
-            style={{
-              color: '#fff',
-              textAlign: 'left',
-              marginBottom: '1rem',
-              marginTop: '3rem',
-              fontSize: '3.3rem',
-              textDecoration: 'none',
-            }}
-          >
+        <div>
+          <h1>
             My
             <span> technologies</span>
           </h1>

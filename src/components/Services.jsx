@@ -5,20 +5,11 @@ const Services = () => {
     <div id='services'>
       <div className="">
         <div className="service-section">
-          <h1
-            style={{
-              color: '#fff',
-              textAlign: 'right',
-              marginTop: '1rem',
-              marginBottom: '1.5rem',
-              fontSize: '3.3rem',
-              textDecoration: 'none',
-            }}
-          >
+          <h1>
             My
             <span> services</span>
           </h1>
-          <p id="paragraph">
+          <p id="paragraph" className='servicesPara'>
             As a versatile designer and developer, I catch the vision and make
             it reality. Lets collaborate to bring your vision to life!
           </p>
