@@ -3,8 +3,9 @@ import resume from '../assets/MonicahCloudResume.pdf'
 const About = () => {
   return (
     <>
-      <div className="aboutContainer">
-        <div className="aboutMeHeading" id="about">
+    <div id="about"></div>
+      <div className="aboutContainer" >
+        <div className="aboutMeHeading" >
           <h1>
             Bringing your vision to life
             <span>
@@ -12,23 +13,25 @@ const About = () => {
               One Website at a time.
             </span>
           </h1>
-
-          <article>
-            <div className="aboutTitle">
-              <h1>
-                Monicah <span> Cloud</span>
-              </h1>
-              <h3>Web Designer and Developer</h3>
-            </div>
-            <p className="aboutInfo">
-              I design and develop websites that focus on user <br />
-              experience and functionality.
-            </p>
-            <a href={resume} download="Monicah Cloud Resume">
-              <button className="btnGlowHover">Download Resume</button>
-            </a>
-          </article>
         </div>
+        <article>
+          <div className="aboutTitle">
+            <h1>
+              Monicah <span> Cloud</span>
+            </h1>
+            <h3>Web Designer and Developer</h3>
+          </div>
+          <p className="aboutInfo">
+            I design and develop websites that focus on user <br />
+            experience and functionality.
+          </p>
+
+          <div className="aboutBtn">
+            <a href={resume} download="Monicah Cloud Resume">
+              <button className="btnGlowHover ">Download Resume</button>
+            </a>
+          </div>
+        </article>
       </div>
     </>
   )

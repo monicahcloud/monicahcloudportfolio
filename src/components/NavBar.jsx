@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { links, social } from '../data'
 import mono2 from '../images/mono5.png'
+import { Link } from 'react-scroll'
 
 const NavBar = () => {
-  const [showLinks, setShowLinks] = useState(true)
+  const [showLinks, setShowLinks] = useState(false)
 
   const toggleLinks = () => {
     setShowLinks(!showLinks)
@@ -29,7 +30,16 @@ const NavBar = () => {
                   const { id, url, text } = link
                   return (
                     <li key={id}>
-                      <a href={url}>{text}</a>
+                      <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-130}
+                        duration={500}
+                        to={url}
+                      >
+                        {text}
+                      </Link>
                     </li>
                   )
                 })}
@@ -42,7 +52,9 @@ const NavBar = () => {
               const { id, url, icon } = socialIcon
               return (
                 <li key={id}>
-                  <a href={url}>{icon}</a>
+                  <a href={url} target="_blank" rel="noreferrer">
+                    {icon}
+                  </a>
                 </li>
               )
             })}

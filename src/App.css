@@ -196,10 +196,18 @@ ul {
 }
 
 #portfolio #about #hero #contact #services #skills {
-  margin-top: -5rem;
+  margin-top: -8rem;
   z-index: 2;
 }
 
+@media screen and (max-width: 800px) {
+  .portfolioHeading {
+    text-align: center;
+    margin: 3rem 0 0 0;
+    font-size: 1.5rem;
+    padding-right: 0;
+  }
+}
 /****************************
 Navbar
 *****************************/
@@ -214,7 +222,7 @@ nav {
   left: 0;
   width: 100%;
   max-width: 100vw;
-  display: block;
+  display: block
 }
 
 .nav-header {
@@ -286,6 +294,11 @@ nav {
 }
 
 @media screen and (min-width: 800px) {
+  
+  .active {
+    color: #00bfff;
+    border-bottom: 3px solid #00bfff;
+  }
   .nav-toggle {
     display: none;
   }
@@ -339,7 +352,7 @@ Contact
 
 .contactPage {
   min-height: 80vh;
-  width: 100vw;
+  width: 100%;
   max-width: 60rem;
   display: flex;
   flex-direction: column;
@@ -582,7 +595,7 @@ Portfolio
   overflow: hidden;
   position: relative;
   min-height: 80vh;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -607,20 +620,12 @@ Portfolio
 .portfolioHeading {
   color: #fff;
   text-align: right;
-  margin-top: 2rem;
+  margin-top: 8rem;
   font-size: 3rem;
   text-decoration: none;
   padding-right: 0rem;
 }
 
-@media screen and (max-width: 800px) {
-  .portfolioHeading {
-    text-align: center;
-    margin: 3rem 0 0 0;
-    font-size: 1.5rem;
-    padding-right: 0;
-  }
-}
 .carousel .list .item {
   position: absolute;
   left: 0;
@@ -701,7 +706,7 @@ Portfolio
   width: 1140px;
   max-width: 90%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateZ(0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -711,11 +716,11 @@ Portfolio
 .arrows #prev {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+
   font-family: monospace;
   font-size: 2rem;
   font-weight: bold;
-  border: 1px solid #555;
+
   color: var(--clr-white);
 }
 
@@ -1053,24 +1058,31 @@ About
   background-size: 30rem;
   min-height: 35rem;
   margin-left: 9rem;
+  width: 100%;
 }
 
 .aboutMeHeading {
   color: #fff;
   text-align: right;
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: rem;
   text-decoration: none;
   padding-right: 12rem;
   padding-top: 5rem;
 }
 
+.aboutMeHeading h1 {
+  font-size: 3rem;
+}
 .aboutTitle {
   color: #ffffff;
   text-align: right;
   margin-top: 5rem;
   font-size: 0.3rem;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12rem;
 }
 .aboutInfo {
   font-size: large;
@@ -1078,8 +1090,53 @@ About
   margin-bottom: -3rem;
   margin-top: 1rem;
   text-align: right;
+  align-items: center;
+  padding-right: 12rem;
+}
+.aboutBtn {
+  text-align: right;
+  align-items: center;
+  padding-right: 12rem;
+  justify-content: center;
 }
 
+@media screen and (max-width: 800px) {
+  .aboutContainer {
+    background-image: url('../src/images/5-removebg-preview.png');
+    background-repeat: no-repeat;
+  
+    background-position: center;
+    min-height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  /* .aboutTitle h1 {
+    text-align: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-size: 2rem;
+    padding: auto;
+  } */
+
+
+
+
+  .aboutBtn {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnGlowHover {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10rem;
+  }
+}
 /********************
 Skills
 ********************/
@@ -1090,16 +1147,11 @@ Skills
   grid-template-columns: repeat(1, minmax(270px, 1fr));
   align-items: center;
   padding: 10px 5%;
-  width: 80%;
+  width: 100%;
   margin-top: -22rem;
   margin-left: 2rem;
 }
-.myTech img {
-  width: 25rem;
-  min-height: 15rem;
-  margin-left: 60rem;
-  border-bottom-left-radius: 60%;
-}
+
 
 .skillsContainer {
   position: relative;
@@ -1162,16 +1214,6 @@ Skills
 .skillsContainer .circle .number span {
   font-size: 0.5em;
   font-weight: 500;
-}
-@media screen and (max-width: 767px) {
-  .aboutMeHeading {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    padding-right: 0;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
 }
 
 /* button */
@@ -1252,40 +1294,6 @@ Skills
   font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
-  .aboutContainer {
-    background-image: url('../src/images/5-removebg-preview.png');
-    background-repeat: no-repeat;
-    background-size: 15rem;
-    min-height: 15rem;
-    margin-left: 5rem;
-  }
-
-  .aboutMeHeading {
-    display: flex;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.5rem;
-    padding-right: 5rem;
-  }
-
-  .aboutTitle {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .aboutInfo {
-    font-size: medium;
-    margin-left: em;
-    margin-bottom: -3rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  article {
-    justify-content: center;
-    align-items: center;
-  }
-}
 /************************
 Services
 *************************/
@@ -1433,6 +1441,12 @@ Services
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+.myTech img {
+  width: 25rem;
+  min-height: 15rem;
+  margin-left: 60rem;
+  border-bottom-left-radius: 60%;
+}
 /* section */
 .section {
   padding: 5rem 0;
@@ -1453,10 +1467,53 @@ Services
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .section-center {
-    width: 95vw;
+    width: 100%;
   }
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5rem;
+  z-index: 9;
+  margin-top: 0.5rem;
+}
+
+.cards .card::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: #00bfff;
+  transition: 0.6s;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+
+.cards .card:hover .card::before {
+  transform: rotate(0deg);
+}
+
+.cards .card i {
+  font-size: 2.5rem;
+  color: var(--mint-greenish);
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.cards .card h3 {
+  font-size: 1.8rem;
+}
+
+.cards .card .content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
 }
 
 /********************************

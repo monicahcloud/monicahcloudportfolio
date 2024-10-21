@@ -2,8 +2,8 @@ import { GiAtomicSlashes, GiBowlSpiral, GiCharm } from 'react-icons/gi'
 
 const Services = () => {
   return (
-    <div>
-      <div className="servicesContainer">
+    <div id='services'>
+      <div className="">
         <div className="service-section">
           <h1
             style={{

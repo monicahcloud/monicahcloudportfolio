@@ -11,22 +11,22 @@ import pic6 from './images/9-removebg-preview.png'
 export const links = [
   {
     id: 1,
-    url: '/',
+    url: 'about',
     text: 'home',
   },
   {
     id: 2,
-    url: '/services',
+    url: 'services',
     text: 'services',
   },
   {
     id: 3,
-    url: '/portfolio',
+    url: 'portfolio',
     text: 'portfolio',
   },
   {
     id: 4,
-    url: '/contact',
+    url: 'contact',
     text: 'contact',
   },
 //   {

@@ -37,7 +37,7 @@ const Portfolio = () => {
       prevButton.current.style.pointerEvents = 'auto'
     }, 2000)
 
-    setUnAcceptClick(timeout)
+    setUnAcceptClick(Timeout)
   }
 
   return (
@@ -47,7 +47,7 @@ const Portfolio = () => {
           style={{
             color: '#fff',
             textAlign: 'right',
-            marginTop: '2rem',
+           
             fontSize: '3.3rem',
             textDecoration: 'none',
             paddingRight: '10rem',
@@ -59,6 +59,8 @@ const Portfolio = () => {
 
       <div className="carousel" ref={carousel}>
         <div className="list" ref={listHTML}>
+
+
           <div className="item">
             <img src={pic2} alt="" className="" />
             <div className="introduce">
@@ -70,15 +72,17 @@ const Portfolio = () => {
                 iure!
               </div>
               <div className="sourceButtons">
-                <button type="button" className="demo">
+               <a href='www.crownoflocs.com' > <button type="button" className="demo">
                   Demo
-                </button>
+                </button></a>
                 <button type="button" className="github">
                   Source
                 </button>
               </div>
             </div>
           </div>
+
+
           <div className="item">
             <img src={pic3} alt="" className="" />
             <div className="introduce">
@@ -150,9 +154,11 @@ const Portfolio = () => {
                 iure!
               </div>
               <div className="sourceButtons">
-                <button type="button" className="demo">
-                  Demo
-                </button>
+                <a href="www.crownoflocs.com">
+                  <button type="button" className="demo">
+                    Demo
+                  </button>
+                </a>
                 <button type="button" className="github">
                   Source
                 </button>
@@ -179,23 +185,25 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
+
           <div className="arrows">
             <button
               id="prev"
               ref={prevButton}
-              onClick={() => showSlider('prev')}
+              onClick={() => showSlider('next')}
             >
-              <FaArrowLeft/>
+              <FaArrowLeft />
             </button>
-
             <button
               id="next"
               ref={nextButton}
-              onClick={() => showSlider('next')}
+              onClick={() => showSlider('prev')}
             >
-             <FaArrowRight/>
+              <FaArrowRight />
             </button>
           </div>
+
+
         </div>
       </div>
     </>
