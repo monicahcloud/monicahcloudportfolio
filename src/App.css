@@ -1199,6 +1199,7 @@ Skills
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  width: 70vw;
   justify-content: center;
   align-items: center;
   gap: 60px;
@@ -1427,6 +1428,7 @@ Services
   font-size: 3rem;
   margin-bottom: 10px;
   position: relative;
+  text-align: center;
 }
 .myTech h1::after {
   position: absolute;
@@ -1439,7 +1441,6 @@ Services
 }
 .myTech h1::before {
   position: absolute;
-
   top: 8px;
   right: -30px;
   height: 0px;
@@ -1448,13 +1449,15 @@ Services
   border-right: 20px solid var(--white);
 }
 .myTech p {
-  width: 45%;
+  width: 45vw;
+  margin-left: 21rem;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
   white-space: 1px;
   margin-bottom: 1rem;
   text-transform: uppercase;
+ 
 }
 .myTech img {
   width: 25rem;

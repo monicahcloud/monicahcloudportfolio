@@ -11,7 +11,7 @@ const Skills = () => {
             My
             <span> technologies</span>
           </h1>
-          <p className="">
+          <p >
             From responsive frameworks to design software— I craft innovative
             and engaging web solutions that elevate brands and enhance user
             experiences using the latest technologies.
