@@ -653,7 +653,7 @@ Portfolio
 }
 
 .carousel .list .item img {
-  width: 55%;
+  width: 45%;
   position: absolute;
   right: 0;
   top: 30%;
@@ -766,6 +766,7 @@ Portfolio
   font-size: 1rem;
   padding: 0.25rem;
   margin: 0.25rem;
+ 
 }
 
 .carousel .list .item:nth-child(2) .introduce .title,
@@ -862,99 +863,16 @@ Portfolio
   opacity: 0;
   pointer-events: none;
 }
-/* showDetail */
-.carousel.showDetail .list .item:nth-child(3),
-.carousel.showDetail .list .item:nth-child(4) {
-  left: 100%;
-  opacity: 0;
-  pointer-events: none;
-}
-.carousel.showDetail .list .item:nth-child(2) {
-  width: 100%;
-}
-.carousel.showDetail .list .item:nth-child(2) .introduce {
-  opacity: 0;
-  pointer-events: none;
-}
-.carousel.showDetail .list .item:nth-child(2) img {
-  right: 50%;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail {
-  opacity: 1;
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: right;
-  pointer-events: auto;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .title {
-  font-size: 4em;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .specifications {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  border-top: 1px solid #5553;
-  margin-top: 20px;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .specifications div {
-  width: 90px;
-  text-align: center;
-  flex-shrink: 0;
-}
-.carousel.showDetail
-  .list
-  .item:nth-child(2)
-  .detail
-  .specifications
-  div
-  p:nth-child(1) {
-  font-weight: bold;
-}
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button {
-  font-family: Poppins;
-  background-color: transparent;
-  border: 1px solid #5555;
-  margin-left: 5px;
-  padding: 5px 10px;
-  letter-spacing: 2px;
-  font-weight: 500;
-}
-.carousel.carousel.showDetail
-  .list
-  .item:nth-child(2)
-  .checkout
-  button:nth-child(2) {
-  background-color: #693eff;
-  color: #eee;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .title,
-.carousel.showDetail .list .item:nth-child(2) .detail .des,
-.carousel.showDetail .list .item:nth-child(2) .detail .specifications,
-.carousel.showDetail .list .item:nth-child(2) .detail .checkout {
-  opacity: 0;
-  animation: showContent 0.5s 1s ease-in-out 1 forwards;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .des {
-  animation-delay: 1.2s;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .specifications {
-  animation-delay: 1.4s;
-}
-.carousel.showDetail .list .item:nth-child(2) .detail .checkout {
-  animation-delay: 1.6s;
-}
 
 .arrows {
   position: absolute;
-  bottom: -50px;
-  width: 1260px;
+  bottom: -30px;
+  width: 150px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  left: 50%;
+  left: 14%;
+  top: 35rem;
   transform: translateX(-50%);
 }
 #prev,
@@ -1032,15 +950,32 @@ Portfolio
 @media screen and (max-width: 767px) {
   /* mobile */
   .carousel {
-    height: 600px;
+    height: 10vh;
+     border: red solid 5px;
+     margin-top: -6rem;
+     margin-bottom: 4rem;
+     width: 100vw;
+  }
+
+  .portfolioHeading h1{
+    font-size: 2rem;
+    margin: -6rem auto;
+     width: 90vw;
   }
   .carousel .list .item {
     width: 100%;
     font-size: 10px;
+   
+  }
+  .arrows{
+    top: 15rem;
+    left: 4rem
   }
 
   .carousel .list {
-    height: 100%;
+    margin-top: 45%;
+    height: 40%;
+
   }
   .carousel .list .item:nth-child(2) .introduce {
     width: 50%;
@@ -1049,14 +984,15 @@ Portfolio
   .carousel .list .item img {
     width: 40%;
   }
-  .carousel.showDetail .list .item:nth-child(2) .detail {
+  .carousel .list .item:nth-child(2) .detail {
     backdrop-filter: blur(10px);
     font-size: small;
   }
   .carousel .list .item:nth-child(2) .introduce .des,
-  .carousel.showDetail .list .item:nth-child(2) .detail .des {
+  .carousel .list .item:nth-child(2) .detail .des {
     height: 100px;
     overflow: auto;
+     border: red solid 5px;
   }
   .carousel.showDetail .list .item:nth-child(2) .detail .checkout {
     display: flex;

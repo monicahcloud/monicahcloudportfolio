@@ -1,11 +1,6 @@
-import pic2 from '../images/4-removebg-preview.png'
-import pic3 from '../images/2-removebg-preview.png'
-import pic5 from '../images/5-removebg-preview.png'
-import pic4 from '../images/4-removebg-preview.png'
-import pic7 from '../images/7-removebg-preview.png'
-import pic9 from '../images/9-removebg-preview.png'
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
 
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import {projects} from '../data'
 import { useState, useRef } from 'react'
 
 const Portfolio = () => {
@@ -45,11 +40,7 @@ const Portfolio = () => {
       <div className="portfolioHeading" id="portfolio">
         <h1
           style={{
-            color: '#fff',
-            textAlign: 'right',
-            fontSize: '3.3rem',
-            textDecoration: 'none',
-            paddingRight: '10rem',
+          
           }}
         >
           Featured <span> Projects</span>
@@ -58,132 +49,34 @@ const Portfolio = () => {
 
       <div className="carousel" ref={carousel}>
         <div className="list" ref={listHTML}>
+          {projects.map((project) => {
+            const { id, url, title, topic, image, info, git } = project
 
-
-          <div className="item">
-            <img src={pic2} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Business Website</div>
-              <div className="title">Crown of Locs and Natural Hair LLC</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-               <a href='www.crownoflocs.com' > <button type="button" className="demo">
-                  Demo
-                </button></a>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="item">
-            <img src={pic3} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Business Website</div>
-              <div className="title">Nerahs Passion</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-                <button type="button" className="demo">
-                  Demo
-                </button>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <img src={pic4} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Landing Page</div>{' '}
-              <div className="title">DJ Sean Deezy</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-                <button type="button" className="demo">
-                  Demo
-                </button>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <img src={pic5} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Business Website</div>
-              <div className="title">Crown of Locs and Natural Hair LLC</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-                <button type="button" className="demo">
-                  Demo
-                </button>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <img src={pic9} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Blog Website</div>{' '}
-              <div className="title">Keto and PCOS: Monicahs Journey</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-                <a href="www.crownoflocs.com">
-                  <button type="button" className="demo">
-                    Demo
-                  </button>
-                </a>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <img src={pic7} alt="" className="" />
-            <div className="introduce">
-              <div className="topic">Business Website</div>
-              <div className="title">Crown of Locs and Natural Hair LLC</div>
-              <div className="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-                omnis obcaecati? At rerum laudantium vitae. Perferendis, labore
-                iure!
-              </div>
-              <div className="sourceButtons">
-                <button type="button" className="demo">
-                  Demo
-                </button>
-                <button type="button" className="github">
-                  Source
-                </button>
-              </div>
-            </div>
-          </div>
+            return (
+              <>
+                <div className="item" key={id}>
+                  <img src={image} alt={title} />
+                  <div className="introduce">
+                    {/* <div className="topic">{topic}</div> */}
+                    <div className="title">{title}</div>
+                    {/* <div className="des">{info}</div> */}
+                    <div className="sourceButtons">
+                      <a href={url} rel="" target="_blank">
+                        <button type="button" className="demo">
+                          Demo
+                        </button>
+                      </a>
+                      <a href={git} rel="" target="_blank">
+                        <button type="button" className="github">
+                          Source
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+          })}
 
           <div className="arrows">
             <button
@@ -191,18 +84,17 @@ const Portfolio = () => {
               ref={prevButton}
               onClick={() => showSlider('next')}
             >
-              <FaArrowLeft />
+              <FaArrowLeft/>
             </button>
+
             <button
               id="next"
               ref={nextButton}
               onClick={() => showSlider('prev')}
             >
-              <FaArrowRight />
+              <FaArrowRight/>
             </button>
           </div>
-
-
         </div>
       </div>
     </>
