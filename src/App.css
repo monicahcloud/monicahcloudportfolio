@@ -1320,13 +1320,12 @@ Responsive Adjustments
 /* Container for the skill circles */
 .skillsContainer {
   display: grid; 
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 10rem
-
+  width: 70%;
+  margin-top: -1rem;
 }
 
 .myTech {
@@ -1339,8 +1338,8 @@ Responsive Adjustments
   margin-top: 5rem;
   background-image: url('../src//images/7-removebg-preview.png');
   background-repeat: no-repeat;
-  background-position: 50% 15%;
-  background-size: 13rem;
+  background-position: 95% 10%;
+  background-size: 25rem;
 
 }
 /* Main circular progress container */
@@ -1356,7 +1355,7 @@ Responsive Adjustments
   background: #333;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), inset 0px 5px 15px rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  
+ 
 }
 
 /* Conic background for showing skill percentage */
@@ -1400,9 +1399,15 @@ Responsive Adjustments
 
 /* Responsive adjustments */
 @media (max-width: 800px) {
-  .skillsContainer {
-    gap: 20px;
-  }
+.skillsContainer {
+  display: grid; 
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10rem;
+}
   .circle {
     width: 150px;
     height: 150px;
@@ -1415,6 +1420,20 @@ Responsive Adjustments
   }
   /* Conic background for showing skill percentage */
 
+  .myTech {
+  min-height: 740px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  background-image: url('../src//images/7-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+  background-size: 13rem;
+
+}
 }
 
 /* button */

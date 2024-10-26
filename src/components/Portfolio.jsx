@@ -1,6 +1,5 @@
-
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
-import {projects} from '../data'
+import { projects } from '../data'
 import { useState, useRef } from 'react'
 
 const Portfolio = () => {
@@ -11,7 +10,7 @@ const Portfolio = () => {
   const [unAcceptClick, setUnAcceptClick] = useState(0)
 
   const showSlider = (type) => {
-    //Disable buttons temporarily
+    // Disable buttons temporarily
     nextButton.current.style.pointerEvents = 'none'
     prevButton.current.style.pointerEvents = 'none'
     const items = listHTML.current.querySelectorAll('.item')
@@ -38,12 +37,8 @@ const Portfolio = () => {
   return (
     <>
       <div className="portfolioHeading" id="portfolio">
-        <h1
-          style={{
-          
-          }}
-        >
-          Featured <span> Projects</span>
+        <h1>
+          Featured <span>Projects</span>
         </h1>
       </div>
 
@@ -53,28 +48,24 @@ const Portfolio = () => {
             const { id, url, title, topic, image, info, git } = project
 
             return (
-              <>
-                <div className="item" key={id}>
-                  <img src={image} alt={title} />
-                  <div className="introduce">
-                    {/* <div className="topic">{topic}</div> */}
-                    <div className="title">{title}</div>
-                    {/* <div className="des">{info}</div> */}
-                    <div className="sourceButtons">
-                      <a href={url} rel="" target="_blank">
-                        <button type="button" className="demo">
-                          Demo
-                        </button>
-                      </a>
-                      <a href={git} rel="" target="_blank">
-                        <button type="button" className="github">
-                          Source
-                        </button>
-                      </a>
-                    </div>
+              <div className="item" key={id}>
+                <img src={image} alt={title} />
+                <div className="introduce">
+                  <div className="title">{title}</div>
+                  <div className="sourceButtons">
+                    <a href={url} rel="noopener noreferrer" target="_blank">
+                      <button type="button" className="demo">
+                        Demo
+                      </button>
+                    </a>
+                    <a href={git} rel="noopener noreferrer" target="_blank">
+                      <button type="button" className="github">
+                        Source
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </>
+              </div>
             )
           })}
 
@@ -84,7 +75,7 @@ const Portfolio = () => {
               ref={prevButton}
               onClick={() => showSlider('next')}
             >
-              <FaArrowLeft/>
+              <FaArrowLeft />
             </button>
 
             <button
@@ -92,7 +83,7 @@ const Portfolio = () => {
               ref={nextButton}
               onClick={() => showSlider('prev')}
             >
-              <FaArrowRight/>
+              <FaArrowRight />
             </button>
           </div>
         </div>
