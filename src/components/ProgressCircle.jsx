@@ -1,35 +1,27 @@
+import PropTypes from 'prop-types'
 import { useState, useEffect } from 'react'
-
 
 const CircleProgress = ({ degree, color, title }) => {
   const [currentDegree, setCurrentDegree] = useState(0)
 
   useEffect(() => {
-    let interval
-    if (currentDegree < degree) {
-      interval = setInterval(() => {
-        setCurrentDegree((prev) => {
-          if (prev >= degree) {
-            clearInterval(interval)
-            return prev
-          }
-          return prev + 1
-        })
-      }, 50)
-    }
-    return () => clearInterval(interval)
-  }, [currentDegree, degree])
+    const interval = setInterval(() => {
+      setCurrentDegree((prev) => {
+        const newDegree = Math.min(prev + 1, degree) // prevent overshoot
+        if (newDegree === degree) clearInterval(interval)
+        return newDegree
+      })
+    }, 30) // Smooth animation with 30ms interval
+
+    return () => clearInterval(interval) // Cleanup interval
+  }, [degree])
 
   return (
-    <div className="">
+    <div className="circle">
       <div
-        className="circle"
         style={{
           background: `conic-gradient(${color} ${currentDegree}%, #222 0%)`,
         }}
-        data-degree={degree}
-        data-color={color}
-        data-title={title}
       >
         <h2 className="number" style={{ color }}>
           {currentDegree}
@@ -41,6 +33,12 @@ const CircleProgress = ({ degree, color, title }) => {
   )
 }
 
+CircleProgress.propTypes = {
+  degree: PropTypes.number.isRequired,
+  color: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
+
 const ProgressCircles = () => {
   const progressData = [
     { degree: 75, color: 'blue', title: 'HTML' },
@@ -50,23 +48,21 @@ const ProgressCircles = () => {
     { degree: 89, color: 'blue', title: 'ReactJS' },
     { degree: 89, color: 'green', title: 'SQL' },
     { degree: 70, color: 'purple', title: 'Figma' },
-    { degree: 88, color: 'teal', title: 'Bootstrap' },
+    // { degree: 88, color: 'teal', title: 'Bootstrap' },
   ]
 
   return (
-    <div>
-      
-      <div className="skillsContainer">
-        {progressData.map((data, index) => (
-          <CircleProgress
-            key={index}
-            degree={data.degree}
-            color={data.color}
-            title={data.title}
-          />
-        ))}
-      </div>
+    <div className="skillsContainer">
+      {progressData.map((data, index) => (
+        <CircleProgress
+          key={index}
+          degree={data.degree}
+          color={data.color}
+          title={data.title}
+        />
+      ))}
     </div>
   )
 }
+
 export default ProgressCircles

@@ -3,9 +3,8 @@ import resume from '../assets/MonicahCloudResume.pdf'
 const About = () => {
   return (
     <>
-    <div id="about"></div>
-      <div className="aboutContainer" >
-        <div className="aboutMeHeading" >
+      <section id="about" className="aboutSection">
+        <header className="aboutHeading">
           <h1>
             Bringing your vision to life
             <span>
@@ -13,27 +12,33 @@ const About = () => {
               One Website at a time.
             </span>
           </h1>
-        </div>
-        <article className=''>
-          <div className="aboutTitle ">
+        </header>
+
+        <article className="aboutContent">
+          <div className="aboutTitle">
             <h1>
-              Monicah <span> Cloud</span>
+              Monicah <span>Cloud</span>
             </h1>
             <h3>Web Designer and Developer</h3>
           </div>
-          <p className="aboutInfo">
-            I design and develop websites that focus on user <br />
-            experience and functionality.
+
+          <p className="aboutDescription">
+            Creating solutions that bring your ideas to life.
           </p>
 
-          <div className="aboutBtn">
-            <a href={resume} download="Monicah Cloud Resume">
-              <button className="btnGlowHover ">Download Resume</button>
+          <div className="aboutButton">
+            <a
+              href={resume}
+              download="Monicah_Cloud_Resume"
+              className="btnGlowHover"
+            >
+              Download Resume
             </a>
           </div>
         </article>
-      </div>
+      </section>
     </>
   )
 }
+
 export default About

@@ -15,8 +15,8 @@ function App() {
      <BlurBackground />
       <About />
       <Services />
-       {/* <Skills />
-      <Portfolio />
+      <Skills />
+      {/*  <Portfolio />
       <Contact />
     <footer><Footer /></footer>     */}
      </>
