@@ -11,14 +11,14 @@ import Skills from './components/Skills'
 function App() {
   return (
     <>
-     <nav><NavBar /></nav> 
-      <BlurBackground />
+     <NavBar />
+     <BlurBackground />
       <About />
       <Services />
-      <Skills />
+       {/* <Skills />
       <Portfolio />
       <Contact />
-    <footer><Footer /></footer>    
+    <footer><Footer /></footer>     */}
      </>
   )
 }
