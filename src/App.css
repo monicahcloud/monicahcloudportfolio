@@ -667,7 +667,6 @@ Portfolio
 }
 
 .carousel .list .item .introduce {
-
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
@@ -722,22 +721,24 @@ Portfolio
   position: absolute;
   width: 15rem;
   max-width: 90%;
-  left: 50%;
   transform: translateZ(0);
   display: flex;
   justify-content: space-between;
   align-items: center;
+    top: 1rem; /* Adjust arrow positioning */
+    left: 1rem;
+    margin-left: -15rem;
+    margin-top: -25rem;
+  
 }
 
 .arrows #next,
 .arrows #prev {
   width: 40px;
   height: 40px;
-
   font-family: monospace;
   font-size: 2rem;
   font-weight: bold;
-
   color: var(--clr-white);
 }
 
@@ -754,7 +755,6 @@ Portfolio
 .sourceButtons {
   background-color: transparent;
   margin-top: 1em;
-
 }
 
 .demo,
@@ -951,7 +951,7 @@ Portfolio
     color: var(--grey-200);
     position: relative;
   }
-.carousel .list .item {
+  .carousel .list .item {
     width: 100%; /* Full width on mobile */
     font-size: 0.9rem; /* Adjust font size */
   }
@@ -965,7 +965,6 @@ Portfolio
   }
   .carousel .list .item {
     width: 90%; /* Change to responsive width */
-   
   }
   .portfolioHeading h1 {
     font-size: 2.3rem; /* Adjust heading size */
@@ -989,10 +988,10 @@ Portfolio
   }
   .carousel .list .item {
     width: 100%;
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
-  .topic{
+  .topic {
     display: none;
   }
   .arrows {
@@ -1019,7 +1018,6 @@ Portfolio
   .carousel .list .item:nth-child(2) .detail .des {
     height: 100px;
     overflow: auto;
-
   }
   .carousel.showDetail .list .item:nth-child(2) .detail .checkout {
     display: flex;
