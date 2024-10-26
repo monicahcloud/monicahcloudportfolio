@@ -47,7 +47,7 @@ const Portfolio = () => {
       <div className="carousel" ref={carousel}>
         <div className="list" ref={listHTML}>
           {projects.map((project) => {
-            const { id, url, title, topic, image, info, git } = project
+            const { id, url, title, topic, image, git } = project
 
             return (
               <div className="item" key={id}>

@@ -96,7 +96,6 @@ const Contact = () => {
 								News and magazine Website
 							</option>
 						</select>
-						 
 						<p
 							style={{
 								color: '#fff',

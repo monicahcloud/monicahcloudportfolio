@@ -1,11 +1,5 @@
 import {  FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdOutlineDesignServices } from 'react-icons/md'
-import pic1 from './images/2-removebg-preview.png'
-import pic3 from './images/7-removebg-preview.png'
-import pic2 from './images/4-removebg-preview.png'
-import pic5 from './images/5-removebg-preview.png'
-import pic4 from './images/4-removebg-preview.png'
-import pic6 from './images/9-removebg-preview.png'
 
 
 export const links = [
