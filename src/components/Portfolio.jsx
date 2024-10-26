@@ -1,4 +1,5 @@
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import { FaArrowRight, FaArrowLeft, FaGithub } from 'react-icons/fa'
+import { TbWorldWww } from 'react-icons/tb'
 import { projects } from '../data'
 import { useState, useRef } from 'react'
 
@@ -36,7 +37,8 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="portfolioHeading" id="portfolio">
+      <div id="portfolio"></div>
+      <div className="portfolioHeading">
         <h1>
           Featured <span>Projects</span>
         </h1>
@@ -51,17 +53,24 @@ const Portfolio = () => {
               <div className="item" key={id}>
                 <img src={image} alt={title} />
                 <div className="introduce">
+                  <div className="topic">{topic}</div>
                   <div className="title">{title}</div>
                   <div className="sourceButtons">
-                    <a href={url} rel="noopener noreferrer" target="_blank">
-                      <button type="button" className="demo">
-                        Demo
-                      </button>
+                    <a
+                      href={url}
+                      className="demo"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <TbWorldWww />
                     </a>
-                    <a href={git} rel="noopener noreferrer" target="_blank">
-                      <button type="button" className="github">
-                        Source
-                      </button>
+                    <a
+                      href={git}
+                      className="github"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <FaGithub />
                     </a>
                   </div>
                 </div>

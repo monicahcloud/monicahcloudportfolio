@@ -607,48 +607,46 @@ BlurBackground
 Portfolio
 ===============
 */
-.carousel {
-  margin-top: -3rem;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  min-height: 80vh;
-  width: 100%;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-  color: var(--grey-200);
-}
-
-.carousel .list {
-  position: absolute;
-  top: 0;
-  width: 1340px;
-  max-width: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 80%;
-}
-
 .portfolioHeading {
   color: #fff;
-  text-align: right;
-  margin-top: 8rem;
+  text-align: center;
+  margin-top: 2rem;
   font-size: 3rem;
   text-decoration: none;
   padding-right: 0rem;
 }
 
+.carousel {
+  margin-top: -3rem;
+  height: auto; /* Change height to auto for better responsiveness */
+  min-height: 80vh;
+  width: 100%;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  color: var(--grey-200);
+  position: relative;
+}
+
+.carousel .list {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  max-width: 100%;
+  left: 60%;
+  transform: translateX(-50%);
+  height: 80%;
+}
+
 .carousel .list .item {
   position: absolute;
+  flex: 0 0 75%; /* Allow items to shrink and maintain 75% width */
   left: 0;
   top: 0;
-  width: 75%;
+  width: 65%;
   height: 100%;
   font-size: 1rem;
 }
@@ -657,7 +655,7 @@ Portfolio
   width: 45%;
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 10%;
   transform: translateY(-50%);
   transform: scaleX(-1);
   border-radius: 8%;
@@ -669,11 +667,13 @@ Portfolio
 }
 
 .carousel .list .item .introduce {
+
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
-  width: 400px;
+  width: 30rem;
   opacity: 50;
+  left: -15%;
   pointer-events: none;
 }
 .carousel .list .item:nth-child(2) .introduce {
@@ -720,8 +720,7 @@ Portfolio
 
 .arrows {
   position: absolute;
-  bottom: 10px;
-  width: 1140px;
+  width: 15rem;
   max-width: 90%;
   left: 50%;
   transform: translateZ(0);
@@ -754,17 +753,14 @@ Portfolio
 }
 .sourceButtons {
   background-color: transparent;
-  border: none;
-  font-family: Poppins;
-  font-weight: bold;
-  margin-top: 1.2em;
-  padding: 1rem;
+  margin-top: 1em;
+
 }
 
 .demo,
 .github {
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 0.25rem;
   margin: 0.25rem;
 }
@@ -934,41 +930,74 @@ Portfolio
   transform: translate(-100%, -50%) rotate(90deg);
   filter: blur(130px);
 }
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 1200px) {
   /* ipad, tablets */
   .carousel .list .item {
-    width: 90%;
+    width: 60%;
   }
-  .carousel.showDetail .list .item:nth-child(2) .detail .specifications {
-    overflow: auto;
+
+  .carousel {
+    margin-top: -3rem;
+    height: auto; /* Change height to auto for better responsiveness */
+    min-height: 80vh;
+    width: 100%;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    color: var(--grey-200);
+    position: relative;
   }
-  .carousel.showDetail .list .item:nth-child(2) .detail .title {
-    font-size: 2em;
+.carousel .list .item {
+    width: 100%; /* Full width on mobile */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+  .arrows {
+    top: 20rem; /* Adjust arrow positioning */
+    left: 1rem;
+    margin-left: 1.5rem;
+  }
+  .carousel .list .item img {
+    width: 50%; /* Adjust image width */
+  }
+  .carousel .list .item {
+    width: 90%; /* Change to responsive width */
+   
+  }
+  .portfolioHeading h1 {
+    font-size: 2.3rem; /* Adjust heading size */
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   /* mobile */
   .carousel {
-    height: 10vh;
-    border: red solid 5px;
-    margin-top: -6rem;
-    margin-bottom: 4rem;
-    width: 100vw;
+    height: auto;
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   .portfolioHeading h1 {
-    font-size: 2rem;
-    margin: -6rem auto;
-    width: 90vw;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    text-align: center;
   }
   .carousel .list .item {
     width: 100%;
-    font-size: 10px;
+    font-size: .5rem;
+  }
+
+  .topic{
+    display: none;
   }
   .arrows {
-    top: 15rem;
-    left: 4rem;
+    top: 10rem;
+    left: auto;
   }
 
   .carousel .list {
@@ -980,7 +1009,7 @@ Portfolio
   }
 
   .carousel .list .item img {
-    width: 40%;
+    width: 60%;
   }
   .carousel .list .item:nth-child(2) .detail {
     backdrop-filter: blur(10px);
@@ -990,7 +1019,7 @@ Portfolio
   .carousel .list .item:nth-child(2) .detail .des {
     height: 100px;
     overflow: auto;
-    border: red solid 5px;
+
   }
   .carousel.showDetail .list .item:nth-child(2) .detail .checkout {
     display: flex;
@@ -1071,13 +1100,13 @@ About
   .aboutSection {
     background-size: 20rem;
     background-position: 10% 10%;
-    
-      width: 100vw;
+
+    width: 100vw;
   }
   .aboutHeading h1 {
     font-size: 1.5rem;
     text-align: right;
-     margin-left: 15rem;
+    margin-left: 15rem;
   }
   .aboutContent {
     text-align: right;
@@ -1089,13 +1118,13 @@ About
   .aboutTitle h3 {
     font-size: 1rem;
   }
-  .aboutDescription{
-    font-size: .85rem;
-    margin-top: -.125rem
+  .aboutDescription {
+    font-size: 0.85rem;
+    margin-top: -0.125rem;
   }
   .aboutButton {
     text-align: right;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1113,16 +1142,15 @@ About
     font-size: 1.5rem;
     margin-top: -5rem;
     width: 15rem;
-   text-align: center;
-    
+    text-align: center;
   }
   .aboutTitle h3 {
     font-size: 1rem;
     text-align: center;
     width: 15rem;
-    
   }
-  .aboutDescription, .aboutButton {
+  .aboutDescription,
+  .aboutButton {
     display: none;
   }
 }
@@ -1166,7 +1194,6 @@ Skills Component
   background-repeat: no-repeat;
   background-position: 90% 30%;
   background-size: 25rem;
-
 }
 
 .myTech h1 {
@@ -1203,9 +1230,7 @@ Skills Component
   margin-bottom: 1rem;
   text-transform: uppercase;
   margin-left: 20rem;
-  
 }
-
 
 /********************
 Skills Progress Circles
@@ -1219,8 +1244,6 @@ Skills Progress Circles
   gap: 2rem;
   align-items: center;
   padding: 10px 5%;
-  
-  
 }
 
 .skillsContainer .circle {
@@ -1232,7 +1255,6 @@ Skills Progress Circles
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  
 }
 
 .skillsContainer .circle::before {
@@ -1300,7 +1322,6 @@ Responsive Adjustments
   .skills {
     width: 90vw;
     gap: 1rem;
-     
   }
 
   .skillsContainer .circle {
@@ -1319,7 +1340,7 @@ Responsive Adjustments
 
 /* Container for the skill circles */
 .skillsContainer {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   justify-content: center;
@@ -1340,7 +1361,6 @@ Responsive Adjustments
   background-repeat: no-repeat;
   background-position: 95% 10%;
   background-size: 25rem;
-
 }
 /* Main circular progress container */
 .circle {
@@ -1353,9 +1373,9 @@ Responsive Adjustments
   height: 200px;
   border-radius: 50%;
   background: #333;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), inset 0px 5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0px 5px 15px rgba(255, 255, 255, 0.1);
   overflow: hidden;
- 
 }
 
 /* Conic background for showing skill percentage */
@@ -1367,7 +1387,6 @@ Responsive Adjustments
   height: 100%;
   border-radius: 50%;
   position: relative;
-  
 }
 
 /* Number in the center */
@@ -1399,15 +1418,15 @@ Responsive Adjustments
 
 /* Responsive adjustments */
 @media (max-width: 800px) {
-.skillsContainer {
-  display: grid; 
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 10rem;
-}
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+  }
   .circle {
     width: 150px;
     height: 150px;
@@ -1416,24 +1435,23 @@ Responsive Adjustments
     font-size: 1rem;
   }
   .circle h4 {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   /* Conic background for showing skill percentage */
 
   .myTech {
-  min-height: 740px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5rem;
-  background-image: url('../src//images/7-removebg-preview.png');
-  background-repeat: no-repeat;
-  background-position: 50% 15%;
-  background-size: 13rem;
-
-}
+    min-height: 740px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-image: url('../src//images/7-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    background-size: 13rem;
+  }
 }
 
 /* button */
@@ -1525,7 +1543,6 @@ Services
   justify-content: center;
   flex-direction: column;
   padding: 4rem 2rem;
-  
 }
 
 .service-section h1 {
