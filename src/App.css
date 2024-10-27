@@ -1093,7 +1093,7 @@ About
   }
   .aboutHeading h1 {
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: right;
     margin-left: 10rem;
   }
@@ -1104,41 +1104,49 @@ About
     padding: 0;
   }
   .aboutTitle h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-top: 2rem;
   }
   .aboutTitle h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .aboutDescription {
-    font-size: 0.85rem;
+    font-size: .9rem;
     margin-top: -0.125rem;
   }
   .aboutButton {
+    margin-left: 10rem;
     text-align: right;
-    margin-top: 0.5rem;
+    margin-top: -3rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .aboutSection {
     background-size: 18rem;
-    background-position: 10% 10%;
-    width: 90vw;
+    background-position: 50% 30%;
+    width: 100vw;
   }
   .aboutHeading h1 {
-    width: 80%;
+    width: 90vw;
+    margin-left: 1rem;
+    margin-top: -2rem;
     font-size: 1.5rem;
-    margin-left: 12rem;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
   }
 
   .aboutContent {
-    width: 60%;
-    margin-left: 10rem;
+    width: 90vw;
+    margin-left: 1rem;
+    text-align: center;
+    margin-top: 20rem;
+    border: red 1px solid;
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
-    margin-top: 0.25rem;
+    margin-top: .125rem;
   }
   .aboutTitle h3 {
     font-size: 1rem;
@@ -1148,8 +1156,9 @@ About
     margin-top: -0.115rem;
   }
   .aboutButton {
+    margin-left: -2rem;
     text-align: right;
-    margin-top: 0.0125rem;
+    margin-top: -3rem;
   }
 }
 
