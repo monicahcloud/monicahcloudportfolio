@@ -1116,7 +1116,7 @@ About
   }
   .aboutButton {
     margin-left: 10rem;
-    text-align: right;
+    text-align: center;
     margin-top: -3rem;
   }
 }
@@ -1146,7 +1146,7 @@ About
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
-    margin-top: .125rem;
+    margin-top: 1rem;
   }
   .aboutTitle h3 {
     font-size: 1rem;
@@ -1156,9 +1156,10 @@ About
     margin-top: -0.115rem;
   }
   .aboutButton {
-    margin-left: -2rem;
-    text-align: right;
+    margin-left: 1rem;
+    text-align: center;
     margin-top: -3rem;
+    width: 1rem;
   }
 }
 
