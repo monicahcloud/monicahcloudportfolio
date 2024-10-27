@@ -1067,6 +1067,7 @@ About
 .aboutButton {
   text-align: right;
   margin-top: 1.5rem;
+  font-size: 1rem;
 }
 
 .btnGlowHover {
@@ -1086,18 +1087,21 @@ About
 
 @media screen and (max-width: 1100px) {
   .aboutSection {
-    background-size: 20rem;
+    background-size: 18rem;
     background-position: 10% 10%;
-
     width: 100vw;
   }
   .aboutHeading h1 {
+    width: 80%;
     font-size: 1.5rem;
     text-align: right;
-    margin-left: 15rem;
+    margin-left: 10rem;
   }
   .aboutContent {
     text-align: right;
+    width: 60%;
+    margin-left: 10rem;
+    padding: 0;
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
@@ -1118,28 +1122,34 @@ About
 
 @media screen and (max-width: 800px) {
   .aboutSection {
-    background-size: 15rem;
-    text-align: center;
-    padding: 1rem;
+    background-size: 18rem;
+    background-position: 10% 10%;
+    width: 90vw;
   }
   .aboutHeading h1 {
-    font-size: 1.2rem;
-    padding-top: -2rem;
+    width: 80%;
+    font-size: 1.5rem;
+    margin-left: 12rem;
+  }
+
+  .aboutContent {
+    width: 60%;
+    margin-left: 10rem;
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
-    margin-top: -5rem;
-    width: 15rem;
-    text-align: center;
+    margin-top: 0.25rem;
   }
   .aboutTitle h3 {
     font-size: 1rem;
-    text-align: center;
-    width: 15rem;
   }
-  .aboutDescription,
+  .aboutDescription {
+    font-size: 0.75rem;
+    margin-top: -0.115rem;
+  }
   .aboutButton {
-    display: none;
+    text-align: right;
+    margin-top: 0.0125rem;
   }
 }
 
@@ -1469,18 +1479,17 @@ Responsive Adjustments
     width: 70%;
   }
   .skillPer.react {
-    width: 88%
+    width: 88%;
   }
   .skillPer.python {
-    width: 80%
+    width: 80%;
   }
   .skillPer.figma {
-    width: 90%
+    width: 90%;
   }
   .skillPer.sql {
-    width: 89%
+    width: 89%;
   }
-
 
   @keyframes progress {
     0% {
@@ -1532,7 +1541,6 @@ Responsive Adjustments
   }
 }
 @media (max-width: 800px) {
-
   .myTech {
     min-height: 740px;
     width: 100%;
