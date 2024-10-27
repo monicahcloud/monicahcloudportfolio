@@ -1039,7 +1039,7 @@ About
 
 .aboutHeading h1 {
   font-size: 3rem;
-  line-height: 1.2;
+
 }
 
 .aboutContent {
@@ -1055,19 +1055,19 @@ About
 .aboutTitle h3 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin-top: 0.5rem;
+
 }
 
 .aboutDescription {
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-top: 1rem;
+
 }
 
 .aboutButton {
   text-align: right;
-  margin-top: 1.5rem;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .btnGlowHover {
