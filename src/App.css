@@ -1578,8 +1578,17 @@ Responsive Adjustments
     margin-top: 5rem;
     background-image: url('../src//images/7-removebg-preview.png');
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 10%;
     background-size: 15rem;
+  }
+    .barsContainer {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: transparent;
+    margin: 13rem 15px 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
   }
 }
 
