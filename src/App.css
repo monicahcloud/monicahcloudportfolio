@@ -1124,7 +1124,7 @@ About
 @media screen and (max-width: 800px) {
   .aboutSection {
     background-size: 18rem;
-    background-position: 50% 30%;
+    background-position: 50% 25%;
     width: 100vw;
   }
   .aboutHeading h1 {
@@ -1141,12 +1141,12 @@ About
     width: 90vw;
     margin-left: 1rem;
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 22rem;
   
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .aboutTitle h3 {
     font-size: 1rem;
