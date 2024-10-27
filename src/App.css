@@ -200,15 +200,6 @@ ul {
   z-index: 2;
 }
 
-@media screen and (max-width: 800px) {
-  .portfolioHeading {
-    text-align: center;
-    margin: 3rem 0 0 0;
-    font-size: 1.5rem;
-    padding-right: 0;
-  }
-}
-
 /****************************
 Navbar
 *****************************/
@@ -525,7 +516,7 @@ Footer
   justify-content: center;
   margin-bottom: 0.25rem;
   flex-wrap: wrap;
-  color: #00bfff;
+  color: #00b2ff;
 }
 
 .copyright {
@@ -725,11 +716,10 @@ Portfolio
   display: flex;
   justify-content: space-between;
   align-items: center;
-    top: 1rem; /* Adjust arrow positioning */
-    left: 1rem;
-    margin-left: -15rem;
-    margin-top: -25rem;
-  
+  top: 1rem; /* Adjust arrow positioning */
+  left: 1rem;
+  margin-left: -15rem;
+  margin-top: -25rem;
 }
 
 .arrows #next,
@@ -931,7 +921,7 @@ Portfolio
   filter: blur(130px);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   /* ipad, tablets */
   .carousel .list .item {
     width: 60%;
@@ -1154,9 +1144,6 @@ About
 }
 
 /********************
-Skills
-********************/
-/********************
 Service Section
 ********************/
 .service-section {
@@ -1332,7 +1319,16 @@ Responsive Adjustments
   }
 
   .skillsContainer .circle h4 {
-    font-size: 0.85em;
+    font-size: 0.8 5em;
+  }
+  .skillsContainer {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: -1rem;
   }
 }
 
@@ -1415,27 +1411,108 @@ Responsive Adjustments
 }
 
 /* Responsive adjustments */
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .skillsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+    display: none;
+  }
+  .myTech p {
+    display: none;
+  }
+  .barsContainer {
+    position: relative;
+    max-width: 500px;
     width: 100%;
-    margin-top: 10rem;
+    background: transparent;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
   }
-  .circle {
-    width: 150px;
-    height: 150px;
+
+  .barsContainer .barsSkillsBox {
+    width: 100%;
+    margin: 25px 0;
   }
-  .number {
+
+  .barsSkillsBox .barsTitle {
+    display: block;
     font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
   }
-  .circle h4 {
-    font-size: 0.75rem;
+
+  .barsSkillsBox .skillBar {
+    height: 1rem;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
   }
-  /* Conic background for showing skill percentage */
+
+  .barsSkillsBox .skillPer {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+
+  .skillPer.css {
+    width: 70%;
+  }
+  .skillPer.js {
+    width: 80%;
+  }
+  .skillPer.css {
+    width: 70%;
+  }
+  .skillPer.react {
+    width: 88%
+  }
+  .skillPer.python {
+    width: 80%
+  }
+  .skillPer.figma {
+    width: 90%
+  }
+
+
+  @keyframes progress {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .skillPer .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+  }
+
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+  }
 
   .myTech {
     min-height: 740px;
@@ -1447,8 +1524,24 @@ Responsive Adjustments
     margin-top: 5rem;
     background-image: url('../src//images/7-removebg-preview.png');
     background-repeat: no-repeat;
-    background-position: 50% 15%;
-    background-size: 13rem;
+    background-position: 95% 50%;
+    background-size: 15rem;
+  }
+}
+@media (max-width: 800px) {
+
+  .myTech {
+    min-height: 740px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-image: url('../src//images/7-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: 95% 5%;
+    background-size: 10rem;
   }
 }
 
