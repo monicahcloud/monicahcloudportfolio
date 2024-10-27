@@ -1689,7 +1689,7 @@ Services
 
 #paragraph {
   width: 50%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   line-height: 1.6;
   color: #fff;
@@ -1757,9 +1757,9 @@ Services
 
 /* Responsive Design */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .service-section h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 2rem;
   }
 
