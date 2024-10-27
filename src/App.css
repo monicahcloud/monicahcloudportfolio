@@ -1185,14 +1185,17 @@ Service Section
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 
 .service-section #paragraph {
   width: 70%;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1rem;
   margin-bottom: 5rem;
+  text-transform: none;
 }
 
 /********************
