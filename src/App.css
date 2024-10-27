@@ -1477,6 +1477,9 @@ Responsive Adjustments
   .skillPer.figma {
     width: 90%
   }
+  .skillPer.sql {
+    width: 89%
+  }
 
 
   @keyframes progress {
@@ -1726,32 +1729,34 @@ Services
   }
 
   #paragraph {
-    width: 80%;
-    font-size: 0.9rem;
+  display: none;
   }
 
   .cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-top: 2rem;
+  
   }
 
   .card {
     width: 80%;
-    max-width: 400px;
+    max-width: 300px;
+    height: 300px;
     margin: 0 auto;
     padding: 1.5rem;
   }
 
   .card i {
-    font-size: 2rem;
-  }
-
-  .card h3 {
     font-size: 1.5rem;
   }
 
+  .card h3 {
+    font-size: 1rem;
+  }
+
   .card p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4;
   }
 }
