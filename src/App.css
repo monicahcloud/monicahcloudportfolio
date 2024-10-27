@@ -605,6 +605,9 @@ Portfolio
   font-size: 3rem;
   text-decoration: none;
   padding-right: 0rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel {
@@ -957,7 +960,11 @@ Portfolio
     width: 90%; /* Change to responsive width */
   }
   .portfolioHeading h1 {
-    font-size: 2.3rem; /* Adjust heading size */
+    font-size: 3rem; /* Adjust heading size */
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -971,10 +978,13 @@ Portfolio
   }
 
   .portfolioHeading h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: 1rem 0 0 0;
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
   }
   .carousel .list .item {
     width: 100%;
@@ -1024,10 +1034,11 @@ About
   background-image: url('../src/images/5-removebg-preview.png');
   background-repeat: no-repeat;
   background-size: 25rem;
-  background-position: 20% 50%;
-  margin-top: 3rem;
+  background-position: 20% 100%;
+  margin: 3rem 0;
   padding: 0rem 0;
   width: 100%;
+  height: 65vh;
   color: #fff;
 }
 
@@ -1035,11 +1046,11 @@ About
   text-align: right;
   margin-top: 2rem;
   padding-right: 12rem;
+
 }
 
 .aboutHeading h1 {
   font-size: 3rem;
-
 }
 
 .aboutContent {
@@ -1055,13 +1066,11 @@ About
 .aboutTitle h3 {
   font-size: 1.5rem;
   font-weight: normal;
-
 }
 
 .aboutDescription {
   font-size: 1.125rem;
   line-height: 1.6;
-
 }
 
 .aboutButton {
@@ -1093,13 +1102,13 @@ About
   }
   .aboutHeading h1 {
     width: 80%;
-    font-size: 1.75rem;
+    font-size: 3rem;
     text-align: right;
-    margin-left: 10rem;
+    margin-left: 15rem;
   }
   .aboutContent {
     text-align: right;
-    width: 60%;
+    width: 70%;
     margin-left: 10rem;
     padding: 0;
   }
@@ -1111,38 +1120,37 @@ About
     font-size: 1.25rem;
   }
   .aboutDescription {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-top: -0.125rem;
   }
   .aboutButton {
-    margin-left: 10rem;
+    margin-left: 15rem;
     text-align: center;
-    margin-top: -3rem;
+   
   }
 }
 
 @media screen and (max-width: 800px) {
   .aboutSection {
     background-size: 18rem;
-    background-position: 50% 25%;
+    background-position: 50% 105%;
     width: 100vw;
   }
   .aboutHeading h1 {
     width: 90vw;
     margin-left: 1rem;
     margin-top: -2rem;
-    font-size: 1.5rem;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutContent {
     width: 90vw;
     margin-left: 1rem;
     text-align: center;
-    margin-top: 22rem;
-  
+    margin-top: 16rem;
   }
   .aboutTitle h1 {
     font-size: 1.5rem;
@@ -1156,9 +1164,9 @@ About
     margin-top: -0.115rem;
   }
   .aboutButton {
-    margin-left: 1rem;
+    margin-left: 5rem;
     text-align: center;
-    margin-top: -3rem;
+    margin-top: -1rem;
     width: 1rem;
   }
 }
@@ -1176,12 +1184,11 @@ Service Section
 }
 
 .service-section #paragraph {
-  width: 45%;
-  font-size: 1rem;
+  width: 70%;
+  font-size: 2rem;
   text-align: center;
   line-height: 1.5rem;
   margin-bottom: 5rem;
-  text-transform: uppercase;
 }
 
 /********************
@@ -1206,6 +1213,9 @@ Skills Component
   margin-bottom: 10px;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
 }
 
 .myTech h1::after,
@@ -1228,7 +1238,7 @@ Skills Component
 }
 
 .myTech p {
-  width: 45vw;
+  width: 70vw;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
@@ -1313,7 +1323,7 @@ Responsive Adjustments
   }
 
   .myTech h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
 
@@ -1568,8 +1578,8 @@ Responsive Adjustments
 
 /* button */
 .btnGlowHover {
-  margin: 100px;
-  padding: 15px 40px;
+  margin: 50px;
+  padding: 15px 20px;
   border: none;
   outline: none;
   color: #fff;
