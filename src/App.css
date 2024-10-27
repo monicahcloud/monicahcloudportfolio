@@ -1051,6 +1051,7 @@ About
 
 .aboutHeading h1 {
   font-size: 3rem;
+  padding-top: 5rem;
 }
 
 .aboutContent {
@@ -1106,6 +1107,7 @@ About
     font-size: 3rem;
     text-align: right;
     margin-left: 15rem;
+    padding-top: 0;
   }
   .aboutContent {
     text-align: right;
