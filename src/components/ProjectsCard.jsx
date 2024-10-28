@@ -5,7 +5,7 @@ import { TbWorldWww } from 'react-icons/tb'
 const ProjectsCard = ({url, image, git, info, title, topic}) => {
   return (
     <>
-      <article className="projectsArticle shadow-md ">
+      <article className="projectsArticle shadow-md glass ">
         <img className='projectsImage'src={image} alt={title}/>
         <div className="projectsIntro">
             <h2 className='projectTitle'>{title}</h2>
