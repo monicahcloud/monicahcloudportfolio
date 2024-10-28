@@ -1184,6 +1184,7 @@ Service Section
   flex-direction: column;
   text-transform: capitalize;
   font-size: 2rem;
+  
 }
 
 .service-section #paragraph {
@@ -1193,6 +1194,7 @@ Service Section
   line-height: 1rem;
   margin-bottom: 5rem;
   text-transform: none;
+  
 }
 
 /********************
@@ -1210,6 +1212,7 @@ Skills Component
   background-repeat: no-repeat;
   background-position: 90% 30%;
   background-size: 25rem;
+  
 }
 
 .myTech h1 {
@@ -1220,6 +1223,7 @@ Skills Component
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
+  
 }
 
 .myTech h1::after,
@@ -1328,6 +1332,7 @@ Responsive Adjustments
   .myTech h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    
   }
 
   .myTech p {
@@ -1677,6 +1682,7 @@ Services
   justify-content: center;
   flex-direction: column;
   padding: 4rem 2rem;
+  
 }
 
 .service-section h1 {
@@ -1686,6 +1692,7 @@ Services
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  
 }
 
 .service-section h1 span {
@@ -1765,7 +1772,7 @@ Services
 @media screen and (max-width: 900px) {
   .service-section h1 {
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: -3rem;
   }
 
   #paragraph {
