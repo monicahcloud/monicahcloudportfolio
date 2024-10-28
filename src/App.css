@@ -1805,20 +1805,19 @@ Projects
 ********************************/
 
 .projectsContainer {
-  padding: 2rem 0;
+  padding: 3rem 0;
   align-items: center;
-
-}
+  }
 
 .projectSection {
-  padding: 2rem 0;
+  padding: 3rem 0;
   display: grid;
-  gap: 2rem; /* Space between items */
+  gap: 1rem; /* Space between items */
   grid-template-columns: 1fr; /* Small screens (default) */  
 }
 
 .projectsArticle{
-  background: white;
+  background: transparent;
   border-radius: .5rem;
 
 }
@@ -1829,30 +1828,31 @@ Projects
   font-weight: 500;
 }
 .projectPara{
-  margin-top: 1rem;
-  color: #334155;
+  margin-top: .5rem;
   line-height: 3rem;
   font-size: 1rem;
 }
 .projectsIntro{
   text-transform: capitalize;
-  padding: 1rem;
-  color: black
+  padding: .5rem;
+
 }
 .projectLinks{
-  gap: 1rem;
+  gap: 5rem;
   display: flex;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  align-items: center;
+  justify-content: center;
 }
 .web{
-  height: 2rem;
-  width: 2rem;
-  color: #64748b;
+  height: .5rem;
+  width: .5rem;
+  color: #fff;
   transition-duration: 300ms;
 }
 
 .web:hover{
-  color: #000;
+  color: #00b2ff;
 }
 /* shadow-md */
 .shadow-md {
@@ -1865,11 +1865,9 @@ Projects
 }
 
 .projectsImage{
-  width: 100%;
+  width: 80%;
   object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  height: 16rem ;
+  height: 10rem ;
 }
 /* Medium screens (min-width: 600px) */
 @media (min-width: 600px) {
