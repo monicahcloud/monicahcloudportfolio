@@ -2,6 +2,7 @@ import ProjectsCard from './ProjectsCard'
 import { projects } from '../data'
 
 const Projects = () => {
+
   return (
     <>
       <section className="portfolioHeading" id="projects">
@@ -14,7 +15,7 @@ const Projects = () => {
           })}
         </div>
       </section>
-      <ProjectsCard />
+     
     </>
   )
 }

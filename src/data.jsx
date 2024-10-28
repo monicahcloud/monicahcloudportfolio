@@ -20,20 +20,15 @@ export const links = [
   },
   {
     id: 3,
-    url: 'portfolio',
-    text: 'portfolio',
+    url: 'projects',
+    text: 'projects',
   },
   {
     id: 4,
     url: 'contact',
     text: 'contact',
   },
-//   {
-//     id: 5,
-//     url: '/tutorials',
-//     text: 'tutorials',
-//   },
- 
+
 ]
 
 export const social = [
@@ -83,23 +78,23 @@ export const projects = [
     title: 'Crown of Locs and Natural Hair LLC.',
     topic: 'small business',
     image: '../src/images/croppedlogo.png',
-    info: 'This project was built using ReactJS. ',
+    info: ' This is a single page website with routing/navigation',
     git: 'https://github.com/monicahcloud/crownoflocs',
   },
   {
     id: 2,
     url: 'https://www.nerahspassion.com',
     title: 'Nerahs Passion',
-    topic: 'landing page business',
+    topic: 'single page business website',
     image: '../src/images/nerrahspassion.png',
-    info: 'This project was built using ReactJS. ',
+    info: 'This is a single page website. ',
     git: 'https://github.com/monicahcloud/nerahspassion',
   },
   {
     id: 3,
     url: 'https://www.google.com',
-    title: 'portfolio',
-    topic: 'blog website',
+    title: 'EPIC',
+    topic: 'non-profit website',
     image: '../src/images/4-removebg-preview.png',
     info: 'This project was built using ReactJS. ',
     git: 'http://github.com/monicahcloud',
@@ -108,7 +103,7 @@ export const projects = [
     id: 4,
     url: 'https://www.brp.com',
     title: "Keto & PCOS: Monicah's Journey",
-    topic: 'personal website',
+    topic: 'personal blog',
     image: '../src/images/5-removebg-preview.png',
     info: 'This project was built using ReactJS. ',
     git: 'http://github.com/monicahcloud',
