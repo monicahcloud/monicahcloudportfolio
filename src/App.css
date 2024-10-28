@@ -1046,7 +1046,6 @@ About
   text-align: right;
   margin-top: 2rem;
   padding-right: 12rem;
-
 }
 
 .aboutHeading h1 {
@@ -1129,7 +1128,6 @@ About
   .aboutButton {
     margin-left: 15rem;
     text-align: center;
-   
   }
 }
 
@@ -1158,7 +1156,6 @@ About
   .aboutTitle h1 {
     font-size: 1.5rem;
     margin-top: 4rem;
-  
   }
   .aboutTitle h3 {
     font-size: 1rem;
@@ -1581,7 +1578,7 @@ Responsive Adjustments
     background-position: 50% 10%;
     background-size: 15rem;
   }
-    .barsContainer {
+  .barsContainer {
     position: relative;
     max-width: 500px;
     width: 100%;
@@ -1802,6 +1799,92 @@ Services
     line-height: 1.4;
   }
 }
+
+/********************************
+Projects
+********************************/
+
+.projectsContainer {
+  padding: 2rem 0;
+  align-items: center;
+
+}
+
+.projectSection {
+  padding: 2rem 0;
+  display: grid;
+  gap: 2rem; /* Space between items */
+  grid-template-columns: 1fr; /* Small screens (default) */  
+}
+
+.projectsArticle{
+  background: white;
+  border-radius: .5rem;
+
+}
+.projectTitle{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: .025em;
+  font-weight: 500;
+}
+.projectPara{
+  margin-top: 1rem;
+  color: #334155;
+  line-height: 3rem;
+  font-size: 1rem;
+}
+.projectsIntro{
+  text-transform: capitalize;
+  padding: 1rem;
+  color: black
+}
+.projectLinks{
+  gap: 1rem;
+  display: flex;
+  margin-top: 1rem;
+}
+.web{
+  height: 2rem;
+  width: 2rem;
+  color: #64748b;
+  transition-duration: 300ms;
+}
+
+.web:hover{
+  color: #000;
+}
+/* shadow-md */
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   transition: box-shadow 300ms;
+}
+
+.shadow-md:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.projectsImage{
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 16rem ;
+}
+/* Medium screens (min-width: 600px) */
+@media (min-width: 600px) {
+  .projectSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .projectSection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /********************************
 Effects
 ********************************/
