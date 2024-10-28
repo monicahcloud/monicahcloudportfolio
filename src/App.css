@@ -1836,7 +1836,7 @@ Projects
 .projectPara{
   margin-top: .5rem;
   line-height: 1rem;
-  font-size: .5rem;
+  font-size: .95rem;
 }
 .projectsIntro{
   text-transform: capitalize;
@@ -1856,8 +1856,6 @@ Projects
   color: #fff;
   transition-duration: 300ms;
   font-size: 2rem;
- 
- 
 }
 
 .web:hover{
