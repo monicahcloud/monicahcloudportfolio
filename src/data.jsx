@@ -2,6 +2,8 @@ import {  FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdOutlineDesignServices } from 'react-icons/md'
 
 
+
+
 export const links = [
   {
     id: 1,
@@ -77,7 +79,7 @@ export const projects = [
     url: 'https://www.crownoflocs.com',
     title: 'Crown of Locs and Natural Hair LLC.',
     topic: 'small business',
-    image: '../src/images/croppedlogo.png',
+    image: 'monicahcloudportfolio/dist/assets/9-removebg-preview-C7g_GgzQ.png',
     info: ' This is a single page website with routing/navigation',
     git: 'https://github.com/monicahcloud/crownoflocs',
   },
