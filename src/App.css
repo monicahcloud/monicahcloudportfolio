@@ -195,7 +195,7 @@ ul {
   width: 100%;
 }
 
-#portfolio #about #hero #contact #services #skills {
+#portfolio #about #hero #contact #services #projects #skills {
   margin-top: -8rem;
   z-index: 2;
 }
@@ -1184,7 +1184,6 @@ Service Section
   flex-direction: column;
   text-transform: capitalize;
   font-size: 2rem;
-  
 }
 
 .service-section #paragraph {
@@ -1194,7 +1193,6 @@ Service Section
   line-height: 1rem;
   margin-bottom: 5rem;
   text-transform: none;
-  
 }
 
 /********************
@@ -1212,7 +1210,6 @@ Skills Component
   background-repeat: no-repeat;
   background-position: 90% 30%;
   background-size: 25rem;
-  
 }
 
 .myTech h1 {
@@ -1223,7 +1220,6 @@ Skills Component
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-  
 }
 
 .myTech h1::after,
@@ -1327,12 +1323,12 @@ Responsive Adjustments
 @media screen and (max-width: 800px) {
   .myTech {
     margin-top: 3rem;
+    
   }
 
   .myTech h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    
   }
 
   .myTech p {
@@ -1359,6 +1355,7 @@ Responsive Adjustments
   .skillsContainer .circle h4 {
     font-size: 0.8 5em;
   }
+
   .skillsContainer {
     display: none;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1682,7 +1679,6 @@ Services
   justify-content: center;
   flex-direction: column;
   padding: 4rem 2rem;
-  
 }
 
 .service-section h1 {
@@ -1697,6 +1693,7 @@ Services
 
 .service-section h1 span {
   color: var(--mint-greenish); /* Accent color */
+  
 }
 
 #paragraph {
@@ -1773,6 +1770,7 @@ Services
   .service-section h1 {
     font-size: 3rem;
     margin-top: -3rem;
+    
   }
 
   #paragraph {
@@ -1810,12 +1808,13 @@ Services
 Projects
 ********************************/
 
+
+
 .projectsContainer {
   padding: 3rem 0;
   align-items: center;
- 
   }
-
+  
 .projectSection {
   padding: 3rem 0;
   display: grid;
@@ -1830,24 +1829,26 @@ Projects
   border-radius: .5rem;
   height: 18rem;
   width: 90%;
-  border: red 1px solid;
 }
+
 .projectTitle{
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: .025em;
   font-weight: 400;
 }
+
 .projectPara{
   margin-top: .5rem;
   line-height: 1rem;
   font-size: .95rem;
 }
+
 .projectsIntro{
   text-transform: capitalize;
   padding: .5rem;  
-
 }
+
 .projectLinks{
   gap: 5rem;
   display: flex;
@@ -1855,6 +1856,7 @@ Projects
   align-items: center;
   justify-content: center;
 }
+
 .web{
   height: .5rem;
   width: .5rem;
@@ -1880,8 +1882,11 @@ Projects
   width: 60%;
   object-fit: fill; 
   height: 10rem ;
-
 }
+.projectHeading{
+  text-transform: uppercase;
+  }
+  
 /* Medium screens (min-width: 600px) */
 @media (min-width: 600px) {
   .projectSection {

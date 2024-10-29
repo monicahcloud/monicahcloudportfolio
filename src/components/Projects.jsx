@@ -46,8 +46,8 @@ const projects = [
 ]
   return (
     <>
-      <section className="portfolioHeading" id="projects">
-        <h1>
+      <section className="portfolioHeading " id="projects">
+        <h1 className="projectHeading">
           Web <span>Creations</span>
         </h1>
         <div className="projectSection">
@@ -56,7 +56,6 @@ const projects = [
           })}
         </div>
       </section>
-     
     </>
   )
 }

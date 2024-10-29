@@ -6,10 +6,10 @@ const About = () => {
       <section id="about" className="aboutSection">
         <header className="aboutHeading">
           <h1>
-            Bringing your vision to life
+            Your Personal
             <span>
               <br />
-              One Website at a time.
+             Website Designer
             </span>
           </h1>
         </header>
