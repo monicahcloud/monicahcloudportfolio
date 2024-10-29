@@ -1813,6 +1813,7 @@ Projects
 .projectsContainer {
   padding: 3rem 0;
   align-items: center;
+ 
   }
 
 .projectSection {
@@ -1820,12 +1821,16 @@ Projects
   display: grid;
   gap: 1rem; /* Space between items */
   grid-template-columns: 1fr; /* Small screens (default) */  
+  margin-left: 2rem;
+  
 }
 
 .projectsArticle{
   background: transparent;
   border-radius: .5rem;
   height: 18rem;
+  width: 90%;
+  border: red 1px solid;
 }
 .projectTitle{
   font-size: 1rem;
@@ -1872,8 +1877,8 @@ Projects
 }
 
 .projectsImage{
-  width: 80%;
-  object-fit: fill;
+  width: 60%;
+  object-fit: fill; 
   height: 10rem ;
 
 }
