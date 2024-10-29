@@ -1,8 +1,8 @@
 import ProjectsCard from './ProjectsCard'
-import img1 from '../src/assets/images/2-removebg-preview.png'
-import img2 from '../src/assets/images/3-removebg-preview.png'
-import img3 from '../src/assets/images/4-removebg-preview.png'
-import img4 from '../src/assets/images/9-removebg-preview.png'
+import img1 from '../assets/images/7-removebg-preview.png'
+import img2 from '../assets/images/3-removebg-preview.png'
+import img3 from '../assets/images/4-removebg-preview.png'
+import img4 from '../assets/images/9-removebg-preview.png'
 
 
 const Projects = () => {
