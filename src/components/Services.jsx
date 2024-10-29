@@ -44,10 +44,12 @@ const Services = () => {
               <GiCharm />
             </i>
             <div className="content">
-              <h3>App Development</h3>
+              <h3>BI Analyst</h3>
               <p>
-                As a graphic designer, I bring ideas to life through compelling
-                visuals and creative storytelling.
+                As a BI Analyst with front-end development skills, I bring the
+                ability to design and create interactive, user-friendly
+                dashboards that enhance data visualization and facilitate deeper
+                insights for stakeholders.
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ const About = () => {
             Your Personal
             <span>
               <br />
-             Website Designer
+             Designer and Developer
             </span>
           </h1>
         </header>
