@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { links, social } from '../data'
-import mono2 from '../images/mono5.png'
+import mono2 from '../assets/images/mono5.png'
 import { Link } from 'react-scroll'
 
 const NavBar = () => {

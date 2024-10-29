@@ -1,5 +1,6 @@
 import {  FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdOutlineDesignServices } from 'react-icons/md'
+import pic1 from '../src/assets/images/7-removebg-preview.png'
 
 
 
@@ -79,7 +80,7 @@ export const projects = [
     url: 'https://www.crownoflocs.com',
     title: 'Crown of Locs and Natural Hair LLC.',
     topic: 'small business',
-    image: 'monicahcloudportfolio/dist/assets/9-removebg-preview-C7g_GgzQ.png',
+    image: {pic1},
     info: ' This is a single page website with routing/navigation',
     git: 'https://github.com/monicahcloud/crownoflocs',
   },
@@ -88,7 +89,7 @@ export const projects = [
     url: 'https://www.nerahspassion.com',
     title: 'Nerahs Passion',
     topic: 'single page business website',
-    image: '../src/images/nerrahspassion.png',
+    image: '../src/assets/images/nerrahspassion.png',
     info: 'This is a single page website. ',
     git: 'https://github.com/monicahcloud/nerahspassion',
   },
@@ -97,7 +98,7 @@ export const projects = [
     url: 'https://www.google.com',
     title: 'EPIC',
     topic: 'non-profit website',
-    image: '../src/images/4-removebg-preview.png',
+    image: '../src/assets/images/4-removebg-preview.png',
     info: 'This project was built using ReactJS. ',
     git: 'http://github.com/monicahcloud',
   },
@@ -106,7 +107,7 @@ export const projects = [
     url: 'https://www.brp.com',
     title: "Keto & PCOS: Monicah's Journey",
     topic: 'personal blog',
-    image: '../src/images/5-removebg-preview.png',
+    image: '../src/assets/images/5-removebg-preview.png',
     info: 'This project was built using ReactJS. ',
     git: 'http://github.com/monicahcloud',
   },

@@ -1031,7 +1031,7 @@ About
 *************************/
 
 .aboutSection {
-  background-image: url('../src/images/5-removebg-preview.png');
+  background-image: url('./assets/images/5-removebg-preview.png');
   background-repeat: no-repeat;
   background-size: 25rem;
   background-position: 20% 100%;
@@ -1208,7 +1208,7 @@ Skills Component
   justify-content: center;
   flex-direction: column;
   margin-top: 5rem;
-  background-image: url('../src//images/7-removebg-preview.png');
+  background-image: url('../src/assets/images/7-removebg-preview.png');
   background-repeat: no-repeat;
   background-position: 90% 30%;
   background-size: 25rem;
@@ -1389,7 +1389,7 @@ Responsive Adjustments
   justify-content: center;
   flex-direction: column;
   margin-top: 5rem;
-  background-image: url('../src//images/7-removebg-preview.png');
+  background-image: url('../src/assets/images/7-removebg-preview.png');
   background-repeat: no-repeat;
   background-position: 95% 10%;
   background-size: 25rem;
@@ -1562,7 +1562,7 @@ Responsive Adjustments
     justify-content: center;
     flex-direction: column;
     margin-top: 5rem;
-    background-image: url('../src//images/7-removebg-preview.png');
+    background-image: url('../src/assets/images/7-removebg-preview.png');
     background-repeat: no-repeat;
     background-position: 95% 50%;
     background-size: 15rem;
@@ -1577,7 +1577,7 @@ Responsive Adjustments
     justify-content: center;
     flex-direction: column;
     margin-top: 5rem;
-    background-image: url('../src//images/7-removebg-preview.png');
+    background-image: url('../src/assets/images/7-removebg-preview.png');
     background-repeat: no-repeat;
     background-position: 50% 10%;
     background-size: 15rem;
