@@ -1,7 +1,7 @@
 import ProjectsCard from './ProjectsCard'
-import img1 from '../assets/images/7-removebg-preview.png'
+import img1 from '../assets/images/4-removebg-preview.png'
 import img2 from '../assets/images/3-removebg-preview.png'
-import img3 from '../assets/images/4-removebg-preview.png'
+import img3 from '../assets/images/2-removebg-preview.png'
 import img4 from '../assets/images/9-removebg-preview.png'
 
 
@@ -10,10 +10,10 @@ const projects = [
   {
     id: 1,
     url: 'https://www.crownoflocs.com',
-    title: 'Crown of Locs and Natural Hair LLC.',
+    title: 'Crown of Locs and Natural Hair',
     topic: 'small business',
     image: img1,
-    info: ' This is a single page website with routing/navigation',
+    info: 'Tech Stack: HTML, CSS, ReactJS',
     git: 'https://github.com/monicahcloud/crownoflocs',
   },
   {
@@ -22,25 +22,25 @@ const projects = [
     title: 'Nerahs Passion',
     topic: 'single page business website',
     image: img2,
-    info: 'This is a single page website. ',
+    info: 'Tech Stack: HTML, CSS, ReactJS',
     git: 'https://github.com/monicahcloud/nerahspassion',
   },
   {
     id: 3,
     url: 'https://www.google.com',
-    title: 'EPIC',
-    topic: 'non-profit website',
+    title: 'Comfy',
+    topic: 'E-Commerce website',
     image: img3,
-    info: 'This project was built using ReactJS. ',
+    info: 'Tech Stack: Figma ',
     git: 'http://github.com/monicahcloud',
   },
   {
     id: 4,
     url: 'https://www.brp.com',
-    title: " Monicah's Journey",
-    topic: 'personal blog',
+    title: ' Real Estate Market Analysis',
+    topic: 'Data Visualization Dashboard',
     image: img4,
-    info: 'This project was built using ReactJS. ',
+    info: 'Tech Stack: Python, HTML, CSS, ReactJS ',
     git: 'http://github.com/monicahcloud',
   },
 ]
