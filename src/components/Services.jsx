@@ -9,7 +9,7 @@ const Services = () => {
         </h1>
         <p id="paragraph" className="servicesPara">
           As a versatile designer and developer, I catch the vision and make it
-          reality. Let's collaborate to bring your vision to life!
+          reality. Lets collaborate to bring your vision to life!
         </p>
 
         <div className="cards">
@@ -44,9 +44,9 @@ const Services = () => {
               <GiCharm />
             </i>
             <div className="content">
-              <h3>BI Analyst</h3>
+              <h3>BI Consultant</h3>
               <p>
-                As a BI Analyst with front-end development skills, I bring the
+                As a BI Consultant with front-end development skills, I bring the
                 ability to design and create interactive, user-friendly
                 dashboards that enhance data visualization and facilitate deeper
                 insights for stakeholders.
