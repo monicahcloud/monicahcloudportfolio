@@ -27,12 +27,12 @@ const projects = [
   },
   {
     id: 3,
-    url: 'https://www.google.com',
+    url: 'https://chicspaces.netlify.app',
     title: 'Chic Spaces',
     topic: 'E-Commerce Online Store',
     image: img3,
     info: 'Tech Stack: React, Redux, Axios ',
-    git: 'http://github.com/monicahcloud',
+    git: 'https://github.com/monicahcloud/chicSpaces',
   },
   {
     id: 4,
