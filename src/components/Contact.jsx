@@ -83,18 +83,12 @@ const Contact = () => {
 								Personal Portfolio Website
 							</option>
 							<option value="Event Website">Event Website</option>
-							<option value="Membership/Subscription Website">
-								Membership/Subscription Website
-							</option>
 							<option value="Nonprofit Website">Nonprofit Website</option>
 							<option value="Consulting Website">Consulting Website</option>
 							<option value="Booking Website">Booking Website</option>
 							<option value="Educational Website">Educational Website</option>
-							<option value="Wedding Website">Wedding Website</option>
-							<option value="Landing Page Website">Landing Page Website</option>
-							<option value="News and magazine Website">
-								News and magazine Website
-							</option>
+						
+							
 						</select>
 						<p
 							style={{

@@ -28,10 +28,10 @@ const projects = [
   {
     id: 3,
     url: 'https://www.google.com',
-    title: 'Comfy',
-    topic: 'E-Commerce website',
+    title: 'Chic Spaces',
+    topic: 'E-Commerce Online Store',
     image: img3,
-    info: 'Tech Stack: Figma ',
+    info: 'Tech Stack: React, Redux, Axios ',
     git: 'http://github.com/monicahcloud',
   },
   {
