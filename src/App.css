@@ -1173,7 +1173,6 @@ About
     width: 1rem;
   }
 }
-
 /********************
 Service Section
 ********************/
@@ -1184,21 +1183,109 @@ Service Section
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-transform: capitalize;
-  font-size: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.service-section #paragraph {
-  width: 70%;
-  font-size: 1rem;
+.service-section h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.service-section h1 span {
+  color: var(--mint-greenish); /* Accent color */
+}
+
+#paragraph {
+  width: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  max-width: 700px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #413e69;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
   text-align: center;
-  line-height: 1rem;
-  margin-bottom: 5rem;
-  text-transform: none;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 3rem;
+  color: var(--mint-greenish);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .service-section h1 {
+    font-size: 3rem;
+    margin-top: -3rem;
+  }
+
+  #paragraph {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .card i {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 }
 
 /********************
-Skills Component
+Skills Section
 ********************/
 .myTech {
   min-height: 740px;
@@ -1220,27 +1307,6 @@ Skills Component
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  align-items: center;
-  justify-content: center;
-}
-
-.myTech h1::after,
-.myTech h1::before {
-  position: absolute;
-  top: 8px;
-  height: 0;
-  width: 0;
-  border-top: 20px solid transparent;
-}
-
-.myTech h1::after {
-  left: -30px;
-  border-left: 20px solid var(--mint-greenish);
-}
-
-.myTech h1::before {
-  right: -30px;
-  border-right: 20px solid var(--white);
 }
 
 .myTech p {
@@ -1248,7 +1314,6 @@ Skills Component
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
-  margin-bottom: 1rem;
   margin-left: 15rem;
 }
 
@@ -1294,29 +1359,55 @@ Skills Progress Circles
   background: #333;
   border: 15px solid #4d4c51;
   border-radius: 50%;
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px -2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 2px rgba(0, 0, 0, 0.25),
-    inset 0 -2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .skillsContainer .circle .number {
   color: #fff;
-  z-index: 1;
   font-size: 2em;
+  z-index: 1;
 }
 
 .skillsContainer .circle h4 {
   color: #fff;
-  z-index: 1;
   font-weight: 500;
   font-size: 1em;
   text-transform: uppercase;
 }
 
-.skillsContainer .circle .number span {
-  font-size: 0.5em;
-  font-weight: 500;
+/* Responsive Adjustments */
+@media screen and (max-width: 800px) {
+  .myTech p {
+    width: 90vw;
+    font-size: 0.75rem;
+    margin-left: 0;
+  }
+
+  .skillsContainer .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skillsContainer .circle .number {
+    font-size: 1.5em;
+  }
+
+  .skillsContainer .circle h4 {
+    font-size: 0.85em;
+  }
+
+  .skills {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .skillsContainer {
+    display: none;
+  }
+
+  .myTech p {
+    display: none;
+  }
 }
 
 /********************
@@ -1351,7 +1442,7 @@ Responsive Adjustments
   }
 
   .skillsContainer .circle .number {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .skillsContainer .circle h4 {
@@ -1422,19 +1513,18 @@ Responsive Adjustments
 
 /* Number in the center */
 .number {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--mint-greenish);
   z-index: 1;
   line-height: 1;
   font-weight: bold;
   display: flex;
   align-items: baseline;
-
 }
 
 /* Percentage symbol */
 .number span {
-  font-size: 1rem;  
+  font-size: .5rem;  
   font-weight: 500;
   margin-left: 0.125rem;
 }
@@ -1811,19 +1901,18 @@ Services
 Projects
 ********************************/
 
-
-
 .projectsContainer {
   padding: 3rem 0;
   align-items: center;
   }
   
 .projectSection {
-  padding: 3rem 0;
+ 
+  padding: 3rem 5rem;
   display: grid;
   gap: 1rem; /* Space between items */
   grid-template-columns: 1fr; /* Small screens (default) */  
-  margin-left: 2rem;
+  margin: 0 2rem;
   
 }
 
@@ -1832,6 +1921,7 @@ Projects
   border-radius: .5rem;
   height: 18rem;
   width: 90%;
+  
 }
 
 .projectTitle{
@@ -1866,6 +1956,7 @@ Projects
   color: #fff;
   transition-duration: 300ms;
   font-size: 2rem;
+  
 }
 
 .web:hover{
@@ -1900,7 +1991,7 @@ Projects
 /* Large screens (min-width: 1200px) */
 @media (min-width: 1200px) {
   .projectSection {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

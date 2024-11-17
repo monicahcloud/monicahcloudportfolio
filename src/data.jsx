@@ -77,12 +77,12 @@ export const services = [
 export const projects = [
   {
     id: 1,
-    url: 'https://www.crownoflocs.com',
-    title: 'Crown of Locs and Natural Hair LLC.',
-    topic: 'small business',
-    image: {pic1},
-    info: ' This is a single page website with routing/navigation',
-    git: 'https://github.com/monicahcloud/crownoflocs',
+    url: 'https://gamehubsplendid.netlify.app/',
+    title: 'Game Hub',
+    topic: '',
+    image: { pic1 },
+    info: ' ',
+    git: 'https://github.com/monicahcloud/gameHub',
   },
   {
     id: 2,
@@ -93,22 +93,5 @@ export const projects = [
     info: 'This is a single page website. ',
     git: 'https://github.com/monicahcloud/nerahspassion',
   },
-  {
-    id: 3,
-    url: 'https://www.google.com',
-    title: 'EPIC',
-    topic: 'non-profit website',
-    image: '../src/assets/images/4-removebg-preview.png',
-    info: 'This project was built using ReactJS. ',
-    git: 'http://github.com/monicahcloud',
-  },
-  {
-    id: 4,
-    url: 'https://www.brp.com',
-    title: "Keto & PCOS: Monicah's Journey",
-    topic: 'personal blog',
-    image: '../src/assets/images/5-removebg-preview.png',
-    info: 'This project was built using ReactJS. ',
-    git: 'http://github.com/monicahcloud',
-  },
+
 ]
