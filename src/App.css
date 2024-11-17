@@ -1908,11 +1908,11 @@ Projects
   
 .projectSection {
  
-  padding: 3rem 5rem;
+  padding: 3rem 3rem;
   display: grid;
   gap: 1rem; /* Space between items */
   grid-template-columns: 1fr; /* Small screens (default) */  
-  margin: 0 2rem;
+  margin: 0;
   
 }
 
