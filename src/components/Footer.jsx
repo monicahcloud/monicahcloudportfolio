@@ -22,7 +22,7 @@ const Footer = () => {
         <p className="copyright">
           <span id="date">
             {' '}
-            copyright &copy; {new Date().getFullYear()} by Monicah Cloud{' '}
+            copyright &copy; {new Date().getFullYear()}
           </span>{' '}
          <br/> <span>
             all rights reserved | Designed and Created by Monicah Cloud
