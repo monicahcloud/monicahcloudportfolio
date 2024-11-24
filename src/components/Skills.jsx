@@ -23,7 +23,7 @@ const Skills = () => {
         <h1>
           Tech <span>Stacks</span>
         </h1>
-        <p className="tech-description">
+        <p id='paragraph' className="tech-description">
           From responsive frameworks to design software—I craft innovative and
           engaging web solutions that elevate brands and enhance user
           experiences using the latest technologies.

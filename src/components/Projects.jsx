@@ -50,6 +50,11 @@ const projects = [
         <h1 className="projectHeading">
           Web <span>Creations</span>
         </h1>
+        <p id="paragraph" className="projectParagraph">
+          Explore my latest projects by clicking on the icons below. Each one
+          leads to a live website showcasing my work and design skills. Feel
+          free to browse and see the results in action!
+        </p>
         <div className="projectSection">
           {projects.map((project) => {
             return <ProjectsCard key={project.id} {...project} />

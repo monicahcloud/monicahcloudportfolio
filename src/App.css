@@ -379,8 +379,8 @@ Contact
   align-items: center;
   justify-content: center;
   text-align: center;
- padding-left: 3rem;
- padding-right: 0;
+  padding-left: 3rem;
+  padding-right: 0;
 }
 
 .contactPageDescription {
@@ -1188,7 +1188,7 @@ Service Section
 }
 
 .service-section h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -1314,7 +1314,7 @@ Skills Section
   font-size: 1rem;
   text-align: center;
   line-height: 1.5rem;
-  margin-left: 15rem;
+  margin-left: 18rem;
 }
 
 /********************
@@ -1416,7 +1416,6 @@ Responsive Adjustments
 @media screen and (max-width: 800px) {
   .myTech {
     margin-top: 3rem;
-    
   }
 
   .myTech h1 {
@@ -1524,7 +1523,7 @@ Responsive Adjustments
 
 /* Percentage symbol */
 .number span {
-  font-size: .5rem;  
+  font-size: 0.5rem;
   font-weight: 500;
   margin-left: 0.125rem;
 }
@@ -1775,18 +1774,16 @@ Services
 }
 
 .service-section h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
   margin-bottom: 1rem;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  
 }
 
 .service-section h1 span {
   color: var(--mint-greenish); /* Accent color */
-  
 }
 
 #paragraph {
@@ -1863,7 +1860,6 @@ Services
   .service-section h1 {
     font-size: 3rem;
     margin-top: -3rem;
-    
   }
 
   #paragraph {
@@ -1904,83 +1900,92 @@ Projects
 .projectsContainer {
   padding: 3rem 0;
   align-items: center;
-  }
-  
+}
+
 .projectSection {
- 
   padding: 3rem 3rem;
   display: grid;
   gap: 1rem; /* Space between items */
-  grid-template-columns: 1fr; /* Small screens (default) */  
+  grid-template-columns: 1fr; /* Small screens (default) */
   margin: 0;
-  
 }
 
-.projectsArticle{
+.projectsArticle {
   background: transparent;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   height: 18rem;
   width: 90%;
-  
 }
 
-.projectTitle{
+.projectTitle {
   font-size: 1rem;
   line-height: 1rem;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   font-weight: 400;
 }
 
-.projectPara{
-  margin-top: .5rem;
+.projectPara {
+  margin-top: 0.5rem;
   line-height: 1rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
-.projectsIntro{
+.projectsIntro {
   text-transform: capitalize;
-  padding: .5rem;  
+  padding: 0.5rem;
 }
 
-.projectLinks{
+.projectLinks {
   gap: 5rem;
   display: flex;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   align-items: center;
   justify-content: center;
 }
 
-.web{
-  height: .5rem;
-  width: .5rem;
+.web {
+  height: 0.5rem;
+  width: 0.5rem;
   color: #fff;
   transition-duration: 300ms;
   font-size: 2rem;
-  
 }
 
-.web:hover{
+.web:hover {
   color: #00b2ff;
 }
 /* shadow-md */
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(168, 183, 216, 0.1), 0 2px 4px -1px rgba(189, 166, 166, 0.06);
-   transition: box-shadow 300ms;
+  box-shadow: 0 4px 6px -1px rgba(168, 183, 216, 0.1),
+    0 2px 4px -1px rgba(189, 166, 166, 0.06);
+  transition: box-shadow 300ms;
 }
 
 .shadow-md:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.projectsImage{
+.projectsImage {
   width: 60%;
-  object-fit: fill; 
-  height: 10rem ;
+  object-fit: fill;
+  height: 10rem;
 }
-.projectHeading{
+.projectHeading {
   text-transform: uppercase;
-  }
-  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projectParagraph {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
 /* Medium screens (min-width: 600px) */
 @media (min-width: 600px) {
   .projectSection {
