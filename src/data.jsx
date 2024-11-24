@@ -40,10 +40,10 @@ export const social = [
     url: 'https://www.facebook.com/monicahcloud',
     icon: <FaFacebook />,
   },
- 
+
   {
     id: 2,
-    url: 'https://www.twitter.com',
+    url: 'https://www.linkedin.com/in/cloudmonicah/',
     icon: <FaLinkedin />,
   },
   {
