@@ -1,4 +1,4 @@
-import resume from '../assets/MonicahCloudResume.pdf'
+import resume from '../assets/WEBSITEANDECOMMERCEPACKAGES.pdf'
 
 const About = () => {
   return (
@@ -29,10 +29,10 @@ const About = () => {
           <div className="aboutButton">
             <a
               href={resume}
-              download="Monicah_Cloud_Resume"
+              download="WEBSITE DESIGN PACKAGE"
               className="btnGlowHover"
             >
-              Download Resume
+              DOWNLOAD PACKAGE AND POLICY
             </a>
           </div>
         </article>
