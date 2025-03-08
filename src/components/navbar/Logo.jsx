@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 function Logo() {
   return (
     <>
-      <Link spy={true} smooth={true} duration={500} offset={-120} to="contact">
+      <Link spy={true} smooth={true} duration={500} offset={-120} to="home">
         <img
           src={logo}
           alt="logo"
