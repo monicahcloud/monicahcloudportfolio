@@ -16,15 +16,7 @@ export default [
         sourceType: "module",
       },
     },
-    theme: {
-      screens: {
-        sm: "100px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-      },
-    },
+    theme: {},
     extend: {
       boxShadow: {
         cyanShadow: "0px 0px 20px 0px rgba(94, 206, 220, 0.5)",

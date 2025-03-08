@@ -12,19 +12,21 @@ const NavBar = () => {
   };
   return (
     <nav className=" mx-auto w-full  fixed left-[50%] -translate-x-[50%] z-20 flex gap-4 ">
-      <div className="flex justify-between w-full  mx-auto  bg-slate-900 items-center p-6  lg:border-b-orange-300 border-[0.5px] ">
+      <div className="flex flex-col sm:justify-around sm:items-center flex-wrap py-6 gap-4 sm:flex-row w-full bg-slate-900 lg:border-b-orange-300 lg:border-[0.5px]">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Logo />
         </div>
-        <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
+        <div
+          className={`md:hidden absolute top-20 left-0 w-full bg-cyan-300 flex flex-col items-center gap-5 py-4 transition-all duration-300 ease-in-out 
+            ${menuOpen ? "block" : "hidden"}`}>
           <Links />
         </div>
         <NavbarBtn />
       </div>
-      <div className="flex lg:hidden sm:block p-5 mt-2  bg-slate-900 items-center justify-center rounded-full  border-cyan-500 border-[0.5px] ">
+      <div className="flex lg:hidden sm:flex p-2 mt-14 bg-slate-900 items-center justify-center rounded-full  border-cyan-500 border-[0.5px] ">
         <button
-          className="text-2xl p-2 border text-white border-cyan-400 rounded-full"
+          className=" p-2 border text-white border-cyan-400 rounded-full"
           onClick={toggleMenu}>
           {" "}
           <GiHamburgerMenu />

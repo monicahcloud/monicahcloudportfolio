@@ -1,4 +1,4 @@
-import NavBar from "../src/components/navbar/NavBar";
+import Navbar from "../src/components/navbar/Navbar2";
 import Hero from "../src/components/hero/Hero";
 import Skills from "../src/components/skills/Skills";
 import About from "../src/components/about/About";
@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 function App() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <Hero />
       <About />
       <Skills />

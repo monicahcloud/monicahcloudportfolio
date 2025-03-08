@@ -4,14 +4,14 @@ const Links = () => {
   return (
     <div className="">
       {/* Desktop Navigation */}
-      <ul className=" flex lg:flex-row sm:flex-col gap-6 text-white font-body lg:relative sm:absolute sm:top-[120%] text-center left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:bg-cyan-300/30 backdrop-blur-lg lg:bg-slate-900 sm:w-full py-4 ">
+      <ul className=" hidden lg:flex justify-center w-full gap-x-10 backdrop-blur-lg lg:bg-slate-900">
         {links.map((link) => {
           const { id, href, text } = link;
           return (
             <li key={id} className="group">
               <a
                 href={href}
-                className="cursor-pointer  transition-all capitalize text-3xl text-gray-300 tracking-wide hover:text-cyan-600 duration-300">
+                className="cursor-pointer transition-all capitalize text-3xl text-gray-300 tracking-wide hover:text-cyan-600 duration-300">
                 {text}
               </a>
               <ul className="mx-auto bg-orange-400 w-0 group-hover:w-full h-[1px] transition-all duration-500"></ul>
