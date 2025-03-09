@@ -1,8 +1,9 @@
 import { Link } from "react-scroll";
+import SocialMedia from "../navbar/SocialMedia";
 
 const AboutMeText = () => {
   return (
-    <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center mx-5">
+    <div className="flex flex-col md:items-start items-center md:text-left text-center mx-5">
       <p className="text-white text-xl pt-10">
         I combine front-end development expertise with business intelligence to
         create impactful digital solutions and data-driven insights. With a
@@ -12,7 +13,7 @@ const AboutMeText = () => {
         roles that bridge technology and business, delivering solutions that
         enhance both user engagement and operational efficiency.
       </p>
-      <button className="border border-cyan-300 rounded-full py-2 px-8 w-1/2 md:w-1/3 justify-center text-lg flex gap-2 items-center mt-8  hover:bg-orange-300 transition-all duration-500 cursor-pointer ">
+      <button className="border border-cyan-300 rounded-full py-2 px-8 w-1/2 md:w-1/3 justify-center text-lg flex gap-2 items-center mt-8  hover:bg-amber-400 transition-all duration-500 cursor-pointer ">
         <Link
           spy={true}
           smooth={true}

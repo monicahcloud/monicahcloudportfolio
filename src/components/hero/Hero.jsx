@@ -29,7 +29,7 @@ const Hero = () => {
             <img
               src={heroImg}
               alt="Monicah Cloud"
-              className="max-h-[450px] w-auto relative z-20"
+              className="max-h-[500px] w-auto relative z-20"
             />
 
             {/* Decorative Hexagon */}
