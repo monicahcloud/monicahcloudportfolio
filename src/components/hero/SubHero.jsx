@@ -1,9 +1,9 @@
 const SubHero = () => {
   return (
-    <div className="mx-auto  mt-20 w-full border-y bg-slate-700 border-gray-200 text-gray-400 flex justify-around uppercase xl:text-4xl md:text-2xl text-4xl py-8 md:flex-row flex-col items-center gap-4">
-      <p className="md:block hidden">Attention to Detail</p>
-      <p className="md:block hidden">Team Work</p>
-      <p>Fast Learner</p>
+    <div className="mx-auto mt-12 w-full border-y justify-around border-gray-600 bg-slate-800 text-gray-300 flex flex-wrap  gap-4 py-6">
+      <p className=" hidden md:block text-3xl">Attention to Detail</p>
+      <p className="text-3xl hidden md:block ">Team Work</p>
+      <p className="text-3xl  ">Fast Learner</p>
     </div>
   );
 };

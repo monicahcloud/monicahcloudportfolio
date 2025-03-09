@@ -12,11 +12,11 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <About />
+      {/* <About />
       <Skills />
       <SubSkills />
       <Experience />
-      <Projects />
+      <Projects /> */}
       <Contact />
     </>
   );
