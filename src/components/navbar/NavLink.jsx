@@ -30,9 +30,9 @@ const NavLink = () => {
       <div className="md:hidden">
         <button onClick={toggleNavbar} className="text-2xl text-cyan-500">
           {isOpen ? (
-            <span className="text-4xl">&times;</span> // Close icon
+            <span className="text-6xl">&times;</span> // Close icon
           ) : (
-            <span className="text-4xl">&#9776;</span> // Hamburger icon
+            <span className="text-6xl">&#9776;</span> // Hamburger icon
           )}
         </button>
       </div>
