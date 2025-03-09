@@ -43,7 +43,7 @@ const SubHero = () => {
           .animate-scroll {
             white-space: nowrap;
             display: flex;
-            animation: scroll 40s linear infinite;
+            animation: scroll 25s linear infinite;
           }
 
           @keyframes scroll {
