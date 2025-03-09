@@ -10,7 +10,7 @@ const NavbarBtn = () => {
         spy={true}
         smooth={true}
         duration={500}
-        offset={-120}
+        offset={-80}
         to="contact"
         className="w-full text-center">
         Hire Me
