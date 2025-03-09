@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="pt-32 px-5 md:px-10 lg:px-20 bg-gray-900 text-white">
+      className="pt-20 px-5 md:pt-40 md:px-10 lg:px-20 bg-gray-900 text-white">
       <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         {/* Text Section */}
         <article className="text-center md:text-left flex flex-col gap-4">
