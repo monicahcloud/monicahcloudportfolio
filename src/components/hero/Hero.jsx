@@ -8,7 +8,7 @@ import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
-    <div id="home" className="pt-20 md:pt-30  bg-gray-900 text-white ">
+    <div id="home" className="pt-20 md:pt-45  bg-gray-900 text-white ">
       <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         {/* Text Section */}
         <article className="text-center md:text-left flex flex-col gap-4">

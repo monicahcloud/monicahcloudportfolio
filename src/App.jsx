@@ -12,7 +12,7 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <main className="font-body text-white relative overflow-hidden">
+      <main className="">
         <Navbar />
         <Hero />
         <SubHero />

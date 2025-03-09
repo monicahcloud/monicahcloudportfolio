@@ -9,7 +9,7 @@ import { fadeIn } from "@/framerMotion/variant";
 
 const About = () => {
   return (
-    <section className="max-w-[1200px] mx-auto px-4 pt-10 pb-10" id="about">
+    <section className="max-w-[1200px] mx-auto px-4 pt-30 pb-20" id="about">
       <div className="align-element grid md:grid-cols-2 items-center gap-16">
         <motion.div
           variants={fadeIn("right", 0)}

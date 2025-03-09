@@ -1,13 +1,11 @@
 import SectionTitle from "../skills/SectionTitle";
 import ContactMeLeft from "./ContactMeLeft";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/framerMotion/variant";
 
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1200px] mx-auto items-center justify-center mt-[100px] px-4 ">
+      className="max-w-[1200px] mx-auto items-center justify-center mt-[100px] px-4 pt-40 ">
       <div className=" md:hidden ">
         <SectionTitle first="Let's Work Together On" second="Something Great" />
       </div>
@@ -18,13 +16,7 @@ const Contact = () => {
         </h1>
       </div>
       <div className="flex justify-between gap-20 bg-slate-900/10 p-8 rounded-2xl lg:flex-row flex-col">
-        <motion.div
-          variants={fadeIn("top", 0)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}>
-          <ContactMeLeft />
-        </motion.div>
+        <ContactMeLeft />
       </div>
     </div>
   );

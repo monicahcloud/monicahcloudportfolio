@@ -4,10 +4,6 @@ import ContactSocial from "../contact/ContactSocial";
 const Footer = () => {
   const footerLinks = [
     {
-      name: "Home",
-      section: "home",
-    },
-    {
       name: "About Me",
       section: "about",
     },
@@ -28,7 +24,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className=" ">
+    <div className="px-4 ">
       <div className="w-full h-[1px] bg-cyan-500 mt-24"></div>
       <div className=" mt-4 justify-center mx-auto text-center  ">
         <h1 className="text-4xl text-white mb-4 uppercase font-medium">
