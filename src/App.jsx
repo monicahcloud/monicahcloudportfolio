@@ -1,4 +1,4 @@
-import Navbar from "../src/components/navbar/Navbar2";
+import Navbar from "../src/components/navbar/NavBarMain";
 import Hero from "../src/components/hero/Hero";
 import Skills from "../src/components/skills/Skills";
 import About from "../src/components/about/About";
@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <About />
       <Skills />
       <SubSkills />
       <Experience />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </>
   );
 }
