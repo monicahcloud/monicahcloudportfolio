@@ -1,7 +1,12 @@
 import { Link } from "react-scroll";
+import ContactSocial from "../contact/ContactSocial";
 
 const Footer = () => {
   const footerLinks = [
+    {
+      name: "Home",
+      section: "home",
+    },
     {
       name: "About Me",
       section: "about",
@@ -23,11 +28,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="px-4">
+    <div className=" ">
       <div className="w-full h-[1px] bg-cyan-500 mt-24"></div>
-      <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
-        <p className="text-3xl text-cyan-500 ">Monicah Cloud</p>
-        <ul className="flex gap-4 text-cyan-500 text-xl">
+      <div className=" mt-4 justify-center mx-auto text-center  ">
+        <h1 className="text-4xl text-white mb-4 uppercase font-medium">
+          Monicah <span className="text-cyan-400">Cloud</span>
+        </h1>
+      </div>
+      <div className="">
+        <ul className="flex gap-4 justify-center mx-auto text-center items-center  text-cyan-500 text-2xl">
           {footerLinks.map((item, index) => {
             return (
               <li key={index}>
@@ -37,15 +46,18 @@ const Footer = () => {
                   duration={500}
                   offset={-120}
                   to={item.section}
-                  className="hover:text-orange-500 transition-all duration-500 cursor-pointer">
+                  className="hover:text-amber-400 transition-all duration-500 cursor-pointer">
                   {item.name}
                 </Link>
               </li>
             );
           })}
         </ul>
+        <div className="justify-center mx-auto text-center flex my-4">
+          <ContactSocial />
+        </div>
       </div>
-      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-cyan-500">
+      <p className="max-w-[1200px] mt-2 mb-12 text-md justify-center mx-auto text-center text-cyan-500">
         &copy; {currentYear} VitaNova Designs LLC | All rights reserved.
       </p>
     </div>

@@ -1,6 +1,7 @@
 import SectionTitle from "../skills/SectionTitle";
 import ContactMeLeft from "./ContactMeLeft";
-import ContactMeRight from "./ContactMeRight";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/framerMotion/variant";
 
 const Contact = () => {
   return (
@@ -16,9 +17,14 @@ const Contact = () => {
           <span className="text-cyan-500"> something great</span>{" "}
         </h1>
       </div>
-      <div className="flex justify-between gap-20 bg-slate-900/10 p-8 rounded-2xl lg:flex-row sm:flex-col">
-        <ContactMeLeft />
-        <ContactMeRight />
+      <div className="flex justify-between gap-20 bg-slate-900/10 p-8 rounded-2xl lg:flex-row flex-col">
+        <motion.div
+          variants={fadeIn("top", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}>
+          <ContactMeLeft />
+        </motion.div>
       </div>
     </div>
   );
