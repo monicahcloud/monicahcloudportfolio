@@ -8,8 +8,8 @@ import SubHero from "./SubHero";
 
 const Hero = () => {
   return (
-    <div id="home" className="pt-20 p-5">
-      <div className=" mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8 justify-between relative">
+    <div id="home" className="pt-40 p-10 ">
+      <div className="  mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8 justify-between relative">
         <article className="flex flex-col gap-4 h-full justify-center md:text-left text-center ml-8">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-red-300 to-cyan-600 via-yellow-300 bg-clip-text text-transparent tracking-wider">
             Creating Seamless Experiences, Powered by Data

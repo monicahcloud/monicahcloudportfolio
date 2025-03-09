@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      {/*   <About />
-      <Skills />
+
+      <About />
+      {/*   <Hero /> <Skills />
       <SubSkills />
       <Experience />
       <Projects />
