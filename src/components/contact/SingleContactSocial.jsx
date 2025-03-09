@@ -1,6 +1,6 @@
 const SingleContactSocial = ({ Icon, link }) => {
   return (
-    <div className="text-2xl h-12 w-12 border border-cyan-500 text-orange-300 rounded-full p-3 flex items-center justify-center ">
+    <div className="text-2xl h-12 w-12 border border-cyan-500 text-amber-500 rounded-full p-3 flex items-center justify-center ">
       <a
         href={link}
         target="_blank"

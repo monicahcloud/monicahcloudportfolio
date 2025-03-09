@@ -21,7 +21,7 @@ const Experience = () => {
         viewport={{ once: false, amount: 0 }}>
         <ExperienceTop />
       </motion.div>
-      <div className="w-full h-1 mt-4 bg-orange-500 lg:block hidden"></div>
+      <div className="w-full h-1 mt-4 bg-amber-500 lg:block hidden"></div>
       <AllExperiences />
     </div>
   );

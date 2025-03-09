@@ -1,6 +1,6 @@
 const ExperienceTopRight = () => {
   return (
-    <div className="xl:w-[45%] lg:w-[50%] border border-orange-600 p-4 rounded-xl">
+    <div className="xl:w-[45%] lg:w-[50%] border border-amber-500 p-4 rounded-xl">
       <p className="text-lg text-center text-gray-400">
         My experience as a{" "}
         <span className="font-bold text-white">React Front-End Developer</span>{" "}

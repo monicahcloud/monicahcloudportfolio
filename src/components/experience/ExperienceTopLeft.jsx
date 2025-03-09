@@ -7,12 +7,12 @@ const ExperienceTopLeft = () => {
 
   return (
     <div className="flex flex-col gap-6 w-[300px]">
-      <p className="text-orange-400 font-bold uppercase text-3xl font-special text-center">
+      <p className="text-amber-500 font-bold uppercase text-3xl font-special text-center">
         Since {startYear}
       </p>
       <div className="flex justify-center items-center gap-4">
         <ExperienceInfo number={yearDifference} text="Years" />
-        <p className="font-bold text-6xl text-orange-400">-</p>
+        <p className="font-bold text-6xl text-amber-500">-</p>
         <ExperienceInfo number="25+" text="Websites" />
       </div>
       <p className="text-center text-white">

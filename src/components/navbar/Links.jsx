@@ -11,10 +11,10 @@ const Links = () => {
             <li key={id} className="group">
               <a
                 href={href}
-                className="cursor-pointer transition-all capitalize text-3xl text-gray-300 tracking-wide hover:text-cyan-600 duration-300">
+                className="cursor-pointer transition-all capitalize text-4xl text-gray-300 tracking-wide hover:text-cyan-600 duration-300">
                 {text}
               </a>
-              <ul className="mx-auto bg-orange-400 w-0 group-hover:w-full h-[1px] transition-all duration-500"></ul>
+              <ul className="mx-auto bg-amber-500 w-0 group-hover:w-full h-[1px] transition-all duration-500"></ul>
             </li>
           );
         })}

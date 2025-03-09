@@ -49,7 +49,7 @@ const AllExperiences = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.7 }}>
-                <FaArrowRightLong className="text-6xl text-orange-500 lg:block hidden" />
+                <FaArrowRightLong className="text-6xl text-amber-500 lg:block hidden" />
               </motion.div>
             ) : (
               ""

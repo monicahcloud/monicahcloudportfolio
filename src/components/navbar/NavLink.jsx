@@ -17,10 +17,10 @@ const NavLink = () => {
             <li key={id} className="group">
               <a
                 href={href}
-                className="capitalize text-2xl tracking-wider hover:text-cyan-800 duration-300">
+                className="capitalize text-3xl tracking-wider hover:text-cyan-600 duration-300">
                 {text}
               </a>
-              <ul className="mx-auto bg-orange-400 w-0 group-hover:w-full h-[1px] transition-all duration-500"></ul>
+              <ul className="mx-auto bg-amber-400 w-0 group-hover:w-full h-[1px] transition-all duration-500"></ul>
             </li>
           );
         })}
