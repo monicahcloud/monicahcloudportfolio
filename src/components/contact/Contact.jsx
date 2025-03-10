@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1200px] mx-auto items-center justify-center mt-[100px] px-4 pt-40 ">
+      className="max-w-[1200px] mx-auto items-center justify-center mt-[100px] px-4 pt-30 ">
       <div className=" md:hidden ">
         <SectionTitle first="Let's Work Together On" second="Something Great" />
       </div>

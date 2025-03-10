@@ -18,8 +18,8 @@ function App() {
         <SubHero />
         <About />
         <Skills />
-        <SubSkills />
-        <Experience />*/}
+        <SubSkills />*/}
+        <Experience />
         <Projects />
         <Contact />
         <Footer />
