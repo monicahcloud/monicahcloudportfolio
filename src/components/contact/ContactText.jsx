@@ -19,7 +19,7 @@ const ContactText = () => {
         <img
           src={image}
           alt="Get in touch illustration"
-          className="relative z-10 w-[180px] w-[300px] md:w-[400px] lg:w-[500px] object-contain"
+          className="relative z-10  w-[300px] md:w-[400px] lg:w-[500px] object-contain"
         />
       </div>
 
