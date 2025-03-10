@@ -4,9 +4,6 @@ import SocialMedia from "../navbar/SocialMedia";
 import AboutMeImage from "./AboutMeImage";
 import AboutMeText from "./AboutmeText";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "@/framerMotion/variant";
-
 const About = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-4 pt-30 pb-20" id="about">
