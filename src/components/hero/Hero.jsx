@@ -26,23 +26,58 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0 }}
             className="relative flex items-center justify-center">
-            {/* Rotating Hexagon */}
-            <div className="absolute flex justify-center items-center z-10 animate-pulse">
+            {/* ✅ First Hexagon (Glow Effect) */}
+            <div className="absolute flex justify-center items-center animate-[spin_20s_linear_infinite] z-0">
               <PiHexagonThin
-                className="text-cyan-500 blur-md animate-[spin_20s_linear_infinite] 
-              h-[450px] w-[450px]  md:h-[500px] md:w-[500px] lg:h-[650px] lg:w-[650px]"
+                className="text-cyan-400 blur-lg animate-pulse
+                h-[500px] w-[500px] md:h-[600px] md:w-[600px] 
+                lg:h-[700px] lg:w-[700px]"
+              />
+              {/* ✅ Glowing Blur */}
+              <div className="absolute w-full h-full bg-cyan-500 blur-[150px] opacity-20"></div>
+            </div>
+
+            {/* ✅ Second Hexagon (Pulse Effect) */}
+            <div className="absolute flex justify-center items-center z-0 animate-pulse">
+              <PiHexagonThin
+                className="text-orange-500 opacity-50 blur-md animate-[ping_5s_ease-in-out_infinite]
+                h-[450px] w-[450px] md:h-[500px] md:w-[500px]"
               />
             </div>
 
-            {/* Image */}
+            {/* ✅ Floating Image */}
             <img
               src={heroImg}
               alt="Monicah Cloud - Frontend Developer & BI Analyst"
-              className="relative z-20 max-w-[300px] md:max-w-[400px] lg:max-w-[500px] object-contain"
+              className="relative z-20 max-w-[300px] md:max-w-[400px] lg:max-w-[500px] 
+              object-contain drop-shadow-xl transform 
+              animate-[float_6s_ease-in-out_infinite]"
             />
           </motion.div>
         </article>
       </div>
+
+      {/* ✅ Keyframes Animation */}
+      <style>
+        {`
+          @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+          }
+
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+
+          @keyframes ping {
+            0% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.1); opacity: 0.2; }
+            100% { transform: scale(1); opacity: 0; }
+          }
+        `}
+      </style>
     </div>
   );
 };
