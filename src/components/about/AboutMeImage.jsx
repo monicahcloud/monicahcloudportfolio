@@ -2,7 +2,7 @@ import aboutImg from "../../assets/images/7-removebg-preview.png";
 
 const AboutMeImage = () => {
   return (
-    <div className="h-[400px] lg:h-[500px] w-full relative flex justify-center items-center">
+    <div className="h-[400px] lg:h-[500px] w-full relative flex justify-center items-center  ">
       {/* Energy Flow Effect */}
       <div
         className="absolute animate-pulse rounded-full bg-gradient-to-r from-cyan-500 to-orange-500 
