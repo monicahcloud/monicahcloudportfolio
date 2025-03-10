@@ -12,7 +12,7 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <main className="container mx-auto max-w-[1800px]">
+      <main className="container mx-auto max-w-full">
         <Navbar />
         {/* <Hero />
         <SubHero />
@@ -20,8 +20,8 @@ function App() {
         <Skills />
         <SubSkills />
         <Experience />
-        <Projects />
-        <Contact /> */}
+        <Projects />*/}
+        <Contact />
         <Footer />
       </main>
     </>
