@@ -18,7 +18,7 @@ const SubHero = () => {
           ].map((text, index) => (
             <p
               key={text + index}
-              className="text-3xl font-semibold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-orange-500">
+              className="text-3xl font-semibold whitespace-nowrap text-gray-300">
               {text}
             </p>
           ))
