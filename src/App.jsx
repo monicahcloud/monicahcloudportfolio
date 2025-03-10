@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Hero />
         <SubHero />
-        <About />
+        {/* <About /> */}
         <Skills />
         <SubSkills />
         <Experience />
