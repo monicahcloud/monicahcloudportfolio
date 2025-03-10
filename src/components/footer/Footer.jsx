@@ -4,7 +4,7 @@ import ContactSocial from "../contact/ContactSocial";
 const Footer = () => {
   const footerLinks = [
     {
-      name: "About Me",
+      name: "About",
       section: "about",
     },
     {

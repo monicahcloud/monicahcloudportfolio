@@ -4,7 +4,7 @@ import image from "../../assets/images/9-removebg-preview.png";
 const ContactText = () => {
   return (
     <div className="px-4 py-10">
-      <h2 className="text-cyan-400 text-3xl md:text-5xl text-center font-bold">
+      <h2 className="text-cyan-400 text-4xl md:text-5xl text-center font-bold">
         Get In Touch
       </h2>
 

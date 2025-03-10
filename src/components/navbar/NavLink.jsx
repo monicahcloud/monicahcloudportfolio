@@ -27,7 +27,7 @@ const NavLink = () => {
       </ul>
 
       {/* Hamburger Button (on small screens) */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button onClick={toggleNavbar} className="text-2xl text-cyan-500">
           {isOpen ? (
             <span className="text-6xl">&times;</span> // Close icon
@@ -39,7 +39,7 @@ const NavLink = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`md:hidden absolute top-20 left-0 w-full text-gray-200 bg-slate-900 flex flex-col items-center gap-5 py-4 transition-all duration-300 ease-in-out ${
+        className={`lg:hidden absolute top-20 left-0 w-full text-gray-200 bg-slate-900 flex flex-col items-center gap-5 py-4 transition-all duration-300 ease-in-out ${
           isOpen ? "block" : "hidden"
         }`}>
         {links.map((link) => {

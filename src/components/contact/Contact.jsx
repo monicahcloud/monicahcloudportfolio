@@ -10,7 +10,7 @@ const Contact = () => {
         <SectionTitle first="Let's Work Together On" second="Something Great" />
       </div>
       <div>
-        <h1 className=" text-6xl font-bold tracking-wider text-center text-white hidden md:block capitalize">
+        <h1 className=" text-5xl md:text-6xl font-bold tracking-wider text-center text-white hidden md:block capitalize">
           Let's Work Together on <br></br>
           <span className="text-cyan-500"> something great</span>{" "}
         </h1>
