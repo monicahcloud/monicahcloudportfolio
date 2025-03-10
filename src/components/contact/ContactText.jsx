@@ -11,7 +11,7 @@ const ContactText = () => {
         <div
           className="absolute animate-spin-slow rounded-full border-4 border-dotted border-cyan-500
           md:h-[600px] md:w-[600px] 
-          h-[400px] w-[400px] 
+          h-[300px] w-[300px] 
           lg:h-[600px] lg:w-[600px]
           shadow-[0_0_50px_10px_rgba(6,182,212,0.4)]"></div>
 
