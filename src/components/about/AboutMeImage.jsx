@@ -6,7 +6,7 @@ const AboutMeImage = () => {
       {/* Energy Flow Effect */}
       <div
         className="absolute animate-pulse rounded-full bg-gradient-to-r from-cyan-500 to-orange-500 
-      opacity-40 blur-xl h-[400px] w-[400px] md:h-[500px] md:w-[500px] 
+      opacity-40 blur-xl h-[400px] w-[400px] md:h-[450px] md:w-[450px] 
       z-0"></div>
 
       <div
