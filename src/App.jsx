@@ -17,8 +17,8 @@ function App() {
         {/* <Hero />
         <SubHero />
         <About />
-        <Skills />
-        <SubSkills />*/}
+        <Skills />*/}
+        <SubSkills />
         <Experience />
         <Projects />
         <Contact />
