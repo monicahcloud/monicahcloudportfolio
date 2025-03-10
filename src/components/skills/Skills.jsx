@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/framerMotion/variant";
 
 const Skills = () => (
-  <div id="skills" className="pt-40">
+  <div id="skills" className="pt-30">
     <div>
       <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
         <motion.div
