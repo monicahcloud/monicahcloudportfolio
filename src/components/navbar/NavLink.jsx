@@ -10,7 +10,7 @@ const NavLink = () => {
   };
   return (
     <div className="">
-      <ul className="hidden md:flex justify-center w-full gap-x-10 text-gray-200 uppercase font-semibold px-5 py-1">
+      <ul className="hidden lg:flex justify-center w-full gap-x-10 text-gray-200 uppercase font-semibold px-5 py-1">
         {links.map((link) => {
           const { id, href, text } = link;
           return (
