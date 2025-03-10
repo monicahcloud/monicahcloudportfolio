@@ -2,7 +2,7 @@ import aboutImg from "../../assets/images/7-removebg-preview.png";
 
 const AboutMeImage = () => {
   return (
-    <div className=" mx-10 h-[400px] mlg:h-[500px] w-full relative">
+    <div className=" mx-10 h-[400px] lg:h-[500px] w-full relative">
       <div className="h-[400px] md:h-[500px] w-full rounded-[100px] absolute overflow-hidden">
         <img
           src={aboutImg}
