@@ -29,12 +29,12 @@ const Hero = () => {
             <img
               src={heroImg}
               alt="Monicah Cloud"
-              className="max-h-[550px] w-auto relative z-20"
+              className="max-h-[500px] w-auto relative z-20"
             />
 
             {/* Decorative Hexagon */}
             <div className="absolute z-10 flex justify-center items-center animate-pulse ">
-              <PiHexagonThin className="md:h-[90%] h-[120%] min-h-[600px] lg:min-h-[650px] w-auto text-cyan-500 blur-md animate-[spin_20s_linear_infinite]" />
+              <PiHexagonThin className="md:h-[90%] h-[120%] min-h-[500px] lg:min-h-[650px] w-auto text-cyan-500 blur-md animate-[spin_20s_linear_infinite]" />
             </div>
           </motion.div>
         </article>
