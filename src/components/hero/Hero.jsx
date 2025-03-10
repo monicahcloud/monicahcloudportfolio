@@ -8,7 +8,9 @@ import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
-    <div id="home" className="pt-20 md:pt-40 bg-gray-900 text-white">
+    <div
+      id="home"
+      className="pt-20 md:pt-40 bg-gray-900 text-white overflow-hidden">
       <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-5">
         {/* Text Section */}
         <article className="text-center md:text-left flex flex-col gap-4">
@@ -26,18 +28,18 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0 }}
             className="relative flex items-center justify-center">
-            {/* ✅ First Hexagon (Glow Effect) */}
+            {/* First Hexagon (Glow Effect) */}
             <div className="absolute flex justify-center items-center animate-[spin_20s_linear_infinite] z-0">
               <PiHexagonThin
                 className="text-cyan-400 blur-lg animate-pulse
                 h-[500px] w-[500px] md:h-[600px] md:w-[600px] 
                 lg:h-[700px] lg:w-[700px]"
               />
-              {/* ✅ Glowing Blur */}
+              {/* Glowing Blur */}
               <div className="absolute w-full h-full bg-cyan-500 blur-[150px] opacity-20"></div>
             </div>
 
-            {/* ✅ Second Hexagon (Pulse Effect) */}
+            {/* Second Hexagon (Pulse Effect) */}
             <div className="absolute flex justify-center items-center z-0 animate-pulse">
               <PiHexagonThin
                 className="text-orange-500 opacity-50 blur-md animate-[ping_5s_ease-in-out_infinite]
@@ -45,7 +47,7 @@ const Hero = () => {
               />
             </div>
 
-            {/* ✅ Floating Image */}
+            {/* Floating Image */}
             <img
               src={heroImg}
               alt="Monicah Cloud - Frontend Developer & BI Analyst"
@@ -57,7 +59,7 @@ const Hero = () => {
         </article>
       </div>
 
-      {/* ✅ Keyframes Animation */}
+      {/* Keyframes Animation */}
       <style>
         {`
           @keyframes float {

@@ -8,9 +8,7 @@ const AboutMeText = () => {
         create impactful digital solutions and data-driven insights. With a
         strong foundation in React, Python, SQL, and analytics, I develop
         intuitive user experiences while leveraging data to drive strategic
-        decisions. Passionate about problem-solving and innovation, I thrive in
-        roles that bridge technology and business, delivering solutions that
-        enhance both user engagement and operational efficiency.
+        decisions.
       </p>
       <button className="border border-cyan-300 rounded-full py-2 px-8 w-1/2 md:w-1/3 justify-center text-lg flex gap-2 items-center mt-8  hover:bg-orange-300 transition-all duration-500 cursor-pointer ">
         <Link
