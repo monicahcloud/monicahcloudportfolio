@@ -15,7 +15,7 @@ const AboutMeImage = () => {
       opacity-50 blur-lg z-0"></div>
 
       {/* Image */}
-      <div className="h-[400px] w-[275px] md:h-[500px] md:w-[350px] rounded-[100px] overflow-hidden z-10">
+      <div className="h-[400px] w-[400px] md:h-[500px] md:w-[500px] rounded-[100px] overflow-hidden z-10">
         <img
           src={aboutImg}
           alt="About Me Image"
