@@ -14,9 +14,9 @@ function App() {
     <>
       <main className="">
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
         <SubHero />
-        {/* <About /> */}
+        <About />
         <Skills />
         <SubSkills />
         <Experience />
