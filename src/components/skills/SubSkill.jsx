@@ -7,7 +7,7 @@ const SubSkills = () => {
       <img
         src={subSkills}
         alt="subSkills image"
-        className="h-[80px] md:h-[500px] lg:h-[600px] w-full object-cover"
+        className="h-[80px] md:h-[100px] lg:h-[100px] w-full object-cover"
       />
     </div>
   );

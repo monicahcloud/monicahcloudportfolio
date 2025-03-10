@@ -15,8 +15,8 @@ function App() {
       <main className="container mx-auto max-w-full">
         <Navbar />
         {/* <Hero />
-        <SubHero />
-        <About />*/}
+        <SubHero />*/}
+        <About />
         <Skills />
         <SubSkills />
         <Experience />
