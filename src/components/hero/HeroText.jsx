@@ -1,28 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/framerMotion/variant";
 
-{
-  /*  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-300 to-cyan-600 via-yellow-300 bg-clip-text text-transparent tracking-wider">
-            Creating Seamless Experiences, Powered by Data
-          </h1>
-
-          <p className="mt-4 text-3xl md:text-4xl text-cyan-400">
-            Monicah Cloud
-          </p>
-
-          <p className="mt-2 text-xl md:text-2xl capitalize">
-            Front-End Developer and BI Analyst
-          </p> */
-}
-
-{
-  /* Resume Button */
-}
-{
-  /* <div className="mt-6 flex justify-center md:justify-start">
-            <RainbowButton text="Download Resume" downloadLink={resume} /></div>*/
-}
-
 const HeroText = () => {
   return (
     <div className="flex flex-col gap-4 h-full justify-center md:text-left sm:text-center">

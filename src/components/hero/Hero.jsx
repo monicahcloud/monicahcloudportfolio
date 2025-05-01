@@ -15,9 +15,9 @@ const Hero = () => {
         {/* Text Section */}
         <article className="text-center md:text-left flex flex-col gap-4">
           <HeroText />
-          <div className="flex justify-center md:justify-start pb-10">
+          {/* <div className="flex justify-center md:justify-start pb-10">
             <RainbowButton text="Download Resume" downloadLink={resume} />
-          </div>
+          </div> */}
         </article>
 
         {/* Image Section */}
