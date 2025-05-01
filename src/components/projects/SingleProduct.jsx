@@ -30,9 +30,13 @@ const SingleProject = ({ title, align, image, url, info }) => {
           View <BsFillArrowUpRightCircleFill />
         </a>
       </div>
-      <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white">
-        <div className="w-full h-full bg-cyan-300 opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500  hidden"></div>
-        <img src={image} alt="website image" className="w-full h-full" />
+      <div className="w-[800px] h-[220px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white">
+        <div className="w-full h-full bg-cyan-300 opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 hidden"></div>
+        <img
+          src={image}
+          alt="website image"
+          className="w-full h-full object-cover"
+        />
       </div>
     </motion.div>
   );

@@ -32,15 +32,15 @@ const HeroText = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
         className=" text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-300 to-cyan-600 via-yellow-300 bg-clip-text text-transparent tracking-wider uppercase  ">
-        Creating Seamless Experiences, Powered by Data
+        Monicah Cloud
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:text-[2.8rem] lg:text-6xl text-4xl text-cyan-400 font-bold uppercase">
-        Monicah Cloud
+        className="md:text-[2.8rem] lg:text-5xl text-3xl text-cyan-400 font-bold uppercase">
+        Your Go-To-Partner for Getting Things Done
       </motion.h1>
       <motion.p
         variants={fadeIn("up", 0.6)}
@@ -48,7 +48,8 @@ const HeroText = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
         className="mt-2 text-xl md:text-2xl capitalize">
-        Front-End Developer and BI Analyst
+        I listen, I understand and I turn challenges into opportunities for your
+        business.
       </motion.p>
     </div>
   );

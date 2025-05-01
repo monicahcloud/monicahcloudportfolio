@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-4 pt-30" id="projects">
       <SectionTitle first="web" second="creations" />
-      <div id="projects" className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1200px] mx-auto px-4">
         <motion.div
           variants={fadeIn("top", 0)}
           initial="hidden"

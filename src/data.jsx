@@ -4,6 +4,7 @@ import bizHub from "../public/bizHub.jpg";
 import celeste from "../public/celeste.jpg";
 import asea from "../public/asea.jpg";
 import gameHub from "../public/gameHub.png";
+import resumebuilder from "../public/resumebuilder.jpg";
 import { nanoid } from "nanoid";
 import { FaHtml5, FaJs, FaReact } from "react-icons/fa";
 
@@ -83,6 +84,16 @@ export const services = [
 ];
 
 export const projects = [
+  {
+    id: nanoid(),
+    align: "left",
+    url: "https://account.maxworkstaffing.com",
+    title: "Resume Builder Client Portal",
+    topic: "",
+    image: resumebuilder,
+    info: "It provides job seekers with tools to build standout resumes, track their job applications, and access a range of career resources to support their job search and professional development.",
+    git: "https://github.com/monicahcloud/maxworkstaffing",
+  },
   {
     id: nanoid(),
     align: "right",

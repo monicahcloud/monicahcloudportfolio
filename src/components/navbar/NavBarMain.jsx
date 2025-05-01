@@ -15,7 +15,7 @@ const NavBarMain = () => {
           </div>
           <div className="hidden lg:block">
             <NavbarBtn />
-          </div>{" "}
+          </div>
         </div>
       </nav>
     </>

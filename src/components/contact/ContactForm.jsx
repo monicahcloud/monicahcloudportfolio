@@ -41,7 +41,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className=" mx-40">
       <p className="text-cyan-500">{success}</p>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input
@@ -49,7 +49,7 @@ const ContactForm = () => {
           name="name"
           placeholder="Full Name"
           required
-          className="h-12 rounded-lg bg-gray-200 px-2 text-black"
+          className="h-15 text-2xl rounded-lg bg-gray-200 px-2 text-black"
           value={name}
           onChange={handleName}
         />
@@ -58,7 +58,7 @@ const ContactForm = () => {
           name="email"
           placeholder="Email"
           required
-          className="h-12 rounded-lg bg-gray-200  text-black px-2"
+          className="h-15 text-2xl rounded-lg bg-gray-200  text-black px-2"
           value={email}
           onChange={handleEmail}
         />
@@ -67,7 +67,7 @@ const ContactForm = () => {
           name="phone"
           placeholder="Phone Number"
           required
-          className="h-12 rounded-lg bg-gray-200  text-black px-2"
+          className="h-15 text-2xl rounded-lg bg-gray-200  text-black px-2"
           value={phone}
           onChange={handlePhone}
         />
@@ -78,7 +78,7 @@ const ContactForm = () => {
           cols="50"
           placeholder="Message"
           required
-          className=" rounded-lg bg-gray-200  text-black p-2"
+          className=" text-2xl rounded-lg bg-gray-200  text-black p-2"
           value={message}
           onChange={handleMessage}
         />

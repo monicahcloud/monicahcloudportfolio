@@ -12,11 +12,9 @@ const About = () => {
 
         <article>
           <div className="pt-20">
-            {" "}
             <SectionTitle first="About " second="Monicah" />
-            <AboutMeText />{" "}
+            <AboutMeText />
             <div className="pt-5 ml-20 flex justify-center items-center">
-              {" "}
               <SocialMedia />
             </div>
           </div>
