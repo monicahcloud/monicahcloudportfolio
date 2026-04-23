@@ -11,7 +11,7 @@ export default function AboutStrip() {
         </h2>
         <div className="mt-3 h-[2px] w-14 bg-[#f2b38c]" />
 
-        <div className="mt-6 max-w-[420px] space-y-4 text-[1rem] leading-8 text-slate-600">
+        <div className="font-serif mt-6 max-w-[420px] space-y-4 text-[1rem]  text-slate-600">
           <p>
             I blend technology, creativity, and strategy to build meaningful
             digital experiences that solve real problems and create impact.
@@ -53,7 +53,7 @@ export default function AboutStrip() {
       </div>
 
       <div className="rounded-[28px] bg-[#0f7f87] p-7 text-white shadow-[0_16px_34px_rgba(16,80,88,0.14)]">
-        <div className="mb-3 text-4xl leading-none text-white/80">“</div>
+        <div className="mb-3 text-4xl leading-none text-white/80"></div>
         <h3 className="font-display text-[2rem] leading-none">My Mission</h3>
         <p className="mt-4 text-[1rem] leading-8 text-white/90">
           To use my God-given gifts to build, inspire, and empower others to

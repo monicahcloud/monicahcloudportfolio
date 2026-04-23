@@ -2,7 +2,7 @@ import AboutStorySection from "../components/about/AboutStorySection";
 import AboutCtaBanner from "../components/about/AboutCtaBanner";
 import HobbiesAndFunFacts from "../components/about/HobbiesAndFunFacts";
 import AboutHero from "../components/about/AboutHero";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/navbar/NavBar";
 
 export default function AboutMe() {
   return (

@@ -102,15 +102,15 @@ export default function ProjectsVlogInspiration() {
         </h3>
 
         <div className="mt-5 rounded-[22px] bg-[#fbefe8] p-5">
-          <div className="mb-3 text-3xl text-[#f08f52]">“</div>
-          <p className="text-sm leading-7 text-slate-600">
+          <div className="mb-3 text-3xl text-[#f08f52]"></div>
+          <p className="text-md italic font-serif leading-7 text-slate-600">
             I can do all things through
             <br />
             <span className="font-semibold text-slate-700">
               Christ who strengthens me.
             </span>
           </p>
-          <p className="mt-3 text-xs font-semibold text-[#f08f52]">
+          <p className="mt-3 text-sm font-semibold text-[#f08f52]">
             Philippians 4:13
           </p>
         </div>

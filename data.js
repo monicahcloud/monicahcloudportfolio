@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 
 export const links = [
-  { id: 1, href: "/home", text: "home" },
+  { id: 1, href: "/", text: "home" },
   { id: 2, href: "/about", text: "about me" },
   { id: 3, href: "/resume", text: "what i do" },
   //   { id: 4, href: "#projects", text: "projects" },
@@ -459,13 +459,78 @@ export const featuredPicks = [
   },
   {
     type: "Music",
-    title: "Songs for Strength",
+    title: "God Carried Me",
     description:
-      "Music that centers your heart, lifts your spirit, and helps you stay grounded.",
-    image: "/resources/featured-music.jpg",
-    href: "#music",
+      "A heartfelt reminder of God’s faithfulness through every trial, season, and moment when His strength carried you farther than your own ever could.",
+    image: "/godcarriedme.png",
+    href: "https://www.youtube.com/watch?v=3idOqNQe8H0&list=RD3idOqNQe8H0&start_radio=1",
     icon: Music,
     color: "text-[#7b4bb7]",
+  },
+];
+export const musicList = [
+  {
+    title: "God Carried Me",
+    artist: "Nia Legend",
+    description:
+      "A heartfelt reminder of God’s faithfulness through every trial, season, and moment when His strength carried you farther than your own ever could.",
+    topic: "Faith",
+    image: "/godcarriedme.png",
+    href: "https://www.youtube.com/watch?v=3idOqNQe8H0&list=RD3idOqNQe8H0&start_radio=1",
+  },
+  {
+    title: "Give Me You",
+    artist: "Shana Wilson",
+    description:
+      "A sincere cry of surrender for anyone longing to put God first and desire His presence above everything else.",
+    topic: "Worship",
+    image: "/givemeyou.png",
+    href: "https://www.youtube.com/watch?v=RxKBVoEEcT0",
+  },
+  {
+    title: "When I Think About The Lord",
+    artist: "Jason Breland",
+    description:
+      "A joyful song of gratitude that reflects on God’s goodness, mercy, and the overwhelming reason we have to praise Him.",
+    topic: "Worship",
+    image: "/whenithinkaboutthelord.png",
+    href: "https://www.youtube.com/watch?v=SsvuBK0pJCA&list=RDMM&start_radio=1&rv=uC0UHJagWNE",
+  },
+  {
+    title: "Lord and Friend",
+    artist: "CeCe Winans",
+    description:
+      "A comforting expression of intimacy with God, highlighting Him not only as Lord, but also as a faithful friend who walks with you closely.",
+    topic: "Praise",
+    image: "/lordandfriend.png",
+    href: "https://www.youtube.com/watch?v=h4sdpyWywtw&list=RDh4sdpyWywtw&start_radio=1",
+  },
+  {
+    title: "Stay With Me Lord",
+    artist: "Tasha Cobbs",
+    description:
+      "A deep prayer for God’s nearness, perfect for seasons when you need comfort, strength, and reassurance that He is with you.",
+    topic: "Worship",
+    image: "/staywithmelord.png",
+    href: "https://www.youtube.com/watch?v=YdQkFXlms2k&list=RDYdQkFXlms2k&start_radio=1&rv=YdQkFXlms2k",
+  },
+  {
+    title: "I Stand In Authority (The Enemey Is Defeated)",
+    artist: "Leonise Pierre",
+    description:
+      "A deep prayer for God’s nearness, perfect for seasons when you need comfort, strength, and reassurance that He is with you.",
+    topic: "Worship",
+    image: "/istandingauthority.png",
+    href: "https://www.youtube.com/watch?v=OrGqXiQ4Wt8&list=RD3idOqNQe8H0&index=2",
+  },
+  {
+    title: "Something Has To Break",
+    artist: "Kierra Sheard-Kelly",
+    description:
+      "A powerful anthem of expectation and breakthrough, stirring faith for the moment when strongholds shift and God moves in impossible situations.",
+    topic: "Worship",
+    image: "/somethinghastobreak.png",
+    href: "https://www.youtube.com/watch?v=0K5KXQpHjEA",
   },
 ];
 
@@ -496,12 +561,12 @@ export const videos = [
 
 export const books = [
   {
-    title: "Shameless Persistence",
-    author: "Monicah Cloud",
+    title: "Pigs In The Parlor",
+    author: "Frank and Ida Mae Hammond",
     description:
       "A faith-centered reminder to stay committed, rise stronger, and walk boldly in purpose.",
     topic: "Purpose",
-    image: "/bookcover.png",
+    image: "/pigsintheparlor.png",
     href: "#",
   },
   {
@@ -547,36 +612,6 @@ export const movies = [
       "A moving story of perseverance, fatherhood, and pressing through hardship.",
     topic: "Resilience",
     image: "/resources/movie-3.jpg",
-    href: "#",
-  },
-];
-
-export const musicList = [
-  {
-    title: "Jireh",
-    artist: "Elevation Worship & Maverick City",
-    description:
-      "A worship song for remembering that God is enough and will provide.",
-    topic: "Faith",
-    image: "/resources/music-1.jpg",
-    href: "#",
-  },
-  {
-    title: "Firm Foundation",
-    artist: "Maverick City Music",
-    description:
-      "A grounding anthem for seasons where you need peace, stability, and confidence in God.",
-    topic: "Encouragement",
-    image: "/resources/music-2.jpg",
-    href: "#",
-  },
-  {
-    title: "Believe For It",
-    artist: "CeCe Winans",
-    description:
-      "A song to stir your faith and remind you that nothing is impossible with God.",
-    topic: "Faith",
-    image: "/resources/music-3.jpg",
     href: "#",
   },
 ];

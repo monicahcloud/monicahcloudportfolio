@@ -20,6 +20,18 @@ export default function ResourcesPage() {
         icon={Play}
         items={videos}
         buttonText="Watch Video"
+        showAuthor={true}
+        authorLabel="speaker"
+      />
+      <ResourceGridSection
+        id="music"
+        eyebrow="Listen"
+        title="Music for the Journey"
+        icon={Headphones}
+        items={musicList}
+        buttonText="Listen Now"
+        showAuthor={true}
+        authorLabel="artist"
       />
       <ResourceGridSection
         id="books"
@@ -28,7 +40,7 @@ export default function ResourcesPage() {
         icon={BookOpen}
         items={books}
         buttonText="View Book"
-        showAuthor
+        showAuthor={true}
       />
       <ResourceGridSection
         id="movies"
@@ -38,16 +50,7 @@ export default function ResourcesPage() {
         items={movies}
         buttonText="See Movie"
       />
-      <ResourceGridSection
-        id="music"
-        eyebrow="Listen"
-        title="Music for the Journey"
-        icon={Headphones}
-        items={musicList}
-        buttonText="Listen Now"
-        showAuthor
-        authorLabel="artist"
-      />
+
       <ResourcesCta />
     </main>
   );
