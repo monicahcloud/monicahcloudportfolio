@@ -1,31 +1,20 @@
-import Navbar from "../src/components/navbar/NavBarMain";
-import Hero from "../src/components/hero/Hero";
-import Skills from "../src/components/skills/Skills";
-import About from "../src/components/about/About";
-import Projects from "../src/components/projects/Projects";
-import SubSkills from "./components/skills/SubSkill";
-import Experience from "./components/experience/Experience";
-import Contact from "./components/contact/Contact";
-import SubHero from "./components/hero/SubHero";
-import Footer from "./components/footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ResumePage from "./pages/ResumePage";
+import AboutMe from "./pages/AboutMe";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
-    <>
-      <main className="container mx-auto max-w-full">
-        <Navbar />
-        <Hero />
-        <SubHero />
-
-        <About />
-        <Skills />
-        <SubSkills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-      </main>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

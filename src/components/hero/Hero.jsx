@@ -1,86 +1,174 @@
-import heroImg from "../../assets/images/5-removebg-preview.png";
-import RainbowButton from "./RainbowButton";
-import resume from "../../assets/resume.pdf";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/framerMotion/variant";
-import { PiHexagonThin } from "react-icons/pi";
-import HeroText from "./HeroText";
+import { ArrowRight, Download } from "lucide-react";
+import heroImg from "/fullerbody.png";
+import bibleImg from "/bible.png";
+import HeroBackground from "./HeroBackground";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="home"
-      className="pt-20 md:pt-40 bg-gray-900 text-white overflow-hidden">
-      <div className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-5">
-        {/* Text Section */}
-        <article className="text-center md:text-left flex flex-col gap-4">
-          <HeroText />
-          {/* <div className="flex justify-center md:justify-start pb-10">
-            <RainbowButton text="Download Resume" downloadLink={resume} />
-          </div> */}
-        </article>
+      className="relative overflow-hidden bg-[#f8f3ee] px-4 pb-10 pt-6 md:px-6 lg:px-8">
+      <HeroBackground />
 
-        {/* Image Section */}
-        <article className="flex items-center justify-center relative">
+      <div className="relative mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-9xl">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0 }}
-            className="relative flex items-center justify-center">
-            {/* First Hexagon (Glow Effect) */}
-            <div className="absolute flex justify-center items-center animate-[spin_20s_linear_infinite] z-0">
-              <PiHexagonThin
-                className="text-cyan-400 blur-lg animate-pulse
-                h-[500px] w-[500px] md:h-[600px] md:w-[600px] 
-                lg:h-[700px] lg:w-[700px]"
-              />
-              {/* Glowing Blur */}
-              <div className="absolute w-full h-full bg-cyan-500 blur-[150px] opacity-20"></div>
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65 }}
+            className="pt-6 lg:pt-10">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#f08f52]">
+              Walking Boldly in Purpose, Fueled by Faith.
+            </p>
+
+            <h1 className="font-display max-w-[700px] text-[3.5rem] leading-[0.9] tracking-[-0.04em] text-[#155f69] sm:text-[4.5rem] lg:text-[6.3rem]">
+              Inspire. Equip.
+              <br />
+              <span className="text-[#412279]">Empower.</span>
+              <span className="ml-4 inline-block align-middle text-[#f08f52] text-[0.6em]">
+                ♡
+              </span>
+            </h1>
+
+            <div className="mt-8 max-w-[620px] space-y-3 text-[1.05rem] leading-[1.8] text-slate-700 md:text-[1.15rem]">
+              <p>
+                I’m called to use my God-given gifts to build, teach, and
+                encourage others to walk boldly in their purpose.
+              </p>
+              <p>
+                Through faith, wisdom, and real-life experience, I help people
+                grow spiritually, mentally, and practically.
+              </p>
             </div>
 
-            {/* Second Hexagon (Pulse Effect) */}
-            <div className="absolute flex justify-center items-center z-0 animate-pulse">
-              <PiHexagonThin
-                className="text-orange-500 opacity-50 blur-md animate-[ping_5s_ease-in-out_infinite]
-                h-[450px] w-[450px] md:h-[500px] md:w-[500px]"
-              />
-            </div>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#about"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-[#0f7f87] px-8 text-base font-semibold text-white transition hover:bg-[#0c6a71]">
+                My Story
+                <ArrowRight className="h-5 w-5" />
+              </a>
 
-            {/* Floating Image */}
-            <img
-              src={heroImg}
-              alt="Monicah Cloud - Frontend Developer & BI Analyst"
-              className="relative z-20 max-w-[300px] md:max-w-[400px] lg:max-w-[500px] 
-              object-contain drop-shadow-xl transform 
-              animate-[float_6s_ease-in-out_infinite]"
-            />
+              <a
+                href="#resources"
+                className="inline-flex h-14 items-center justify-center gap-3 rounded-2xl border border-[#6e53b6] bg-transparent px-8 text-base font-semibold text-[#4c2d8a] transition hover:bg-white/70">
+                <Download className="h-5 w-5" />
+                Download Encouragement Guide
+              </a>
+            </div>
           </motion.div>
-        </article>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="relative flex justify-center lg:justify-end">
+            <div className="relative flex h-[430px] w-full max-w-[680px] items-center justify-center sm:h-[540px] lg:h-[640px]">
+              {/* Outer soft glow */}
+              <div
+                className="absolute right-1/2 top-1/2
+  h-[520px] w-[520px]
+  sm:h-[700px] sm:w-[700px]
+  lg:h-[860px] lg:w-[860px]
+ translate-x-[55%] -translate-y-1/2
+  rounded-full
+  bg-[radial-gradient(circle,#ffe1d2_0%,#f6c8dc_45%,#dcc6f3_75%,transparent_100%)]
+  opacity-80 blur-3xl"
+              />
+              <div
+                className="absolute right-1/2 top-1/2
+  h-[400px] w-[400px]
+  sm:h-[560px] sm:w-[560px]
+  lg:h-[680px] lg:w-[680px]
+  translate-x-[55%]-translate-y-1/2
+  rounded-full
+  bg-white/20 blur-2xl"
+              />
+              {/* Main circle */}
+              <div
+                className="absolute right-1/2 top-1/2
+  h-[460px] w-[460px]
+  sm:h-[600px] sm:w-[600px]
+  lg:h-[720px] lg:w-[720px]
+  translate-x-[55%] -translate-y-[45%]
+  rounded-full border border-[#b8e3e4]
+  bg-[radial-gradient(circle_at_32%_30%,#8ee5e6_0%,#58d6dc_16%,#f6c7b6_52%,#efc5df_76%,#d8b9f1_100%)]
+  shadow-[0_25px_60px_rgba(121,86,151,0.12)]"
+              />
+
+              {/* Soft inner haze to reduce harshness */}
+              <div
+                className="absolute right-[26px] top-1/2 h-[320px] w-[320px] -translate-y-1/2 rounded-full
+      bg-white/18 blur-2xl sm:h-[420px] sm:w-[420px] lg:h-[520px] lg:w-[520px]"
+              />
+
+              {/* Portrait */}
+              <div className="relative z-10 w-[320px] translate-y-2 sm:w-[410px] lg:w-[900px]">
+                <img
+                  src={heroImg}
+                  alt="Monicah smiling"
+                  className="h-auto w-full object-contain drop-shadow-[0_14px_28px_rgba(0,0,0,0.08)] saturate-[1.02] brightness-[1.02]"
+                />
+              </div>
+
+              {/* Softer quote card */}
+              <div
+                className="absolute bottom-10 right-2 z-20 max-w-[255px] rounded-[24px]
+      border border-white/35 bg-white/18 px-5 py-5 text-[#44237f]
+      shadow-[0_18px_35px_rgba(92,58,130,0.14)] backdrop-blur-md
+      sm:right-[6px] lg:right-[-6px]">
+                <div className="text-3xl leading-none text-[#6b3fa0]/70">“</div>
+
+                <p className="text-[0.98rem] font-medium leading-[1.65] text-[#4b2d79]">
+                  I can do all things through Christ who strengthens me.
+                </p>
+
+                <p className="mt-4 text-sm font-semibold tracking-[0.01em] text-[#f08f52]">
+                  Philippians 4:13
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 26 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+          className="relative mt-8 overflow-hidden rounded-[28px] bg-gradient-to-r from-[#2b173e] via-[#3e2670] to-[#0c8891] shadow-[0_20px_50px_rgba(35,20,60,0.14)]">
+          <div className="grid items-stretch md:grid-cols-[340px_1fr_150px]">
+            <div className="min-h-[220px]">
+              <img
+                src={bibleImg}
+                alt="Open Bible"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="flex flex-col justify-center px-6 py-8 text-white md:px-10">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#f2a25f]">
+                God is the Center
+              </p>
+
+              <h2 className="font-display text-[2.25rem] leading-[1] md:text-[3.4rem]">
+                Everything I do starts with Him.
+              </h2>
+
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/90 md:text-[1.1rem]">
+                My ministry is rooted in a relationship with Jesus Christ. He is
+                my source, my strength, and my why. Every word I share and every
+                life I touch is for His glory.
+              </p>
+            </div>
+
+            <div className="hidden items-center justify-center md:flex">
+              <div className="text-[120px] leading-none text-[#f2a25f]">✞</div>
+            </div>
+          </div>
+        </motion.div>
       </div>
-
-      {/* Keyframes Animation */}
-      <style>
-        {`
-          @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-          }
-
-          @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-          }
-
-          @keyframes ping {
-            0% { transform: scale(1); opacity: 0.6; }
-            50% { transform: scale(1.1); opacity: 0.2; }
-            100% { transform: scale(1); opacity: 0; }
-          }
-        `}
-      </style>
-    </div>
+    </section>
   );
 };
 

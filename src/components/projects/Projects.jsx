@@ -1,5 +1,5 @@
 import { projects } from "@/data";
-import SectionTitle from "../skills/SectionTitle";
+import SectionTitle from "../resume/SectionTitle";
 import SingleProject from "./SingleProduct";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/framerMotion/variant";

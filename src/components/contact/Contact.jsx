@@ -1,4 +1,4 @@
-import SectionTitle from "../skills/SectionTitle";
+import SectionTitle from "../resume/SectionTitle";
 import ContactMeLeft from "./ContactMeLeft";
 
 const Contact = () => {

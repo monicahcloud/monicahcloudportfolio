@@ -4,10 +4,9 @@ const NavbarBtn = () => {
   return (
     <a
       href="#contact"
-      className="flex items-center justify-center px-8 h-12 min-w-[170px] whitespace-nowrap rounded-full text-xl font-bold font-body text-white border-cyan-300 border gap-1 
-        transition-all duration-500 hover:scale-105 hover:border-orange-300 cursor-pointer hover:text-cyan-500">
-      Hire Me
-      <span className="hidden md:block">
+      className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-[#f3b490] bg-[#f7c3a7] px-6 h-11 text-sm md:text-base font-semibold text-slate-900 transition-all duration-300 hover:scale-105 hover:bg-[#f1b391]">
+      Let’s Connect
+      <span className="hidden md:flex">
         <LuArrowDownRight />
       </span>
     </a>
