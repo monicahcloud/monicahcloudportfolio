@@ -44,17 +44,17 @@ const Hero = () => {
 
             <div className="mt-6 flex flex-col gap-3 sm:mx-auto sm:max-w-[460px] sm:flex-row lg:mx-0">
               <a
-                href="#about"
+                href="/about"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-[#0f7f87] px-6 text-sm font-semibold text-white transition hover:bg-[#0c6a71] sm:h-14 sm:px-8 sm:text-base">
                 My Story
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
 
               <a
-                href="#resources"
+                href="resources"
                 className="inline-flex h-12 items-center justify-center gap-3 rounded-2xl border border-[#6e53b6] bg-transparent px-6 text-sm font-semibold text-[#4c2d8a] transition hover:bg-white/70 sm:h-14 sm:px-8 sm:text-base">
                 <Download className="h-4 w-4 sm:h-5 sm:w-5" />
-                Download Encouragement Guide
+                Download Shameless Persistence
               </a>
             </div>
           </motion.div>
@@ -78,7 +78,7 @@ const Hero = () => {
               <div className="absolute right-1/2 top-1/2 h-[220px] w-[220px] translate-x-[54%] -translate-y-[42%] rounded-full bg-white/18 blur-2xl sm:h-[340px] sm:w-[340px] lg:h-[520px] lg:w-[520px]" />
 
               {/* Portrait */}
-              <div className="relative z-10 w-[75%] max-w-[320px] translate-y-2 sm:max-w-[380px] lg:max-w-[480px]">
+              <div className="relative z-10 w-[100%] max-w-[380px] translate-y-4 sm:max-w-[500px] lg:max-w-[640px]">
                 <img
                   src={heroImg}
                   alt="Monicah smiling"

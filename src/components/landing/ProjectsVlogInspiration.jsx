@@ -23,7 +23,7 @@ export default function ProjectsVlogInspiration() {
           </a>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
           {featuredProjects.map((project) => (
             <div
               key={project.title}
@@ -41,7 +41,8 @@ export default function ProjectsVlogInspiration() {
                   {project.text}
                 </p>
                 <a
-                  href="#"
+                  href={project.herf}
+                  target="_blank"
                   className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#0f7f87]">
                   <ArrowRight className="h-4 w-4" />
                 </a>

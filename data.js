@@ -31,10 +31,10 @@ export const links = [
   { id: 2, href: "/about", text: "about me" },
   { id: 3, href: "/resume", text: "what i do" },
   //   { id: 4, href: "#projects", text: "projects" },
-  { id: 5, href: "/vlog", text: "vlog" },
-  { id: 6, href: "#inspiration", text: "inspiration" },
+  // { id: 5, href: "/vlog", text: "vlog" },
+  // { id: 6, href: "#inspiration", text: "inspiration" },
   { id: 7, href: "/resources", text: "resources" },
-  { id: 8, href: "#contact", text: "contact" },
+  { id: 8, href: "/contact", text: "contact" },
 ];
 
 export const purposeCards = [
@@ -332,23 +332,23 @@ export const experienceItems = [
 
 export const projects = [
   {
-    image: "/project-codered.png",
+    image: "/codered.png",
     title: "Code Red SSI",
     text: "A platform focused on school safety solutions, communication, and strategic partnerships.",
     link: "coderedssi.org",
   },
   {
-    image: "/project-maxresume.png",
-    title: "MaxResumeBuilder",
+    image: "/smartcareeros.png",
+    title: "Smart Career OS",
     text: "An AI-powered resume builder helping job seekers create optimized, ATS-friendly resumes.",
     link: "smartcareeros.com",
   },
-  {
-    image: "/project-formquill.png",
-    title: "FormQuill",
-    text: "A smart AI form builder designed for efficiency, clarity, and better user experience.",
-    link: "formbuilder.com",
-  },
+  // {
+  //   image: "/project-formquill.png",
+  //   title: "FormQuill",
+  //   text: "A smart AI form builder designed for efficiency, clarity, and better user experience.",
+  //   link: "formbuilder.com",
+  // },
 ];
 
 export const education = [
@@ -391,20 +391,22 @@ export const serviceCards = [
 
 export const featuredProjects = [
   {
-    image: "/project-codered.png",
+    image: "/codered.png",
     title: "Code Red SSI",
     text: "A platform helping individuals understand SSI and maximize benefits.",
+    herf: "https://coderedssi.org",
   },
   {
-    image: "/project-maxresume.png",
-    title: "MaxResumeBuilder",
+    image: "/smartcareeros.png",
+    title: "Smart Career OS",
     text: "AI-powered resume builder that helps jobseekers stand out and get hired.",
+    herf: "https://smartcareeros.com",
   },
-  {
-    image: "/project-formquill.png",
-    title: "FormQuill",
-    text: "Smart form builder with AI assistance for effortless form creation.",
-  },
+  // {
+  //   image: "/project-formquill.png",
+  //   title: "FormQuill",
+  //   text: "Smart form builder with AI assistance for effortless form creation.",
+  // },
 ];
 
 export const latestVideos = [
@@ -430,9 +432,21 @@ export const latestVideos = [
 
 export const socialLinks = [
   { icon: FileText, label: "Resume", href: "/resume" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Youtube, label: "YouTube", href: "#" },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/cloudmonicah/",
+  },
+  {
+    icon: Github,
+    label: "GitHub",
+    href: "https://www.github.com/monicahcloud",
+  },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    href: "https://www.youtube.com/@monicahcloud",
+  },
   { icon: Mail, label: "Email Me", href: "#contact" },
 ];
 
@@ -452,7 +466,7 @@ export const featuredPicks = [
     title: "Shameless Persistence",
     description:
       "A reminder to keep showing up, growing through the process, and walking in purpose.",
-    image: "/resources/featured-book.jpg",
+    image: "/bookcover.png",
     href: "#books",
     icon: BookOpen,
     color: "text-[#f08f52]",
@@ -515,7 +529,7 @@ export const musicList = [
     href: "https://www.youtube.com/watch?v=YdQkFXlms2k&list=RDYdQkFXlms2k&start_radio=1&rv=YdQkFXlms2k",
   },
   {
-    title: "I Stand In Authority (The Enemey Is Defeated)",
+    title: "I Stand In Authority (The Enemy Is Defeated)",
     artist: "Leonise Pierre",
     description:
       "A deep prayer for God’s nearness, perfect for seasons when you need comfort, strength, and reassurance that He is with you.",
@@ -531,6 +545,15 @@ export const musicList = [
     topic: "Worship",
     image: "/somethinghastobreak.png",
     href: "https://www.youtube.com/watch?v=0K5KXQpHjEA",
+  },
+  {
+    title: "No Weapon",
+    artist: "Todd Dulaney",
+    description:
+      "A powerful anthem of expectation and breakthrough, stirring faith for the moment when strongholds shift and God moves in impossible situations.",
+    topic: "Worship",
+    image: "/somethinghastobreak.png",
+    href: "https://www.youtube.com/watch?v=_WdUIWfMDeU&list=RDGMEMpBTPDS4vUcNkxDpMWGK7rw&index=3",
   },
 ];
 
