@@ -1,9 +1,9 @@
 import { ArrowRight } from "lucide-react";
-import { featuredProjects, latestVideos } from "/data";
+import { featuredProjects } from "/data";
 
 export default function ProjectsVlogInspiration() {
   return (
-    <section className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr_0.9fr]">
+    <section className="grid gap-6 lg:grid-cols-[2.3fr_1fr]">
       {/* Projects */}
       <div className="rounded-[26px] border border-[#ece2dc] bg-white/60 p-6 shadow-[0_8px_24px_rgba(80,50,120,0.03)]">
         <div className="mb-5 flex items-start justify-between gap-4">
@@ -15,12 +15,12 @@ export default function ProjectsVlogInspiration() {
               Turning Ideas <span className="text-[#f08f52]">Into Impact</span>
             </h3>
           </div>
-
+          {/* 
           <a
             href="#projects"
             className="text-sm font-semibold text-[#0f7f87] whitespace-nowrap">
             View All Projects →
-          </a>
+          </a> */}
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
@@ -31,7 +31,7 @@ export default function ProjectsVlogInspiration() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="h-28 w-full object-cover"
+                className="h-28 w-full bg-white object-contain p-4 md:h-36 lg:h-28 xl:h-36"
               />
               <div className="p-4">
                 <h4 className="text-base font-semibold text-slate-700">
@@ -53,7 +53,7 @@ export default function ProjectsVlogInspiration() {
       </div>
 
       {/* Latest videos */}
-      <div className="rounded-[26px] border border-[#ece2dc] bg-white/60 p-6 shadow-[0_8px_24px_rgba(80,50,120,0.03)]">
+      {/* <div className="rounded-[26px] border border-[#ece2dc] bg-white/60 p-6 shadow-[0_8px_24px_rgba(80,50,120,0.03)]">
         <div className="mb-5 flex items-start justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0f7f87]">
@@ -62,16 +62,16 @@ export default function ProjectsVlogInspiration() {
             <h3 className="font-display mt-2 text-[2rem] leading-none text-[#155f69]">
               Latest Videos
             </h3>
-          </div>
-
+          </div> */}
+      {/* 
           <a
-            href="#vlog"
+            href="/vlog"
             className="text-sm font-semibold text-[#0f7f87] whitespace-nowrap">
             View All →
-          </a>
-        </div>
+          </a> 
+        </div>*/}
 
-        <div className="space-y-4">
+      {/* <div className="space-y-4">
           {latestVideos.map((video) => (
             <div key={video.title} className="flex gap-3">
               <img
@@ -89,8 +89,8 @@ export default function ProjectsVlogInspiration() {
               </div>
             </div>
           ))}
-        </div>
-      </div>
+        </div> 
+      </div>*/}
 
       {/* Inspiration */}
       <div className="rounded-[26px] border border-[#ece2dc] bg-white/60 p-6 shadow-[0_8px_24px_rgba(80,50,120,0.03)]">
@@ -98,7 +98,7 @@ export default function ProjectsVlogInspiration() {
           Inspiration
         </p>
 
-        <h3 className="font-display mt-2 text-[2rem] leading-none text-[#155f69]">
+        <h3 className="font-display mt-5 text-[2rem] leading-none text-[#155f69]">
           Encouragement for Your Journey
         </h3>
 
@@ -116,12 +116,12 @@ export default function ProjectsVlogInspiration() {
           </p>
         </div>
 
-        <a
+        {/* <a
           href="/inspiration"
           className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-full border border-[#7abcc3] px-5 text-sm font-semibold text-[#0f7f87] transition hover:bg-white">
           More Inspiration
           <ArrowRight className="h-4 w-4" />
-        </a>
+        </a> */}
       </div>
     </section>
   );

@@ -1,5 +1,3 @@
-import { Mail } from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
 export default function ValueItem({ icon: Icon, title, text, color }) {
   return (
     <div className="flex items-start gap-4">

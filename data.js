@@ -403,7 +403,7 @@ export const featuredProjects = [
     herf: "https://smartcareeros.com",
   },
   // {
-  //   image: "/project-formquill.png",
+  //   image: "/formquill.png",
   //   title: "FormQuill",
   //   text: "Smart form builder with AI assistance for effortless form creation.",
   // },

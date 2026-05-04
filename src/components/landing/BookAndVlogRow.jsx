@@ -45,7 +45,8 @@ export default function BookAndVlogRow() {
             </p>
 
             <a
-              href="/resources"
+              href="/books/ShamelessPersistence.pdf"
+              download
               className="mt-5 inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#f4ba97] px-5 text-sm font-semibold text-slate-900 transition hover:bg-[#efac85]">
               Get Your Copy
               <Download className="h-4 w-4" />
@@ -72,9 +73,12 @@ export default function BookAndVlogRow() {
 
         {/* CONTENT */}
         <div className="relative z-10 px-6 py-7 md:py-8">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#f08f52]">
+          {/* <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#f08f52]">
             New on the Vlog
-          </p>
+          </p> */}
+          <div className="mb-4 inline-flex items-center rounded-full border border-[#f3d8c8] bg-white/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#4b2d79] backdrop-blur-sm">
+            Coming Soon
+          </div>
 
           <h3 className="font-display text-[2rem] leading-none text-[#155f69]">
             Faith. Purpose.
@@ -87,12 +91,12 @@ export default function BookAndVlogRow() {
             journey.
           </p>
 
-          <a
-            href="/vlog"
-            className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#111827] px-5 text-sm font-semibold text-white">
+          <button
+            disabled
+            className="mt-6 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#111827]/70 px-5 text-sm font-semibold text-white/90 cursor-not-allowed">
             <Play className="h-4 w-4 fill-current" />
             Watch on YouTube
-          </a>
+          </button>
         </div>
       </div>
     </section>
