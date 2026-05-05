@@ -55,7 +55,7 @@ const Hero = () => {
                 download
                 className="inline-flex h-12 items-center justify-center gap-3 rounded-2xl border border-[#6e53b6] bg-transparent px-6 text-sm font-semibold text-[#4c2d8a] transition hover:bg-white/70 sm:h-14 sm:px-8 sm:text-base">
                 <Download className="h-4 w-4 sm:h-5 sm:w-5" />
-                Download Shameless Persistence
+                Download Free Copy of Shameless Persistence
               </a>
             </div>
           </motion.div>

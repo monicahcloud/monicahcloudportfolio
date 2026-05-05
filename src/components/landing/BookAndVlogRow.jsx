@@ -48,7 +48,7 @@ export default function BookAndVlogRow() {
               href="/books/ShamelessPersistence.pdf"
               download
               className="mt-5 inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#f4ba97] px-5 text-sm font-semibold text-slate-900 transition hover:bg-[#efac85]">
-              Get Your Copy
+              Get Your Free Copy
               <Download className="h-4 w-4" />
             </a>
 
