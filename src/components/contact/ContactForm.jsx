@@ -10,24 +10,43 @@ const ContactForm = () => {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_ecjoxco", "template_8s24eyo", form.current, {
-        publicKey: "XnLTFneXRVkwkphGD",
-      })
-      .then(
-        () => {
-          setEmail("");
-          setName("");
-          setMessage("");
-          setPhone("");
-          setSuccess("Message sent successfully!");
+
+    try {
+      // EMAIL TO YOU
+      await emailjs.sendForm(
+        "service_ecjoxco",
+        "template_8s24eyo",
+        form.current,
+        {
+          publicKey: "XnLTFneXRVkwkphGD",
         },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
       );
+
+      // AUTO REPLY TO VISITOR
+      await emailjs.send(
+        "service_ecjoxco",
+        "template_6z3mtw2",
+        {
+          name,
+          email,
+          phone,
+          message,
+        },
+        {
+          publicKey: "XnLTFneXRVkwkphGD",
+        },
+      );
+
+      setEmail("");
+      setName("");
+      setMessage("");
+      setPhone("");
+      setSuccess("Message sent successfully!");
+    } catch (error) {
+      console.log("FAILED...", error);
+    }
   };
 
   return (
