@@ -38,7 +38,8 @@ export default function AboutStorySection() {
             </p>
           </div>
           <a
-            href="#resume"
+            href="/books/MONICAHCLOUDRESUME.pdf"
+            target="_blank"
             className="mt-8 inline-flex h-12 items-center justify-center gap-2 rounded-full border border-[#7abcc3] px-6 text-sm font-semibold text-[#0f7f87] transition hover:bg-white">
             Download My Resume
             <DownloadMini />

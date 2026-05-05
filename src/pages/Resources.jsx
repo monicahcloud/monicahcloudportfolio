@@ -13,7 +13,7 @@ export default function ResourcesPage() {
       <Navbar />
       <ResourcesHero />
       <FeaturedPicks />
-      <ResourceGridSection
+      {/* <ResourceGridSection
         id="videos"
         eyebrow="Watch"
         title="YouTube Videos"
@@ -22,7 +22,7 @@ export default function ResourcesPage() {
         buttonText="Watch Video"
         showAuthor={true}
         authorLabel="speaker"
-      />
+      /> */}
       <ResourceGridSection
         id="music"
         eyebrow="Listen"
@@ -42,14 +42,14 @@ export default function ResourcesPage() {
         buttonText="View Book"
         showAuthor={true}
       />
-      <ResourceGridSection
+      {/* <ResourceGridSection
         id="movies"
         eyebrow="Watch"
         title="Recommended Movies"
         icon={Film}
         items={movies}
         buttonText="See Movie"
-      />
+      /> */}
 
       <ResourcesCta />
     </main>

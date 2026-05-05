@@ -1,5 +1,4 @@
 import { hobbies, funFacts } from "/data";
-import DownloadMini from "./DownloadMini";
 
 export default function HobbiesAndFunFacts() {
   return (

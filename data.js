@@ -178,35 +178,35 @@ export const descriptorCards = [
 
 export const hobbies = [
   {
-    image: "/hobby-journaling.png",
+    image: "/journal.png",
     title: "Journaling &\nBible Study",
   },
   {
-    image: "/hobby-puzzles.png",
+    image: "/puzzles.png",
     title: "Puzzles",
   },
   {
-    image: "/hobby-reading.png",
+    image: "/reading.png",
     title: "Reading",
   },
   {
-    image: "/hobby-travel.png",
+    image: "/travel.png",
     title: "Traveling &\nExploring",
   },
   {
-    image: "/hobby-tech.png",
+    image: "/technology.jpg",
     title: "Learning New\nTechnologies",
   },
   {
-    image: "/hobby-mentoring.png",
+    image: "/mentor.png",
     title: "Mentoring &\nEncouraging Others",
   },
   {
-    image: "/hobby-health.png",
+    image: "/wellness.png",
     title: "Health &\nWellness",
   },
   {
-    image: "/hobby-worship.png",
+    image: "/worship.png",
     title: "Worship &\nMusic",
   },
 ];
@@ -282,7 +282,7 @@ export const skillColumns = [
 export const experienceItems = [
   {
     years: "2025 – Present",
-    title: "Creative Strategist & Developer",
+    title: "Technical Consultant & BI Analyst",
     subtitle: "Freelance / Remote",
     accent: "bg-[#7b4bb7]",
     points: [
@@ -294,7 +294,7 @@ export const experienceItems = [
   },
   {
     years: "2023 – 2024",
-    title: "Business Intelligence Analyst",
+    title: "Business Intelligence Analyst/Technical Engineer",
     subtitle: "Bombardier Recreational Products (BRP)",
     accent: "bg-[#f4ba97]",
     points: [
@@ -306,7 +306,7 @@ export const experienceItems = [
   },
   {
     years: "2021 – 2023",
-    title: "Software Developer / Technical Engineer",
+    title: "Software Developer",
     subtitle: "Infosys / BRP",
     accent: "bg-[#0f7f87]",
     points: [
@@ -339,16 +339,16 @@ export const projects = [
   },
   {
     image: "/smartcareeros.png",
-    title: "Smart Career OS",
+    title: "Smart Career OS (Under Development)",
     text: "An AI-powered resume builder helping job seekers create optimized, ATS-friendly resumes.",
     link: "smartcareeros.com",
   },
-  // {
-  //   image: "/project-formquill.png",
-  //   title: "FormQuill",
-  //   text: "A smart AI form builder designed for efficiency, clarity, and better user experience.",
-  //   link: "formbuilder.com",
-  // },
+  {
+    image: "/formquill.png",
+    title: "FormQuill (Under Development)",
+    text: "A smart AI form builder designed for efficiency, clarity, and better user experience.",
+    link: "formquill.com",
+  },
 ];
 
 export const education = [
@@ -451,23 +451,23 @@ export const socialLinks = [
 ];
 
 export const featuredPicks = [
-  {
-    type: "Video",
-    title: "Faith Over Fear",
-    description:
-      "A message to help you trust God in uncertain seasons and keep moving forward.",
-    image: "/resources/featured-video.jpg",
-    href: "#videos",
-    icon: Play,
-    color: "text-[#0f7f87]",
-  },
+  // {
+  //   type: "Video",
+  //   title: "Faith Over Fear",
+  //   description:
+  //     "A message to help you trust God in uncertain seasons and keep moving forward.",
+  //   image: "/resources/featured-video.jpg",
+  //   href: "#videos",
+  //   icon: Play,
+  //   color: "text-[#0f7f87]",
+  // },
   {
     type: "Book",
     title: "Shameless Persistence",
     description:
       "A reminder to keep showing up, growing through the process, and walking in purpose.",
     image: "/bookcover.png",
-    href: "#books",
+    href: "/books/ShamelessPersistence.pdf",
     icon: BookOpen,
     color: "text-[#f08f52]",
   },
@@ -546,15 +546,15 @@ export const musicList = [
     image: "/somethinghastobreak.png",
     href: "https://www.youtube.com/watch?v=0K5KXQpHjEA",
   },
-  {
-    title: "No Weapon",
-    artist: "Todd Dulaney",
-    description:
-      "A powerful anthem of expectation and breakthrough, stirring faith for the moment when strongholds shift and God moves in impossible situations.",
-    topic: "Worship",
-    image: "/somethinghastobreak.png",
-    href: "https://www.youtube.com/watch?v=_WdUIWfMDeU&list=RDGMEMpBTPDS4vUcNkxDpMWGK7rw&index=3",
-  },
+  // {
+  //   title: "No Weapon",
+  //   artist: "Todd Dulaney",
+  //   description:
+  //     "A powerful anthem of expectation and breakthrough, stirring faith for the moment when strongholds shift and God moves in impossible situations.",
+  //   topic: "Worship",
+  //   image: "/somethinghastobreak.png",
+  //   href: "https://www.youtube.com/watch?v=_WdUIWfMDeU&list=RDGMEMpBTPDS4vUcNkxDpMWGK7rw&index=3",
+  // },
 ];
 
 export const videos = [
@@ -587,28 +587,30 @@ export const books = [
     title: "Pigs In The Parlor",
     author: "Frank and Ida Mae Hammond",
     description:
-      "A faith-centered reminder to stay committed, rise stronger, and walk boldly in purpose.",
-    topic: "Purpose",
+      "A foundational book on spiritual warfare and deliverance that helps believers recognize spiritual strongholds, pursue healing, and walk in freedom through Christ.",
+    topic: "Spiritual Growth",
     image: "/pigsintheparlor.png",
-    href: "#",
+    href: "https://www.amazon.co.uk/Pigs-Parlor-deliverance-spiritual-oppression-ebook/dp/B00J5J8VWQ/ref=sr_1_2?crid=28IEF51PY2CD1&dib=eyJ2IjoiMSJ9.26-xaXjDv5aY3z_3wEd4_gU2ZssslI4jJ0JubsH06hv0qfG63vDQync_PGMGcvElKmEp8JtCN4umIlpXkGTXZ5L4raUBLIGhDSN1qKScAo0BjXyEDuMG84ztokI-C1XfLoqyoZxCL-Tgqo8gPJSeDjmzTBdSFzvaBS2TqvhWmz1xOw-DJNgqZxFHwcO87PO2.86Barkuc0ug3Rq4nHRPrxZyP3oq_kVnqUgrkoLT-8do&dib_tag=se&keywords=pigs+in+the+parlour&qid=1777938784&sprefix=pigs+in+the+pa%2Caps%2C194&sr=8-2",
   },
+
   {
     title: "The Vision",
-    author: "Priscilla Shirer",
+    author: "Rick Joyner",
     description:
-      "A powerful resource on prayer, spiritual strategy, and standing firm in faith.",
+      "A powerful and thought-provoking journey that challenges believers to pursue deeper intimacy with God, spiritual maturity, humility, and eternal perspective.",
     topic: "Faith",
-    image: "/resources/book-2.jpg",
-    href: "#",
+    image: "/thevision.png",
+    href: "https://www.amazon.co.uk/Vision-Rick-Joyner/dp/0785217029",
   },
+
   {
-    title: "The Mountain Is You",
-    author: "Brianna Wiest",
+    title: "Shameless Persistence",
+    author: "Monicah Cloud",
     description:
-      "A strong recommendation for mindset, self-sabotage, healing, and inner growth.",
-    topic: "Mindset",
-    image: "/resources/book-3.jpg",
-    href: "#",
+      "A heartfelt and faith-filled guide to perseverance, healing, and purpose — encouraging readers to keep showing up, trust God through adversity, and boldly pursue the life they were called to live.",
+    topic: "Purpose",
+    image: "/bookcover.png",
+    href: "/books/ShamelessPersistence.pdf",
   },
 ];
 

@@ -119,7 +119,7 @@ export default function ResumeContent() {
                   {item.years}
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-1">
                   <div
                     className={`mt-1 h-11 w-11 shrink-0 rounded-full ${item.accent}`}
                   />
@@ -163,7 +163,7 @@ export default function ResumeContent() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-40 w-full object-cover"
+                  className="h-28 w-full bg-white object-contain p-4 md:h-36 lg:h-28 xl:h-36"
                 />
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-slate-700">

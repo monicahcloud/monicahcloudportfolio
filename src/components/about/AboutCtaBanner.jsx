@@ -21,7 +21,7 @@ export default function AboutCtaBanner() {
             </p>
 
             <a
-              href="#contact"
+              href="/contact"
               className="mt-5 inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[#f4ba97] px-6 text-sm font-semibold text-slate-900 transition hover:bg-[#efac85]">
               Let’s Connect
               <ArrowMini />

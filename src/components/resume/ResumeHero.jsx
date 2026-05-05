@@ -21,7 +21,7 @@ export default function ResumeHero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="/resume.pdf"
+              href="/books/MONICAHCLOUDRESUME.pdf"
               download
               className="rounded-full bg-[#0f7f87] px-6 py-3 text-white font-medium hover:opacity-90">
               Download PDF Resume
