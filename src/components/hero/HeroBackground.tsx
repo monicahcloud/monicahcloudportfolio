@@ -125,38 +125,59 @@ function ArcLines() {
 export default function HeroBackground() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
-      <LeftRings />
-      <RightGlow />
+      {/* MOBILE BACKGROUND */}
+      <div className="absolute inset-0 block lg:hidden">
+        {/* soft top glow */}
+        <div className="absolute left-1/2 top-[-120px] h-[320px] w-[320px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,#ffd8c5_0%,#f4d4e7_48%,transparent_78%)] opacity-70 blur-3xl" />
 
-      <DotGrid
-        className="right-16 top-44"
-        count={24}
-        cols={6}
-        color="#1d9aa2"
-        opacity="opacity-70"
-      />
+        {/* subtle teal glow */}
+        <div className="absolute bottom-[18%] left-1/2 h-[240px] w-[240px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,#bfeff0_0%,transparent_72%)] opacity-50 blur-3xl" />
 
-      <DotGrid
-        className="bottom-28 left-6"
-        count={15}
-        cols={5}
-        color="#7c4ed8"
-        opacity="opacity-40"
-      />
-
-      <div className="absolute bottom-52 left-0 hidden lg:block">
-        <LeafGraphicLeft />
+        {/* tiny dots */}
+        <DotGrid
+          className="right-6 top-24"
+          count={12}
+          cols={4}
+          color="#1d9aa2"
+          opacity="opacity-30"
+        />
       </div>
 
-      <div className="absolute right-0 top-56 hidden lg:block">
-        <LeafGraphicRight />
-      </div>
+      {/* DESKTOP BACKGROUND */}
+      <div className="hidden lg:block">
+        <LeftRings />
+        <RightGlow />
 
-      <div className="absolute right-0 top-14 hidden xl:block">
-        <ArcLines />
-      </div>
+        <DotGrid
+          className="right-16 top-44"
+          count={24}
+          cols={6}
+          color="#1d9aa2"
+          opacity="opacity-70"
+        />
 
-      <BottomWave />
+        <DotGrid
+          className="bottom-28 left-6"
+          count={15}
+          cols={5}
+          color="#7c4ed8"
+          opacity="opacity-40"
+        />
+
+        <div className="absolute bottom-52 left-0">
+          <LeafGraphicLeft />
+        </div>
+
+        <div className="absolute right-0 top-56">
+          <LeafGraphicRight />
+        </div>
+
+        <div className="absolute right-0 top-14 hidden xl:block">
+          <ArcLines />
+        </div>
+
+        <BottomWave />
+      </div>
     </div>
   );
 }

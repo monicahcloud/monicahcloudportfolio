@@ -37,17 +37,20 @@ export default function AboutStorySection() {
               grounded in faith, and driven by purpose.”
             </p>
           </div>
-          <a
-            href="/books/MONICAHCLOUDRESUME.pdf"
-            target="_blank"
-            className="mt-8 inline-flex h-12 items-center justify-center gap-2 rounded-full border border-[#7abcc3] px-6 text-sm font-semibold text-[#0f7f87] transition hover:bg-white">
-            Download My Resume
-            <DownloadMini />
-          </a>
+          <div className="mt-8 flex justify-center lg:justify-start">
+            <a
+              href="/books/MONICAHCLOUDRESUME.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-[#7abcc3] px-6 text-sm font-semibold text-[#0f7f87] transition hover:bg-white">
+              Download My Resume
+              <DownloadMini />
+            </a>
+          </div>
         </div>
 
         <div className="border-l-0 border-[#ece2dc] pt-2 lg:border-l lg:pl-10">
-          <h2 className="font-display text-[2.2rem] leading-none text-[#155f69]">
+          <h2 className="font-display text-[2.2rem] leading-none text-[#155f69] justify-center lg:justify-start">
             A Few Things That Describe Me
           </h2>
 

@@ -194,7 +194,7 @@ export const hobbies = [
     title: "Traveling &\nExploring",
   },
   {
-    image: "/technology.jpg",
+    image: "/coding.jpg",
     title: "Learning New\nTechnologies",
   },
   {

@@ -1,5 +1,3 @@
-import heroImg from "/fullerbody.png";
-
 const HeroImage = ({ mobile }) => {
   return (
     <div

@@ -22,7 +22,7 @@ const NavLinks = () => {
             <li key={id} className="group relative">
               <a
                 href={href}
-                className="capitalize text-base font-medium tracking-[0.04em] text-[#155f69] transition hover:text-[#0f7f87]">
+                className="capitalize text-lg font-medium tracking-[0.04em] text-[#155f69] transition hover:text-[#0f7f87]">
                 {text}
               </a>
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 rounded-full bg-[#f2b38c] transition-all duration-300 group-hover:w-full" />

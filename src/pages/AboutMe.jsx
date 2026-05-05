@@ -1,5 +1,5 @@
 import AboutStorySection from "../components/about/AboutStorySection";
-import AboutCtaBanner from "../components/about/AboutCtaBanner";
+import AboutCtaBanner from "../components/about/AboutCtaBanner.jsx";
 import HobbiesAndFunFacts from "../components/about/HobbiesAndFunFacts";
 import AboutHero from "../components/about/AboutHero";
 import Navbar from "../components/navbar/NavBar";

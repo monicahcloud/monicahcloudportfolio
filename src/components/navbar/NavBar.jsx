@@ -10,7 +10,7 @@ const Navbar = () => {
         <Logo />
 
         {/* Center desktop nav */}
-        <div className="flex-1 justify-center hidden lg:flex font-display text-md font-semibold tracking-[0.02em] text-[#155f69]  ">
+        <div className="flex-1 justify-center hidden lg:flex font-display text-lg font-semibold tracking-[0.02em] text-[#155f69]  ">
           <NavLinks />
         </div>
 

@@ -22,7 +22,7 @@ const Hero = () => {
               Walking Boldly in Purpose, Fueled by Faith.
             </p>
 
-            <h1 className="font-display text-[2.7rem] leading-[0.92] tracking-[-0.04em] text-[#155f69] sm:text-[3.8rem] lg:max-w-[700px] lg:text-[6rem]">
+            <h1 className="font-display text-[2.45rem] leading-[0.95] tracking-[-0.035em] text-[#155f69] sm:text-[3.8rem] lg:max-w-[700px] lg:text-[6rem]">
               Inspire. Equip.
               <br />
               <span className="text-[#412279]">Empower.</span>
@@ -30,8 +30,26 @@ const Hero = () => {
                 ♡
               </span>
             </h1>
+            {/* MOBILE IMAGE */}
+            <div className="mt-5 flex justify-center lg:hidden">
+              <div className="relative flex h-[320px] w-full max-w-[340px] items-center justify-center sm:h-[430px] sm:max-w-[430px]">
+                {/* Outer glow */}
+                <div className="absolute h-[320px] w-[320px] rounded-full bg-[radial-gradient(circle,#ffe1d2_0%,#f6c8dc_45%,#dcc6f3_75%,transparent_100%)] opacity-80 blur-3xl sm:h-[460px] sm:w-[460px]" />
 
-            <div className="font-display mt-5 space-y-3 text-[1.2rem] leading-7 text-slate-700 sm:mx-auto sm:max-w-[620px] sm:text-[1.05rem] sm:leading-[1.8] lg:mx-0">
+                {/* Main circle */}
+                <div className="absolute h-[270px] w-[270px] rounded-full border border-[#b8e3e4] bg-[radial-gradient(circle_at_32%_30%,#8ee5e6_0%,#58d6dc_16%,#f6c7b6_52%,#efc5df_76%,#d8b9f1_100%)] shadow-[0_25px_60px_rgba(121,86,151,0.12)] sm:h-[380px] sm:w-[380px]" />
+
+                {/* Portrait */}
+                <div className="relative z-10 w-[300px] translate-y-2 sm:w-[400px]">
+                  <img
+                    src={heroImg}
+                    alt="Monicah smiling"
+                    className="h-auto w-full object-contain drop-shadow-[0_14px_28px_rgba(0,0,0,0.08)]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className=" font-display mt-5 space-y-3 text-[1.2rem] leading-7 text-slate-700 sm:mx-auto sm:max-w-[620px] sm:text-[1.05rem] sm:leading-[1.8] lg:mx-0">
               <p>
                 I’m called to use my God-given gifts to build, teach, and
                 encourage others to walk boldly in their purpose.
@@ -55,7 +73,10 @@ const Hero = () => {
                 download
                 className="inline-flex h-12 items-center justify-center gap-3 rounded-2xl border border-[#6e53b6] bg-transparent px-6 text-sm font-semibold text-[#4c2d8a] transition hover:bg-white/70 sm:h-14 sm:px-8 sm:text-base">
                 <Download className="h-4 w-4 sm:h-5 sm:w-5" />
-                Download Free Copy of Shameless Persistence
+                <span className="sm:hidden">Download Free Book</span>
+                <span className="hidden sm:inline">
+                  Download Free Copy of Shameless Persistence
+                </span>
               </a>
             </div>
           </motion.div>
@@ -64,7 +85,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="relative flex justify-center lg:justify-end">
+            className="relative hidden justify-center lg:flex lg:justify-end">
             <div className="relative flex h-[340px] w-full max-w-[420px] items-center justify-center sm:h-[470px] sm:max-w-[560px] lg:h-[640px] lg:max-w-[680px]">
               {/* Outer soft glow */}
               <div className="absolute right-1/2 top-1/2 h-[360px] w-[360px] translate-x-[54%] -translate-y-[44%] rounded-full bg-[radial-gradient(circle,#ffe1d2_0%,#f6c8dc_45%,#dcc6f3_75%,transparent_100%)] opacity-80 blur-3xl sm:h-[560px] sm:w-[560px] lg:h-[860px] lg:w-[860px]" />
@@ -88,14 +109,13 @@ const Hero = () => {
               </div>
 
               {/* Quote card */}
-              <div className="absolute bottom-2 right-1 z-20 max-w-[190px] rounded-[20px] border border-white/35 bg-white/20 px-4 py-3 text-[#44237f] shadow-[0_18px_35px_rgba(92,58,130,0.14)] backdrop-blur-md sm:bottom-8 sm:right-[6px] sm:max-w-[240px] sm:px-5 sm:py-4 lg:right-[-6px] font-display italic font-semibold">
-                <div className="text-2xl leading-none text-[#6b3fa0]/70 sm:text-3xl">
-                  “
-                </div>
+              <div className="absolute bottom-2 right-1 z-20 hidden max-w-[190px] rounded-[20px] border border-white/35 bg-white/20 px-4 py-3 text-[#44237f] shadow-[0_18px_35px_rgba(92,58,130,0.14)] backdrop-blur-md sm:block sm:bottom-8 sm:right-[6px] sm:max-w-[240px] sm:px-5 sm:py-4 lg:right-[-6px] font-display italic font-semibold">
+                {/* <div className="text-2xl leading-none text-[#6b3fa0]/70 sm:text-3xl"></div> */}
 
-                <p className="text-md font-medium leading-[1.5] text-[#4b2d79]  sm:leading-[1.65]">
-                  Create in me a clean heart, O God and renew a right spirit
-                  within me.
+                <p className="text-md font-medium text-center leading-[1.5] text-[#4b2d79] sm:leading-[1.65]">
+                  <span className="ml-1">”</span> Create in me a clean heart, O
+                  God and renew a right spirit within me.
+                  <span className="ml-1">”</span>
                 </p>
 
                 <p className="mt-2 text-md font-semibold tracking-[0.01em] text-[#f08f52] sm:mt-3 sm:text-md">
@@ -110,7 +130,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="relative mt-6 overflow-hidden rounded-[24px] bg-gradient-to-r from-[#2b173e] via-[#3e2670] to-[#0c8891] shadow-[0_20px_50px_rgba(35,20,60,0.14)] sm:mt-8 sm:rounded-[28px]">
+          className="relative mt-16 overflow-hidden rounded-[24px] bg-gradient-to-r from-[#2b173e] via-[#3e2670] to-[#0c8891] shadow-[0_20px_50px_rgba(35,20,60,0.14)] sm:mt-8 sm:rounded-[28px]">
           <div className="grid items-stretch md:grid-cols-[260px_1fr_120px] lg:grid-cols-[340px_1fr_150px]">
             <div className="min-h-[180px] md:min-h-[220px]">
               <img

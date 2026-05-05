@@ -7,7 +7,7 @@ function Logo() {
         <img
           src={logo}
           alt="Monicah Cloud logo"
-          className="block h-auto w-36 md:w-40 lg:w-44 max-w-none"
+          className="hidden h-auto w-36 max-w-none md:block md:w-40 lg:w-44"
         />
       </a>
     </div>
