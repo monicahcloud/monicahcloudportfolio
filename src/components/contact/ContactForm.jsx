@@ -25,12 +25,13 @@ const ContactForm = () => {
       );
 
       // AUTO REPLY TO VISITOR
-      await emailjs.send(
+      const autoReplyResult = await emailjs.send(
         "service_ecjoxco",
         "template_6z3mtw2",
         {
           name,
           email,
+          reply_to: email,
           phone,
           message,
         },
@@ -38,6 +39,8 @@ const ContactForm = () => {
           publicKey: "XnLTFneXRVkwkphGD",
         },
       );
+
+      console.log("AUTO REPLY SENT:", autoReplyResult);
 
       setEmail("");
       setName("");
