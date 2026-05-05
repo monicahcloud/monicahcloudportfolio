@@ -65,11 +65,11 @@ export default function ResumeHero() {
 
             {/* Quote Card */}
             <div className="absolute bottom-8 right-0 z-20 max-w-[260px] rounded-[24px] border border-white/30 bg-white/25 p-5 font-display text-[#4b2d79] shadow-[0_18px_35px_rgba(92,58,130,0.14)] backdrop-blur-md">
-              <p className="text-md leading-7">
+              <p className="text-xl font-bold leading-7">
                 I build solutions that create impact and inspire transformation.
               </p>
 
-              <p className="mt-3 text-sm font-semibold text-[#f08f52]">
+              <p className="mt-3 text-md font-semibold text-[#f08f52]">
                 — Monicah C.
               </p>
             </div>

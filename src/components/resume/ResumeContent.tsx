@@ -37,7 +37,7 @@ export default function ResumeContent() {
               AI Consultant. Developer. Strategist.
             </h2>
 
-            <div className="mt-5 space-y-5 text-[1rem] leading-8 text-slate-600">
+            <div className="mt-5 space-y-5 text-[1rem] leading-8 text-slate-900">
               <p>
                 I build AI-powered solutions, data-driven systems, and digital
                 experiences that solve real-world problems. My background spans
